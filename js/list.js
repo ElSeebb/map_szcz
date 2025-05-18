@@ -13,15 +13,15 @@ const emblems = [
 
 let emblemsHTML = '';
 
-emblems.forEach((embelm) => {
+emblems.forEach((emblem) => {
 	emblemsHTML += `
         <button class="emblem-box">
 				<div class="emblem-box-symbol">
-					<img src="${emblems.symbol}" style="width: 100%;"/>
+					<img src="${emblem.symbol}" style="width: 100%;"/>
 				</div>
-				<div class="emblem-box-name"><p>${emblems.nazwa}</p></div>
+				<div class="emblem-box-name"><p>${emblem.nazwa}</p></div>
 		</button>
     `;
 });
 
-//document.querySelector('.js-emblem-list').innerHTML = emblemsHTML;
+document.querySelector('.js-emblem-list').innerHTML = emblemsHTML;
