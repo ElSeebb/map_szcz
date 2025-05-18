@@ -1,7 +1,75 @@
 const emblems = [
 	{
 		symbol: '/img/symbol/pod-gackiem.avif',
-		nazwa: 'abc',
+		nazwa: 'Pod gackiem',
+	},
+	{
+		symbol: '',
+		nazwa: 'sss',
+	},
+	{
+		symbol: '',
+		nazwa: 'sss',
+	},
+	{
+		symbol: '',
+		nazwa: 'sss',
+	},
+	{
+		symbol: '',
+		nazwa: 'sss',
+	},
+	{
+		symbol: '',
+		nazwa: 'sss',
+	},
+	{
+		symbol: '',
+		nazwa: 'sss',
+	},
+	{
+		symbol: '',
+		nazwa: 'sss',
+	},
+	{
+		symbol: '',
+		nazwa: 'sss',
+	},
+	{
+		symbol: '',
+		nazwa: 'sss',
+	},
+	{
+		symbol: '',
+		nazwa: 'sss',
+	},
+	{
+		symbol: '',
+		nazwa: 'sss',
+	},
+	{
+		symbol: '',
+		nazwa: 'sss',
+	},
+	{
+		symbol: '',
+		nazwa: 'sss',
+	},
+	{
+		symbol: '',
+		nazwa: 'sss',
+	},
+	{
+		symbol: '',
+		nazwa: 'sss',
+	},
+	{
+		symbol: '',
+		nazwa: 'sss',
+	},
+	{
+		symbol: '',
+		nazwa: 'sss',
 	},
 	{
 		symbol: '',
@@ -15,13 +83,13 @@ let emblemsHTML = '';
 
 emblems.forEach((emblem) => {
 	emblemsHTML += `
-        <button class="emblem-box">
-				<div class="emblem-box-symbol">
+        <button class="emblem-btn">
+				<div class="emblem-btn-symbol">
 					<img src="${emblem.symbol}" style="width: 100%;"/>
 				</div>
-				<div class="emblem-box-name"><p>${emblem.nazwa}</p></div>
+				<div class="emblem-btn-name"><p>${emblem.nazwa}</p></div>
 		</button>
     `;
 });
 
-document.querySelector('.js-emblem-list').innerHTML = emblemsHTML;
+document.querySelector('.emblem-list-box').innerHTML = emblemsHTML;
