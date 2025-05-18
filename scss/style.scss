@@ -6,12 +6,12 @@ body {
 }
 
 #emblem-list {
-	position: absolute;
+	position: relative;
 	top: 105px;
 	bottom: 10px;
-	right: 20px;
-	width: 11vw;
+	left: 10px;
 	.emblem-box {
+		width: 120px;
 		margin: 2px;
 		padding: 5px 10px;
 		border: 1px solid lightgray;
@@ -32,7 +32,8 @@ body {
 	position: absolute;
 	top: 10px;
 	bottom: 10px;
-	left: 20px;
+	left: 100px;
+	margin-left: 40px;
 	width: 70vw;
 	border-radius: 15px;
 	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
