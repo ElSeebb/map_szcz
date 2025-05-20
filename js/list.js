@@ -2,14 +2,17 @@
 
 const emblems = [
 	{
+		id: 1,
 		symbol: '/img/symbol/pod-gackiem.avif',
 		nazwa: 'Pod gackiem',
 	},
 	{
+		id: 2,
 		symbol: '',
 		nazwa: 'Pod Aniołem Stróżem',
 	},
 	{
+		id: 3,
 		symbol: '',
 		nazwa: 'Pod Matką Boską',
 	},

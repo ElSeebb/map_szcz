@@ -1,6 +1,6 @@
 const places = [
 	{
-    id: 1,
+    	id: 1,
 		coords: [49.426272, 20.476756],
 		img: 'img/tablica/zdj/pod_gackiem2.jpg',
 		title: 'Pod gackiem',
@@ -8,7 +8,7 @@ const places = [
 		description: 'Tablica nadana w 2023r dla budynku Hotel Szczawnica Park ',
 	},
 	{
-    id: 2,
+    	id: 2,
 		coords: [49.426782, 20.474926],
 		img: 'img/tablica/zdj/pod_aniołem_strozem.jpg',
 		title: 'Pod Aniołem Stróżem',
@@ -16,7 +16,7 @@ const places = [
 		description: 'Orginał znajduje się w Muzeum Pienińskim',
 	},
 	{
-    id: 3,
+    	id: 3,
 		coords: [49.427002, 20.474226],
 		img: 'img/tablica/zdj/pod_matka_boska.jpg',
 		title: 'Pod Matką Boską',
