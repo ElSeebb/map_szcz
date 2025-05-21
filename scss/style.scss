@@ -17,18 +17,18 @@ body {
 	background: white;
 	padding: 5px;
 	border: 1px solid #ccc;
-	border-radius: 15px;
+	border-radius: 5px;
 	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 	z-index: 1000;
 	.list-header {
 		position: sticky;
-		width: 85%;
+		width: 84%;
 		top: 0;
 		background: #fff;
 		padding: 10px;
 		font-size: 14px;
 		border: 2px solid #ccc;
-		border-radius: 15px;
+		border-radius: 5px;
 		box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
 		z-index: 10;
 	}

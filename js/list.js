@@ -3,7 +3,7 @@
 const emblems = [
 	{
 		id: 1,
-		symbol: '/img/symbol/pod-gackiem.avif',
+		symbol: '',
 		nazwa: 'Pod gackiem',
 	},
 	{
@@ -15,70 +15,6 @@ const emblems = [
 		id: 3,
 		symbol: '',
 		nazwa: 'Pod Matką Boską',
-	},
-	{
-		symbol: '',
-		nazwa: 'sss',
-	},
-	{
-		symbol: '',
-		nazwa: 'sss',
-	},
-	{
-		symbol: '',
-		nazwa: 'sss',
-	},
-	{
-		symbol: '',
-		nazwa: 'sss',
-	},
-	{
-		symbol: '',
-		nazwa: 'sss',
-	},
-	{
-		symbol: '',
-		nazwa: 'sss',
-	},
-	{
-		symbol: '',
-		nazwa: 'sss',
-	},
-	{
-		symbol: '',
-		nazwa: 'sss',
-	},
-	{
-		symbol: '',
-		nazwa: 'sss',
-	},
-	{
-		symbol: '',
-		nazwa: 'sss',
-	},
-	{
-		symbol: '',
-		nazwa: 'sss',
-	},
-	{
-		symbol: '',
-		nazwa: 'sss',
-	},
-	{
-		symbol: '',
-		nazwa: 'sss',
-	},
-	{
-		symbol: '',
-		nazwa: 'sss',
-	},
-	{
-		symbol: '',
-		nazwa: 'sss',
-	},
-	{
-		symbol: '',
-		nazwa: 'sss',
 	},
 ];
 
