@@ -165,7 +165,7 @@ const places = [
 		img: 'img/tablica/zdj/pod_gaweda.jpg',
 		title: 'Pod gawędą',
 		address: '<b>Adres:</b> ',
-		description: '...',
+		description: 'Nadana w 2022r',
 	},*/
 	/*{
 		id: 21,
@@ -378,8 +378,8 @@ const places = [
 	{
 		id: 47,
 		coords: [49.407470,20.565529],
-		img: 'img/tablica/zdj/pod_kukulka1.jpg',
-		title: 'Pod kukułką',
+		img: 'img/tablica/zdj/pod_kukucka1.jpg',
+		title: 'Pod kukucką',
 		address: '<b>Adres:</b> Biała Woda 57 ?',
 		description: 'Nadana w 2022r',
 	},
@@ -573,7 +573,7 @@ const places = [
 		img: 'img/tablica/zdj/pod_skrzypkiem1.jpg',
 		title: 'Pod skrzypkiem',
 		address: '<b>Adres:</b> Pod Sadami 9b',
-		description: '...',
+		description: 'Nadana w 2022r',
 	},
 	{
 		id: 72,
@@ -821,7 +821,7 @@ const places = [
 		img: 'img/tablica/zdj/pod_wodospadem1.jpg',
 		title: 'Pod wodospadem',
 		address: '<b>Adres:</b> Sopotnicka 35a',
-		description: '...',
+		description: 'Nadana w 2022r',
 	},
 	{
 		id: 103,
@@ -853,7 +853,7 @@ const places = [
 		img: 'img/tablica/zdj/pod_zbojem_pipikasem1.jpg',
 		title: 'Pod zbójem Pipikasem',
 		address: '<b>Adres:</b> Zielona 1a ?',
-		description: '...',
+		description: 'Nadana w 2022r',
 	},
 	/*{
 		id: 107,
@@ -887,6 +887,14 @@ const places = [
 		address: '<b>Adres:</b> Aleja Parkowa 13',
 		description: '...',
 	},
+	/*{
+		id: 111,
+		coords: [49.427357,20.472679],
+		img: 'img/tablica/zdj/',
+		title: 'Pod kajakiem',
+		address: '<b>Adres:</b> ',
+		description: 'Nadana w 2022r',
+	},*/
 ];
 
 // Funkcja do tworzenia markera i obsługi kliknięcia
