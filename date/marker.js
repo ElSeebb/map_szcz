@@ -1,4 +1,4 @@
-const places = [
+export const places = [
 	/*{
     	id: 1,
 		coords: [49.426782, 20.474926],

@@ -1,34 +1,15 @@
+import {places} from '../date/marker.js'
 
-
-const emblems = [
-	{
-		id: 1,
-		symbol: '',
-		nazwa: 'Pod gackiem',
-	},
-	{
-		id: 2,
-		symbol: '',
-		nazwa: 'Pod Aniołem Stróżem',
-	},
-	{
-		id: 3,
-		symbol: '',
-		nazwa: 'Pod Matką Boską',
-	},
-];
-
-//generator HTML
 
 let emblemsHTML = '';
 
-emblems.forEach((emblem) => {
+places.forEach((place) => {
 	emblemsHTML += `
         <button class="emblem-btn">
 				<div class="emblem-btn-symbol">
-					<img src="${emblem.symbol}" style="width: 100%;"/>
+					<img src="${place.symbol}" style="width: 100%;"/>
 				</div>
-				<div class="emblem-btn-name"><p>${emblem.nazwa}</p></div>
+				<div class="emblem-btn-name"><p>${place.title}</p></div>
 		</button>
     `;
 });
