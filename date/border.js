@@ -1,4 +1,4 @@
-var latlngs = [
+export const latlngs = [
     [49.44509235000004, 20.46204082400004],
 [49.44510139400006, 20.46203258900005],
 [49.44515257000006, 20.46218965900005],
@@ -1249,8 +1249,5 @@ var latlngs = [
 [49.44503686400004, 20.46184642800006],
 [49.44509235000004, 20.46204082400004],
 ];
-var polyline = L.polyline(latlngs, {color: 'red',weight: 4,
-    opacity: 0.8,
-    dashArray: '10, 8',
-    lineJoin: 'round'}).addTo(map);
+
 

@@ -1,5 +1,5 @@
 import {places} from '../date/marker.js'
-
+import {map} from '../js/map.js'
 
 places.forEach((place) => {
     const marker = L.marker(place.coords).addTo(map);

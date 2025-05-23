@@ -1,5 +1,7 @@
+import {latlngs} from '../date/border.js'
+
 const key = 'mnZ4thQ7dlWpRjiHX5FU';
-const map = L.map('map').setView([49.422978, 20.524778], 13);
+export const map = L.map('map').setView([49.422978, 20.524778], 13);
 L.tileLayer(
 	`https://api.maptiler.com/maps/openstreetmap/{z}/{x}/{y}.jpg?key=${key}`,
 	{
@@ -11,3 +13,10 @@ L.tileLayer(
 		crossOrigin: true,
 	}
 ).addTo(map);
+
+//border
+
+const polyline = L.polyline(latlngs, {color: 'red',weight: 4,
+    opacity: 0.8,
+    dashArray: '10, 8',
+    lineJoin: 'round'}).addTo(map);
