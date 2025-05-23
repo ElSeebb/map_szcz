@@ -380,7 +380,7 @@ export const places = [
 		coords: [49.407470,20.565529],
 		img: 'img/tablica/zdj/pod_kukucka1.jpg',
 		title: 'Pod kukucką',
-		address: '<b>Adres:</b> Biała Woda 57 ?',
+		address: '<b>Adres:</b> Biała Woda 57',
 		description: 'Nadana w 2022r',
 	},
 	{
