@@ -11,15 +11,15 @@ places.forEach((place) => {
 			panel.classList.remove('aktywny');
 
 			setTimeout(() => {
-				loadPanelDesc(panel, place);
+				openPanel(panel, place);
 			}, 200);
 		} else {
-			loadPanelDesc(panel, place);
+			openPanel(panel, place);
 		}
 	});
 });
 
-function loadPanelDesc(panel, place) {
+function openPanel(panel, place) {
 	panel.innerHTML = `
 		<img src="${place.img}" alt="Tablica ${place.title}" style="width: 100%; height: auto; border-radius: 8px;">
 		<h2>${place.title}</h2> 
