@@ -1,15 +1,42 @@
 import { places } from '../date/marker.js';
 import { map } from '../js/map.js';
 
+const defaultIcon = L.icon({
+	iconUrl: './img/icon/inactive-pin.svg',
+	iconSize: [35, 65],
+	iconAnchor: [15, 50],
+	popupAnchor: [1, -34],
+	
+});
+
+const activeIcon = L.icon({
+	iconUrl: './img/icon/active-pin.svg',
+	iconSize: [35, 55],
+	iconAnchor: [15, 50],
+	popupAnchor: [1, -34],
+	
+});
+
+const markers = {}; // przechowuje wszystkie markery
+let activeMarker = null;
+
 places.forEach((place) => {
-	const marker = L.marker(place.coords).addTo(map);
+	const marker = L.marker(place.coords, { icon: defaultIcon }).addTo(map);
+	markers[place.id] = marker;
 
 	marker.on('click', () => {
 		const panel = document.getElementById('panel');
 
+		// zmiana ikony aktywnego markera
+		if (activeMarker && activeMarker !== marker) {
+			activeMarker.setIcon(defaultIcon);
+		}
+		marker.setIcon(activeIcon);
+		activeMarker = marker;
+
+		// animacja zamykania i otwierania panelu
 		if (panel.classList.contains('aktywny')) {
 			panel.classList.remove('aktywny');
-
 			setTimeout(() => {
 				openPanel(panel, place);
 			}, 200);
@@ -32,18 +59,28 @@ function openPanel(panel, place) {
 
 	document.getElementById('zamknij-btn').addEventListener('click', () => {
 		panel.classList.remove('aktywny');
+
+		if (activeMarker) {
+			activeMarker.setIcon(defaultIcon);
+			activeMarker = null;
+		}
 	});
 }
 
+// kliknięcie poza panelem
 document.addEventListener('click', (e) => {
 	const panel = document.getElementById('panel');
-
-	const isMarker = e.target.closest(
-		'.leaflet-marker-icon, .leaflet-interactive'
-	);
+	const isMarker = e.target.closest('.leaflet-marker-icon, .leaflet-interactive');
 	const isPanel = panel.contains(e.target);
 
 	if (panel.classList.contains('aktywny') && !isMarker && !isPanel) {
 		panel.classList.remove('aktywny');
+		if (activeMarker) {
+			activeMarker.setIcon(defaultIcon);
+			activeMarker = null;
+		}
 	}
 });
+
+export { markers, activeMarker, defaultIcon, activeIcon, openPanel };
+

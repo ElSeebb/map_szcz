@@ -73,7 +73,7 @@ export const places = [
 	},
 	{
 		id: 10,
-		coords: [49.424651,20.463741],
+		coords: [49.424651,20.463701],
 		img: 'img/tablica/zdj/pod_bucikiem1.jpg',
 		title: 'Pod bucikiem',
 		address: '<b>Adres:</b> Flisacka 25a',
@@ -225,7 +225,7 @@ export const places = [
 	},
 	{
 		id: 28,
-		coords: [49.427347,20.472799],
+		coords: [49.427347,20.472779],
 		img: 'img/tablica/zdj/pod_hiszpanem1.jpg',
 		title: 'Pod hiszpanem',
 		address: '<b>Adres:</b> Glówna 62',
@@ -233,7 +233,7 @@ export const places = [
 	},
 	{
 		id: 29,
-		coords: [49.423000,20.486080],
+		coords: [49.423000,20.486060],
 		img: 'img/tablica/zdj/pod_huzarem1.jpg',
 		title: 'Pod Huzarem',
 		address: '<b>Adres:</b> Szalaya 38',
@@ -315,7 +315,7 @@ export const places = [
 		id: 39,
 		coords: [49.422873,20.487953],
 		img: 'img/tablica/zdj/pod_konikiem1.jpg',
-		title: 'Pod wykrotem',
+		title: 'Pod konikiem',
 		address: '<b>Adres:</b> Szalaya 55',
 		description: '...',
 	},
@@ -761,7 +761,7 @@ export const places = [
 	},*/
 	{
 		id: 95,
-		coords: [49.426375,20.452098],
+		coords: [49.422507,20.488168],
 		img: 'img/tablica/zdj/pod_wegrzynem1.jpg',
 		title: 'Pod węgrzynem',
 		address: '<b>Adres:</b> Szalaya 72',
@@ -825,7 +825,7 @@ export const places = [
 	},
 	{
 		id: 103,
-		coords: [49.427782,20.468670],
+		coords: [49.427732,20.468630],
 		img: 'img/tablica/zdj/pod_wykrotem1.jpg',
 		title: 'Pod wykrotem',
 		address: '<b>Adres:</b> Skotnicka 6a',
