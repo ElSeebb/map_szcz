@@ -258,8 +258,8 @@ export const places = [
 	{
 		id: 32,
 		coords: [49.423006,20.486579],
-		img: 'img/tablica/zdj/pod_jazebina.jpg',
-		title: 'Pod jażębiną',
+		img: 'img/tablica/zdj/pod_jarzebina1.jpg',
+		title: 'Pod jarzębiną',
 		address: '<b>Adres:</b> Szlaya 41a',
 		description: '...',
 	},
