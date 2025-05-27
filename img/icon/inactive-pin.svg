@@ -1,7 +1,77 @@
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg height="800px" width="800px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 293.334 293.334" xml:space="preserve" fill="#000000">
-<g id="SVGRepo_bgCarrier" stroke-width="0"/>
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#030303" stroke-width="9.973356"> <g> <g> <path style="fill:#7c8ccb;" d="M146.667,0C94.903,0,52.946,41.957,52.946,93.721c0,22.322,7.849,42.789,20.891,58.878 c4.204,5.178,11.237,13.331,14.903,18.906c21.109,32.069,48.19,78.643,56.082,116.864c1.354,6.527,2.986,6.641,4.743,0.212 c5.629-20.609,20.228-65.639,50.377-112.757c3.595-5.619,10.884-13.483,15.409-18.379c6.554-7.098,12.009-15.224,16.154-24.084 c5.651-12.086,8.882-25.466,8.882-39.629C240.387,41.962,198.43,0,146.667,0z M146.667,144.358 c-28.892,0-52.313-23.421-52.313-52.313c0-28.887,23.421-52.307,52.313-52.307s52.313,23.421,52.313,52.307 C198.98,120.938,175.559,144.358,146.667,144.358z"/> <circle style="fill:#7c8ccb;" cx="146.667" cy="90.196" r="21.756"/> </g> </g> </g>
-<g id="SVGRepo_iconCarrier"> <g> <g> <path style="fill:#7c8ccb;" d="M146.667,0C94.903,0,52.946,41.957,52.946,93.721c0,22.322,7.849,42.789,20.891,58.878 c4.204,5.178,11.237,13.331,14.903,18.906c21.109,32.069,48.19,78.643,56.082,116.864c1.354,6.527,2.986,6.641,4.743,0.212 c5.629-20.609,20.228-65.639,50.377-112.757c3.595-5.619,10.884-13.483,15.409-18.379c6.554-7.098,12.009-15.224,16.154-24.084 c5.651-12.086,8.882-25.466,8.882-39.629C240.387,41.962,198.43,0,146.667,0z M146.667,144.358 c-28.892,0-52.313-23.421-52.313-52.313c0-28.887,23.421-52.307,52.313-52.307s52.313,23.421,52.313,52.307 C198.98,120.938,175.559,144.358,146.667,144.358z"/> <circle style="fill:#7c8ccb;" cx="146.667" cy="90.196" r="21.756"/> </g> </g> </g>
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+
+<svg
+   height="800"
+   width="550"
+   version="1.1"
+   id="Capa_1"
+   viewBox="0 0 201.66712 293.334"
+   xml:space="preserve"
+   fill="#000000"
+   sodipodi:docname="inactive-pin.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs4" /><sodipodi:namedview
+   id="namedview4"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:zoom="1.01875"
+   inkscape:cx="400.4908"
+   inkscape:cy="400"
+   inkscape:window-width="1920"
+   inkscape:window-height="1017"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Capa_1" />
+
+<g
+   id="SVGRepo_bgCarrier"
+   stroke-width="0"
+   transform="translate(-46.789472,0.71983804)" />
+
+<g
+   id="SVGRepo_tracerCarrier"
+   stroke-linecap="round"
+   stroke-linejoin="round"
+   stroke="#030303"
+   stroke-width="9.97336"
+   transform="translate(-46.789472,0.71983804)"> <g
+   id="g2"> <g
+   id="g1"> <path
+   style="fill:#cb3a3a"
+   d="M 146.667,0 C 94.903,0 52.946,41.957 52.946,93.721 c 0,22.322 7.849,42.789 20.891,58.878 4.204,5.178 11.237,13.331 14.903,18.906 21.109,32.069 48.19,78.643 56.082,116.864 1.354,6.527 2.986,6.641 4.743,0.212 5.629,-20.609 20.228,-65.639 50.377,-112.757 3.595,-5.619 10.884,-13.483 15.409,-18.379 6.554,-7.098 12.009,-15.224 16.154,-24.084 5.651,-12.086 8.882,-25.466 8.882,-39.629 C 240.387,41.962 198.43,0 146.667,0 Z m 0,144.358 c -28.892,0 -52.313,-23.421 -52.313,-52.313 0,-28.887 23.421,-52.307 52.313,-52.307 28.892,0 52.313,23.421 52.313,52.307 0,28.893 -23.421,52.313 -52.313,52.313 z"
+   id="path1" /> <circle
+   style="fill:#cb3a3a"
+   cx="146.66701"
+   cy="90.195999"
+   r="21.756001"
+   id="circle1" /> </g> </g> </g>
+
+<g
+   id="SVGRepo_iconCarrier"
+   transform="translate(-46.789472,0.71983804)"
+   style="fill:#15adad;fill-opacity:1"> <g
+   id="g4"
+   style="fill:#15adad;fill-opacity:1"> <g
+   id="g3"
+   style="fill:#15adad;fill-opacity:1"> <path
+   style="fill:#15adad;fill-opacity:1"
+   d="M 146.667,0 C 94.903,0 52.946,41.957 52.946,93.721 c 0,22.322 7.849,42.789 20.891,58.878 4.204,5.178 11.237,13.331 14.903,18.906 21.109,32.069 48.19,78.643 56.082,116.864 1.354,6.527 2.986,6.641 4.743,0.212 5.629,-20.609 20.228,-65.639 50.377,-112.757 3.595,-5.619 10.884,-13.483 15.409,-18.379 6.554,-7.098 12.009,-15.224 16.154,-24.084 5.651,-12.086 8.882,-25.466 8.882,-39.629 C 240.387,41.962 198.43,0 146.667,0 Z m 0,144.358 c -28.892,0 -52.313,-23.421 -52.313,-52.313 0,-28.887 23.421,-52.307 52.313,-52.307 28.892,0 52.313,23.421 52.313,52.307 0,28.893 -23.421,52.313 -52.313,52.313 z"
+   id="path2" /> <circle
+   style="fill:#15adad;fill-opacity:1"
+   cx="146.66701"
+   cy="90.195999"
+   r="21.756001"
+   id="circle2" /> </g> </g> </g>
+
+</svg>

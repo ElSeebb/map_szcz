@@ -41,7 +41,7 @@ export const places = [
 	},
 	{
 		id: 6,
-		coords: [49.420068,20.496481],
+		coords: [49.420020,20.496491],
 		img: 'img/tablica/zdj/pod_beczka1.jpg',
 		title: 'Pod beczką',
 		address: '<b>Adres:</b> Szlachtowska 28',

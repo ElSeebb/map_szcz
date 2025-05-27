@@ -3,19 +3,21 @@ import { map } from '../js/map.js';
 
 const defaultIcon = L.icon({
 	iconUrl: './img/icon/inactive-pin.svg',
-	iconSize: [35, 65],
-	iconAnchor: [15, 50],
+	iconSize: [25, 35],
+ 	iconAnchor: [12, 35],
 	popupAnchor: [1, -34],
 	
 });
 
 const activeIcon = L.icon({
 	iconUrl: './img/icon/active-pin.svg',
-	iconSize: [35, 55],
-	iconAnchor: [15, 50],
+	iconSize: [28, 38],
+	iconAnchor: [12, 35],
 	popupAnchor: [1, -34],
 	
 });
+
+
 
 const markers = {}; // przechowuje wszystkie markery
 let activeMarker = null;
