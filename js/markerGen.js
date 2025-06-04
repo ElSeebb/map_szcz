@@ -25,6 +25,13 @@ places.forEach((place) => {
 	marker.on('click', () => {
 		handlePlaceClick(place);
 	});
+
+	marker.bindTooltip(place.title, {
+		permanent: false,
+		direction: 'top',
+		offset: [0, -30],
+		opacity: 0.8,
+	});
 });
 
 function openPanel(panel, place) {
@@ -54,7 +61,7 @@ function handlePlaceClick(place) {
 	if (!marker) return;
 
 	// widok mapy
-	map.setView(place.coords, 15);
+	map.setView(place.coords);
 
 	// reset markera
 	if (activeMarker && activeMarker !== marker) {
