@@ -70,7 +70,16 @@ function handlePlaceClick(place) {
 	//podświetlanie przycisku z listy
 	document.querySelectorAll('.emblem-btn').forEach((btn) => {
 		const id = parseInt(btn.dataset.id);
-		btn.classList.toggle('active', id === place.id);
+		const isActive = id === place.id;
+		btn.classList.toggle('active', isActive);
+
+		if (isActive) {
+			btn.scrollIntoView({
+				behavior: 'smooth',
+				block: 'center',
+				inline: 'nearest',
+			});
+		}
 	});
 
 	// otwarcie panelu
