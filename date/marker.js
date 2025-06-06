@@ -177,10 +177,10 @@ export const places = [
 	},*/
 	{
 		id: 22,
-		coords: [49.421955,20.485653],
+		coords: [49.421955,20.485953],
 		img: 'img/tablica/zdj/pod_golebiem1.jpg',
-		title: 'Pod gołębiem',
-		address: '<b>Adres:</b> Zawodzie 12a',
+		title: 'Pod gołąbiem',
+		address: '<b>Adres:</b> Zawodzie 12',
 		description: '<b>Opis: </b>...',
 	},
 	{
@@ -295,14 +295,14 @@ export const places = [
 		address: '<b>Adres:</b> Park Górny 16',
 		description: '<b>Opis: </b>...',
 	},
-	/*{
+	{
 		id: 37,
-		coords: [49.427357,20.472679],
+		coords: [49.419802, 20.500657],
 		img: 'img/tablica/zdj/pod_kogutkiem1.jpg',
 		title: 'Pod kogutkiem',
-		address: '<b>Adres:</b> ',
+		address: '<b>Adres: Szlachtowska 68</b> ',
 		description: '<b>Opis: </b>...',
-	},*/
+	},
 	{
 		id: 38,
 		coords: [49.427184,20.472474],
@@ -563,7 +563,7 @@ export const places = [
 		id: 70,
 		coords: [49.427357,20.472679],
 		img: 'img/tablica/zdj/pod_sienkiewiczem.jpg',
-		title: 'Pod Prusem',
+		title: 'Pod Sienkiewiczem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
 	},*/
@@ -711,14 +711,14 @@ export const places = [
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
 	},*/
-	/*{
+	{
 		id: 89,
-		coords: [49.427357,20.472679],
+		coords: [49.425270, 20.482248],
 		img: 'img/tablica/zdj/',
 		title: 'Pod trzema różami',
-		address: '<b>Adres:</b> ',
+		address: '<b>Adres: Główna 1</b> ',
 		description: '<b>Opis: </b>...',
-	},*/
+	},
 	/*{
 		id: 90,
 		coords: [49.427357,20.472679],
