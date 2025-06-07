@@ -8,7 +8,7 @@ export const places = [
 	},*/
 	{
 		coords: [49.426782, 20.474926],
-		img: 'img/tablica/zdj/pod_aniołem_strozem.jpg',
+		img: 'img/tablica/zdj/pod_aniolem_strozem1.webp',
 		title: 'Pod Aniołem Stróżem',
 		address: '<b>Adres:</b> Glówna 29',
 		description: '<b>Opis: </b>Orginał znajduje się w Muzeum Pienińskim',
@@ -29,10 +29,10 @@ export const places = [
 	},
 	{
 		coords: [49.425506, 20.486935],
-		img: 'img/tablica/zdj/pod_batorym.jpg',
+		img: 'img/tablica/zdj/pod_batorym.png',
 		title: 'Pod Batorym',
 		address: '<b>Adres:</b> Park Górny 13',
-		description: '<b>Opis: </b>Nadana w 2023r',
+		description: '<b>Opis: </b>Nadana w 2022r',
 	},
 	{
 		coords: [49.42002, 20.496491],
@@ -156,7 +156,7 @@ export const places = [
 	},*/
 	{
 		coords: [49.421955, 20.485953],
-		img: 'img/tablica/zdj/pod_golebiem1.jpg',
+		img: 'img/tablica/zdj/pod_golobkiem1.jpg',
 		title: 'Pod gołąbiem',
 		address: '<b>Adres:</b> Zawodzie 12',
 		description: '<b>Opis: </b>...',
@@ -498,14 +498,14 @@ export const places = [
 		description: '<b>Opis: </b>...',
 	},*/
 	{
-		coords: [49.428851, 20.466221],
+		coords: [49.428761, 20.466021],
 		img: 'img/tablica/zdj/pod_skrzypkiem1.jpg',
 		title: 'Pod skrzypkiem',
 		address: '<b>Adres:</b> Pod Sadami 9b',
 		description: '<b>Opis: </b>Nadana w 2022r',
 	},
 	{
-		coords: [49.424679, 20.483683],
+		coords: [49.424639, 20.483683],
 		img: 'img/tablica/zdj/pod_sloncem1.jpg',
 		title: 'Pod słońcem',
 		address: '<b>Adres:</b> Szlaya 17',
@@ -600,7 +600,7 @@ export const places = [
 		img: 'img/tablica/zdj/pod_swierkami1.jpg',
 		title: 'Pod świerkami',
 		address: '<b>Adres:</b> Główna 212',
-		description: '<b>Opis: </b>...',
+		description: '<b>Opis: </b>Nadana w 2022r.',
 	},
 	{
 		coords: [49.427379, 20.472524],
@@ -624,7 +624,7 @@ export const places = [
 		description: '<b>Opis: </b>...',
 	},*/
 	{
-		coords: [49.42527, 20.482248],
+		coords: [49.425170, 20.482248],
 		img: 'img/tablica/zdj/',
 		title: 'Pod trzema różami',
 		address: '<b>Adres: Główna 1</b> ',
