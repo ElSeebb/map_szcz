@@ -1,5 +1,8 @@
-import { places } from '../date/marker.js';
+//import { places } from '../date/marker.js';
 import { handlePlaceClick } from './markerGen.js';
+import { getSortedPlacesWithId } from './sort.js';
+const places = getSortedPlacesWithId();
+console.log('places:', places);
 
 let emblemsHTML = '';
 

@@ -1,6 +1,9 @@
-import { places } from '../date/marker.js';
+//import { places } from '../date/marker.js';
 import { map } from '../js/map.js';
+import { getSortedPlacesWithId } from './sort.js';
+const places = getSortedPlacesWithId();
 
+console.log('places:', places);
 const markers = {};
 let activeMarker = null;
 
