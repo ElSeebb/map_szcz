@@ -16,7 +16,7 @@
 	<body>
 		
 		<div id="map"></div>
-		<div id="panel"></div>
+		<div id="panel" class="panel-mob hidden"></div>
 		<div class="title-box">
 			<div class="title">
 				<h2>Godła Szalayowskie</h2>
@@ -32,7 +32,8 @@
 				</p>
 				<p>Wersja niepełna, testowa, bez zdjęć - aktualnie</p>
 		</div>
-		<div id="emblem-list" class="js-emblem-list">
+		<button id="burger-btn"><img class="burger-btn" src="./img/icon/menu.svg" alt=""></button>
+		<aside id="emblem-list" class="js-emblem-list hidden">
 			<div class="list-header">
 				<h2>Lista Godeł</h2>
 			</div>
@@ -49,12 +50,11 @@
 					<div class="emblem-box-name">Pod gackiem</div>
 				</button>
 			</div>
-		</div>
+		</aside>
 		<script type="module" src="js/map.js"></script>
-		<!-- <script src="date/marker.js"></script>
-		<script src="date/border.js"></script> -->
 		<script type="module" src="js/list.js"></script>
 		<script type="module" src="js/markerGen.js"></script>
+		<script src="./js/burger.js"></script>
 
 	</body>
 </html>

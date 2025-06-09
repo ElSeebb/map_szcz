@@ -3,6 +3,12 @@ import { map } from '../js/map.js';
 import { getSortedPlacesWithId } from './sort.js';
 const places = getSortedPlacesWithId();
 
+function centerMapWithOffset(latlng, offsetX = 0, offsetY = 0) {
+	const point = map.project(latlng, map.getZoom()).subtract([offsetX, offsetY]);
+	const newLatLng = map.unproject(point, map.getZoom());
+	map.panTo(newLatLng, { animate: true });
+}
+
 console.log('places:', places);
 const markers = {};
 let activeMarker = null;
@@ -64,7 +70,13 @@ function handlePlaceClick(place) {
 	if (!marker) return;
 
 	// widok mapy
-	map.setView(place.coords);
+	const isMobile = window.innerWidth < 768;
+
+	if (isMobile) {
+		centerMapWithOffset(place.coords, -110, 0); 
+	} else {
+		map.setView(place.coords); 
+	}
 
 	// reset markera
 	if (activeMarker && activeMarker !== marker) {

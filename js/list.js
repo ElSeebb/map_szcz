@@ -24,5 +24,12 @@ document.querySelectorAll('.emblem-btn').forEach((btn) => {
 		const id = parseInt(btn.dataset.id);
 		const place = places.find((p) => p.id === id);
 		if (place) handlePlaceClick(place);
+
+		//zamykanie menu
+		const listBox = document.getElementById('emblem-list');
+		if (listBox && listBox.classList.contains('active')) {
+			listBox.classList.remove('active');
+		}
 	});
 });
+

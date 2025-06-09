@@ -672,13 +672,13 @@ export const places = [
 		address: '<b>Adres:</b> Szalaya 72',
 		description: '<b>Opis: </b>...',
 	},
-	/*{
+	{
 		coords: [49.423210, 20.483915],
-		img: 'img/tablica/zdj/',
+		img: 'img/tablica/zdj/pod_wezem1.jpg',
 		title: 'Pod wężem',
-		address: '<b>Adres:</b> Zawodzie 17?',
+		address: '<b>Adres:</b> Zawodzie 17',
 		description: '<b>Opis: </b>...',
-	},*/
+	},
 	{
 		coords: [49.422597, 20.489099],
 		img: 'img/tablica/zdj/pod_wiencem1.jpg',
