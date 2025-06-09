@@ -5,11 +5,11 @@ let initialCoords;
 let initialZoom;
 
 if (window.innerWidth < 768) {
-	// 📱 Widok mobilny
-	initialCoords = [49.423800, 20.522000]; // np. bardziej przesunięty w lewo
+	//Widok mobilny
+	initialCoords = [49.423800, 20.522000];
 	initialZoom = 12;
 } else {
-	// 💻 Widok desktopowy
+	//Widok desktopowy
 	initialCoords = [49.422978, 20.524778];
 	initialZoom = 13;
 }
