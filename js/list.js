@@ -33,3 +33,14 @@ document.querySelectorAll('.emblem-btn').forEach((btn) => {
 	});
 });
 
+document.addEventListener('click', (e) => {
+	const listBox = document.getElementById('emblem-list');
+	const burgerBtn = document.getElementById('burger-btn');
+
+	const clickedOutsideList = !listBox.contains(e.target);
+	const clickedOutsideBurger = !burgerBtn.contains(e.target);
+
+	if (listBox.classList.contains('active') && clickedOutsideList && clickedOutsideBurger) {
+		listBox.classList.remove('active');
+	}
+});

@@ -6,8 +6,8 @@ let initialZoom;
 
 if (window.innerWidth < 768) {
 	//Widok mobilny
-	initialCoords = [49.423800, 20.522000];
-	initialZoom = 12;
+	initialCoords = [49.434800, 20.480000];
+	initialZoom = 13;
 } else {
 	//Widok desktopowy
 	initialCoords = [49.422978, 20.524778];
