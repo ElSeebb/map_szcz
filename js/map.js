@@ -1,7 +1,20 @@
 import {latlngs} from '../date/border.js'
 
 const key = 'mnZ4thQ7dlWpRjiHX5FU';
-export const map = L.map('map').setView([49.422978, 20.524778], 13);
+let initialCoords;
+let initialZoom;
+
+if (window.innerWidth < 768) {
+	// 📱 Widok mobilny
+	initialCoords = [49.423800, 20.522000]; // np. bardziej przesunięty w lewo
+	initialZoom = 12;
+} else {
+	// 💻 Widok desktopowy
+	initialCoords = [49.422978, 20.524778];
+	initialZoom = 13;
+}
+
+export const map = L.map('map').setView(initialCoords, initialZoom);
 L.tileLayer(
 	`https://api.maptiler.com/maps/openstreetmap/{z}/{x}/{y}.jpg?key=${key}`,
 	{
