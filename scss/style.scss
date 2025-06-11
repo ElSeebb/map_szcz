@@ -6,6 +6,11 @@ body {
 	font-family: serif;
 }
 
+html {
+	font-size: 62.5%;
+	//scroll-behavior: smooth;
+}
+
 #emblem-list {
 	position: fixed;
 	top: 10px;
@@ -27,7 +32,7 @@ body {
 		top: 0;
 		background: #fff;
 		padding: 10px;
-		font-size: 14px;
+		font-size: 1.4em;
 		text-align: center;
 		border: 2px solid #ccc;
 		border-radius: 5px;
@@ -43,7 +48,7 @@ body {
 			border: 1px solid lightgray;
 			border-radius: 5px;
 			box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-			font-size: 14px;
+			font-size: 1.1em;
 			cursor: pointer;
 			display: flex;
 			align-items: center;
@@ -56,7 +61,7 @@ body {
 			}
 			.emblem-btn-name {
 				flex-grow: 1;
-				font-size: 13px;
+				font-size: 1.3em;
 			}
 		}
 		.emblem-btn:hover {
@@ -96,6 +101,12 @@ body {
 	transform: translateX(100%);
 	opacity: 0;
 	z-index: 1000;
+	h2{
+		font-size: 2em;
+	}
+	p{
+		font-size: 1.5em;
+	}
 	button {
 		width: 50%;
 		height: 5%;
@@ -125,8 +136,11 @@ body {
 	.title {
 		top: 10px;
 		position: relative;
+		display: flex;
 		justify-content: center;
 		text-align: center;
+		align-items: center;
+		font-size: 1.5em;
 	}
 }
 .text-box {
@@ -138,6 +152,7 @@ body {
 	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
 	border-radius: 15px;
 	background-color: #f7f7f7;
+	font-size: 1.4em;
 	p {
 		padding: 10px;
 		text-align: center;
@@ -148,10 +163,113 @@ body {
 	display: none;
 }
 
-@media (max-width: 576px) {
+.leaflet-tooltip {
+	font-size: 1.5em;
+	font-family: inherit;
+	line-height: 1.2;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 562px) {
+	#map {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		margin: 2px;
+	}
+	#emblem-list {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 40vw;
+		height: 100vh;
+		background: rgba($color: #000000, $alpha: 0.5);
+		color: white;
+		box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+		z-index: 1000;
+		transform: translateX(-100%);
+		transition: transform 0.3s ease;
+		.list-header {
+			background: black;
+			color: white;
+		}
+		.emblem-list-box {
+			background: rgba($color: #000000, $alpha: 0.5);
+			color: white;
+			.emblem-btn {
+				background: rgba($color: #000000, $alpha: 0.5);
+				color: white;
+			}
+			.emblem-btn:hover{
+				background-color: rgba($color: #ffffff, $alpha: 0.7);
+				color: #000;
+			}
+			.emblem-btn.active{
+				background-color: rgba($color: #ffffff, $alpha: 0.7);
+				color: #000;
+				border: 1px solid white;
+			}
+		}
+	}
+
+	#emblem-list.active {
+		transform: translateX(0);
+	}
+
+	.title-box {
+		width: 60%;
+		right: 10px;
+		top: 10px;
+		background: rgba($color: #000000, $alpha: 0.7);
+		color: white;
+		.title {
+			justify-content: center;
+			text-align: center;
+			top: 0px;
+		}
+	}
+	.text-box {
+		display: none;
+	}
+
+	#panel {
+		position: absolute;
+		bottom: 20px;
+		right: 0;
+		width: 60vw;
+		max-height: 75vh;
+		background: rgba($color: #000000, $alpha: 0.7);
+		color: white;
+		z-index: 1001;
+		overflow-y: auto;
+		box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+		border-radius: 12px;
+
+	}
+	#burger-btn {
+		position: absolute;
+		bottom: 5vh;
+		right: 3vh;
+		width: 8vh;
+		height: 8vh;
+		display: block;
+		border: 1px solid gray;
+		border-radius: 50%;
+		box-shadow: 1px 1px 5px black;
+		text-decoration: none;
+		cursor: pointer;
+		z-index: 1100;
+	}
+
+	.burger-btn {
+		position: relative;
+		height: 20px;
+		top: 2px;
+	}
+}
+
+@media (min-width: 562px) and (max-width: 768px) {
 	
 	#map {
 		position: absolute;
@@ -165,7 +283,107 @@ body {
 		position: fixed;
 		top: 0;
 		left: 0;
-		width: 30%;
+		width: 40vw;
+		height: 100vh;
+		background: rgba($color: #000000, $alpha: 0.5);
+		color: white;
+		box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+		z-index: 1000;
+		transform: translateX(-100%);
+		transition: transform 0.3s ease;
+		.list-header {
+			background: black;
+			color: white;
+		}
+		.emblem-list-box {
+			background: rgba($color: #000000, $alpha: 0.5);
+			color: white;
+			.emblem-btn {
+				background: rgba($color: #000000, $alpha: 0.5);
+				color: white;
+			}
+			.emblem-btn:hover{
+				background-color: rgba($color: #ffffff, $alpha: 0.7);
+				color: #000;
+			}
+			.emblem-btn.active{
+				background-color: rgba($color: #ffffff, $alpha: 0.7);
+				color: #000;
+				border: 1px solid white;
+			}
+		}
+	}
+
+	#emblem-list.active {
+		transform: translateX(0);
+	}
+
+	.title-box {
+		width: 60%;
+		right: 10px;
+		top: 10px;
+		background: rgba($color: #000000, $alpha: 0.7);
+		color: white;
+		.title {
+			justify-content: center;
+			text-align: center;
+			top: 0px;
+		}
+	}
+	.text-box {
+		display: none;
+	}
+
+	#panel {
+		position: absolute;
+		bottom: 20px;
+		right: 0;
+		width: 60vw;
+		max-height: 75vh;
+		background: rgba($color: #000000, $alpha: 0.7);
+		color: white;
+		z-index: 1001;
+		overflow-y: auto;
+		box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+		border-radius: 12px;
+
+	}
+	#burger-btn {
+		position: absolute;
+		bottom: 5vh;
+		right: 3vh;
+		width: 8vh;
+		height: 8vh;
+		display: block;
+		border: 1px solid gray;
+		border-radius: 50%;
+		box-shadow: 1px 1px 5px black;
+		text-decoration: none;
+		cursor: pointer;
+		z-index: 1100;
+	}
+
+	.burger-btn {
+		position: relative;
+		height: 20px;
+		top: 2px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	#map {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		margin: 2px;
+	}
+	#emblem-list {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 40vw;
 		height: 100vh;
 		background: rgba($color: #000000, $alpha: 0.5);
 		color: white;
@@ -228,20 +446,21 @@ body {
 		overflow-y: auto;
 		box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
 		border-radius: 12px;
+
 	}
 	#burger-btn {
 		position: absolute;
-		top: 80px;
-		left: 13px;
-		width: 31px;
-		height: 31px;
+		bottom: 5vh;
+		right: 3vh;
+		width: 8vh;
+		height: 8vh;
 		display: block;
 		border: 1px solid gray;
-		border-radius: 2px;
+		border-radius: 50%;
 		box-shadow: 1px 1px 5px black;
 		text-decoration: none;
 		cursor: pointer;
-		z-index: 1000;
+		z-index: 1100;
 	}
 
 	.burger-btn {
@@ -251,8 +470,104 @@ body {
 	}
 }
 
-@media (max-width: 992px) {
-}
+@media (min-width: 992px) and (max-width: 1200px) {
+	#map {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		margin: 2px;
+	}
+	#emblem-list {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 20vw;
+		height: 100vh;
+		background: rgba($color: #000000, $alpha: 0.5);
+		color: white;
+		box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+		z-index: 1000;
+		transform: translateX(-100%);
+		transition: transform 0.3s ease;
+		.list-header {
+			background: black;
+			color: white;
+		}
+		.emblem-list-box {
+			background: rgba($color: #000000, $alpha: 0.5);
+			color: white;
+			.emblem-btn {
+				background: rgba($color: #000000, $alpha: 0.5);
+				color: white;
+			}
+			.emblem-btn:hover{
+				background-color: rgba($color: #ffffff, $alpha: 0.7);
+				color: #000;
+			}
+			.emblem-btn.active{
+				background-color: rgba($color: #ffffff, $alpha: 0.7);
+				color: #000;
+				border: 1px solid white;
+			}
+		}
+	}
 
-@media (max-width: 1200px) {
+	#emblem-list.active {
+		transform: translateX(0);
+	}
+
+	.title-box {
+		width: 60%;
+		right: 10px;
+		top: 10px;
+		background: rgba($color: #000000, $alpha: 0.7);
+		color: white;
+		.title {
+			justify-content: center;
+			text-align: center;
+			top: 0px;
+		}
+	}
+	.text-box {
+		display: none;
+	}
+
+	#panel {
+		position: absolute;
+		bottom: 20px;
+		right: 0;
+		width: 30vw;
+		max-height: 75vh;
+		background: rgba($color: #000000, $alpha: 0.7);
+		color: white;
+		z-index: 1001;
+		overflow-y: auto;
+		box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+		border-radius: 12px;
+
+	}
+	#burger-btn {
+		position: absolute;
+		bottom: 5vh;
+		right: 3vh;
+		//top: 80px;
+		//left: 13px;
+		width: 8vh;
+		height: 8vh;
+		display: block;
+		border: 1px solid gray;
+		border-radius: 50%;
+		box-shadow: 1px 1px 5px black;
+		text-decoration: none;
+		cursor: pointer;
+		z-index: 1100;
+	}
+
+	.burger-btn {
+		position: relative;
+		height: 20px;
+		top: 2px;
+	}
 }

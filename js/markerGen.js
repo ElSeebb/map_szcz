@@ -39,7 +39,7 @@ places.forEach((place) => {
 		permanent: false,
 		direction: 'top',
 		offset: [0, -30],
-		opacity: 0.8,
+		opacity: 0.7,
 	});
 });
 
