@@ -14,8 +14,10 @@
 	</head>
 
 	<body>
-		<button id="theme-toggle" class="theme-btn">Tryb nocny</button>
-		<div id="night-overlay" class="night day"></div>
+		<button id="theme-toggle" class="theme-btn">
+			<span class="label">Tryb nocny</span>
+		</button>
+		<div id="night-overlay" class="night hidden"></div>
 		<div id="map"></div>
 		<div id="panel" class="panel-mob hidden"></div>
 		<div class="title-box">
@@ -28,12 +30,13 @@
 				Są to szyldy na drewnianych tablicach przedstawiające malowidła i
 				podpisy okreslające nazwę domu, nazwywane często "godłami szalayowskimi"
 				na cześć twórcy i właściciela uzdrowiska w Szczawnicy, któremu
-				przypisuje się pomysł tych szyldów oraz pierwotne ich wykonanie. 
-				
-				</p>
-				<p>Wersja niepełna, testowa, bez zdjęć - aktualnie</p>
+				przypisuje się pomysł tych szyldów oraz pierwotne ich wykonanie.
+			</p>
+			<p>Wersja niepełna, testowa, bez zdjęć - aktualnie</p>
 		</div>
-		<button id="burger-btn"><img class="burger-btn" src="./img/icon/menu.svg" alt=""></button>
+		<button id="burger-btn">
+			<img class="burger-btn" src="./img/icon/menu.svg" alt="" />
+		</button>
 		<aside id="emblem-list" class="js-emblem-list hidden">
 			<div class="list-header">
 				<h2>Lista Godeł</h2>
@@ -45,7 +48,7 @@
 					</div>
 					<div class="emblem-box-name">Pod gackiem</div>
 				</button>
-	
+
 				<button class="emblem-box">
 					<div class="emblem-box-symbol"></div>
 					<div class="emblem-box-name">Pod gackiem</div>

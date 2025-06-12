@@ -1,21 +1,24 @@
 const toggleBtn = document.getElementById('theme-toggle');
 const overlay = document.getElementById('night-overlay');
 
-// przywrócenie stanu z localStorage
+// przywróć stan przy ładowaniu
 if (localStorage.getItem('theme') === 'night') {
-	overlay.classList.remove('day');
+	overlay.classList.add('visible');
+	overlay.classList.remove('hidden');
 	toggleBtn.textContent = 'Tryb dzienny';
 }
 
 toggleBtn.addEventListener('click', () => {
-	const isActive = !overlay.classList.contains('day');
+	const isNight = overlay.classList.contains('visible');
 
-	if (isActive) {
-		overlay.classList.add('day');
+	if (isNight) {
+		overlay.classList.remove('visible');
+		overlay.classList.add('hidden');
 		toggleBtn.textContent = 'Tryb nocny';
 		localStorage.setItem('theme', 'light');
 	} else {
-		overlay.classList.remove('day');
+		overlay.classList.add('visible');
+		overlay.classList.remove('hidden');
 		toggleBtn.textContent = 'Tryb dzienny';
 		localStorage.setItem('theme', 'night');
 	}
