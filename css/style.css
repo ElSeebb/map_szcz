@@ -122,9 +122,9 @@ html {
 }
 
 #panel {
-  position: absolute;
+  position: fixed;
   right: 2rem;
-  bottom: 1rem;
+  top: 12rem;
   width: 15vw;
   height: 82vh;
   float: right;
