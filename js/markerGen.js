@@ -13,6 +13,8 @@ console.log('places:', places);
 const markers = {};
 let activeMarker = null;
 
+//ikony
+
 const defaultIcon = L.icon({
 	iconUrl: './img/icon/inactive-pin.svg',
 	iconSize: [25, 41],
@@ -26,6 +28,8 @@ const activeIcon = L.icon({
 	iconAnchor: [12, 41],
 	popupAnchor: [1, -34],
 });
+
+//generator markerów
 
 places.forEach((place) => {
 	const marker = L.marker(place.coords, { icon: defaultIcon }).addTo(map);
@@ -42,6 +46,8 @@ places.forEach((place) => {
 		opacity: 0.7,
 	});
 });
+
+//panel
 
 function openPanel(panel, place) {
 	panel.innerHTML = `
