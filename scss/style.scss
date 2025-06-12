@@ -11,6 +11,8 @@ html {
 	
 }
 
+//tryb nocny
+
 .night{
 	position: fixed;
 	top: 0;
@@ -23,13 +25,10 @@ html {
 	transition: opacity 0.5s ease;
 }
 
-
-/* widoczna wersja */
 .night.visible {
 	opacity: 1;
 }
 
-/* ukryta wersja */
 .night.hidden {
 	opacity: 0;
 }
@@ -51,6 +50,7 @@ html {
 	z-index: 1100;
 }
 
+//lista
 
 #emblem-list {
 	position: fixed;
@@ -115,6 +115,12 @@ html {
 	}
 }
 
+#burger-btn {
+	display: none;
+}
+
+//mapa
+
 #map {
 	position: absolute;
 	top: 1rem;
@@ -125,6 +131,14 @@ html {
 	border-radius: 15px;
 	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
 }
+
+.leaflet-tooltip {
+	font-size: 1.1rem;
+	font-family: inherit;
+	line-height: 1.2;
+}
+
+//panel
 
 #panel {
 	position: fixed;
@@ -166,6 +180,8 @@ html {
 	opacity: 1;
 }
 
+//tytuł i opis
+
 .title-box {
 	position: absolute;
 	top: 1rem;
@@ -205,15 +221,7 @@ html {
 	}
 }
 
-#burger-btn {
-	display: none;
-}
-
-.leaflet-tooltip {
-	font-size: 1.1rem;
-	font-family: inherit;
-	line-height: 1.2;
-}
+// media
 
 @media (max-width: 562px) {
 	#map {
