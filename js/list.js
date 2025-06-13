@@ -2,30 +2,59 @@
 import { handlePlaceClick } from './markerGen.js';
 import { getSortedPlacesWithId } from './sort.js';
 const places = getSortedPlacesWithId();
-console.log('places:', places);
 
-let emblemsHTML = '';
+function generateList(filter = '') {
+	const filtered = places.filter((place) => {
+		const title = (place.title || '').toLowerCase();
+		return title.includes(filter.toLowerCase().trim());
+	});
 
-places.forEach((place) => {
-	emblemsHTML += `
-        <button class="emblem-btn" data-id="${place.id}">
-			<div class="emblem-btn-symbol">
-				<img src="${place.symbol}" style="width: 100%;" />
-			</div>
-			<div class="emblem-btn-name"><p>${place.title}</p></div>
-			</button>
-    `;
+	let emblemsHTML = '';
+
+	if (filtered.length === 0) {
+		emblemsHTML = '<p class="no-results">Brak wyników.</p>';
+	} else {
+		filtered.forEach((place) => {
+			emblemsHTML += `
+				<button class="emblem-btn" data-id="${place.id}">
+					<div class="emblem-btn-symbol">
+						<img src="${place.symbol}" style="width: 100%;" />
+					</div>
+					<div class="emblem-btn-name"><p>${place.title}</p></div>
+				</button>
+			`;
+		});
+	}
+
+	document.querySelector('.emblem-list-box').innerHTML = emblemsHTML;
+
+	// przypięcie kliknięć
+	document.querySelectorAll('.emblem-btn').forEach((btn) => {
+		btn.addEventListener('click', () => {
+			const id = parseInt(btn.dataset.id);
+			const place = places.find((p) => p.id === id);
+			if (place) handlePlaceClick(place);
+		});
+	});
+
+	
+}
+
+document.getElementById('search-input').addEventListener('input', (e) => {
+	const query = e.target.value;
+	generateList(query);
 });
 
-document.querySelector('.emblem-list-box').innerHTML = emblemsHTML;
+generateList()
 
+
+//zamykanie listy po kliknięciu przycisku
 document.querySelectorAll('.emblem-btn').forEach((btn) => {
 	btn.addEventListener('click', () => {
 		const id = parseInt(btn.dataset.id);
 		const place = places.find((p) => p.id === id);
 		if (place) handlePlaceClick(place);
 
-		//zamykanie menu
 		const listBox = document.getElementById('emblem-list');
 		if (listBox && listBox.classList.contains('active')) {
 			listBox.classList.remove('active');
@@ -33,6 +62,7 @@ document.querySelectorAll('.emblem-btn').forEach((btn) => {
 	});
 });
 
+// zamykanie listy po kliknięciu poza
 document.addEventListener('click', (e) => {
 	const listBox = document.getElementById('emblem-list');
 	const burgerBtn = document.getElementById('burger-btn');

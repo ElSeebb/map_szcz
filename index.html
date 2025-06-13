@@ -17,7 +17,9 @@
 		<button id="theme-toggle" class="theme-btn">
 			<span class="label">Tryb nocny</span>
 		</button>
-		<button class="error-btn" title="Zgłoś błąd"><img src="./img/icon/alert-triangle.svg" alt=""></button>
+		<button class="error-btn" title="Zgłoś błąd">
+			<img src="./img/icon/alert-triangle.svg" alt="" />
+		</button>
 		<div id="night-overlay" class="night hidden"></div>
 		<div id="map"></div>
 		<div id="panel" class="panel-mob hidden"></div>
@@ -33,7 +35,7 @@
 				na cześć twórcy i właściciela uzdrowiska w Szczawnicy, któremu
 				przypisuje się pomysł tych szyldów oraz pierwotne ich wykonanie.
 			</p>
-			<p>Wersja niepełna, testowa, bez zdjęć - aktualnie</p>
+			<p>Wersja niepełna, testowa, aktualnie bez zdjęć</p>
 		</div>
 		<button id="burger-btn">
 			<img class="burger-btn" src="./img/icon/menu.svg" alt="" />
@@ -41,6 +43,13 @@
 		<aside id="emblem-list" class="js-emblem-list hidden">
 			<div class="list-header">
 				<h2>Lista Godeł</h2>
+				<div class="search-wrapper">
+					<input
+						type="text"
+						id="search-input"
+						placeholder="Szukaj godła"
+					/>
+				</div>
 			</div>
 			<div class="emblem-list-box">
 				<button class="emblem-box">
