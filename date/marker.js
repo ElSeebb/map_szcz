@@ -156,9 +156,8 @@ export const places = [
 		img: 'img/tablica/zdj/pod_gackiem2.jpg',
 		title: 'Pod gackiem',
 		address: '<b>Adres:</b> Główna 25',
-		description:
-		//symbol: '',
-			'<b>Opis: </b>Tablica nadana w 2022r dla budynku Hotel Szczawnica Park ',
+		description:'<b>Opis: </b>Tablica nadana w 2022r dla budynku Hotel Szczawnica Park ',
+		//symbol: 'img/symbol/po_gackiem_sym.svg',
 	},
 	/*{
 		coords: [49.425678,20.462774],
