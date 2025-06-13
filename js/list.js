@@ -13,7 +13,7 @@ places.forEach((place) => {
 				<img src="${place.symbol}" style="width: 100%;" />
 			</div>
 			<div class="emblem-btn-name"><p>${place.title}</p></div>
-		</button>
+			</button>
     `;
 });
 
