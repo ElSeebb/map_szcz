@@ -5,6 +5,7 @@ export const places = [
 		title: 'Pod akacją',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>',
+		//symbol: '',
 	},*/
 	{
 		coords: [49.426782, 20.474926],
@@ -12,6 +13,7 @@ export const places = [
 		title: 'Pod Aniołem Stróżem',
 		address: '<b>Adres:</b> Glówna 29',
 		description: '<b>Opis: </b>Orginał znajduje się w Muzeum Pienińskim',
+		//symbol: '',
 	},
 	{
 		coords: [49.423419, 20.486438],
@@ -19,6 +21,7 @@ export const places = [
 		title: 'Pod aniołkiem',
 		address: '<b>Adres:</b> Glówna 31',
 		description: '<b>Opis: </b>',
+		//symbol: '',
 	},
 	{
 		coords: [49.420609, 20.490922],
@@ -26,6 +29,7 @@ export const places = [
 		title: 'Pod basami',
 		address: '<b>Adres:</b> Szalaya 110',
 		description: '<b>Opis: </b>',
+		//symbol: '',
 	},
 	{
 		coords: [49.425506, 20.486935],
@@ -33,6 +37,7 @@ export const places = [
 		title: 'Pod Batorym',
 		address: '<b>Adres:</b> Park Górny 13',
 		description: '<b>Opis: </b>Nadana w 2022r',
+		//symbol: '',
 	},
 	{
 		coords: [49.42002, 20.496491],
@@ -40,6 +45,7 @@ export const places = [
 		title: 'Pod beczką',
 		address: '<b>Adres:</b> Szlachtowska 28',
 		description: '<b>Opis: </b>Nadana w 2022',
+		//symbol: '',
 	},
 	/*{
 		coords: [49.426782, 20.474926],
@@ -47,6 +53,7 @@ export const places = [
 		title: 'Pod Białym Orłem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>',
+		//symbol: '',
 	},*/
 	/*{
 		coords: [49.426782, 20.474926],
@@ -54,6 +61,7 @@ export const places = [
 		title: 'Pod Bogurodzicą',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>',
+		//symbol: '',
 	},*/
 	{
 		coords: [49.427029, 20.473863],
@@ -61,6 +69,7 @@ export const places = [
 		title: 'Pod Bożą Opatrznością',
 		address: '<b>Adres:</b> Glówna 46',
 		description: '<b>Opis: </b>',
+		//symbol: '',
 	},
 	{
 		coords: [49.424651, 20.463701],
@@ -68,6 +77,7 @@ export const places = [
 		title: 'Pod bucikiem',
 		address: '<b>Adres:</b> Flisacka 25a',
 		description: '<b>Opis: </b>Nadana w 2022r',
+		//symbol: '',
 	},
 	{
 		coords: [49.427649, 20.469984],
@@ -75,6 +85,7 @@ export const places = [
 		title: 'Pod Bzem',
 		address: '<b>Adres:</b> Glówna 94',
 		description: '<b>Opis: </b>',
+		//symbol: '',
 	},
 	{
 		coords: [49.423162, 20.486919],
@@ -82,6 +93,7 @@ export const places = [
 		title: 'Pod capkiem',
 		address: '<b>Adres:</b> Glówna 48',
 		description: '<b>Opis: </b>',
+		//symbol: '',
 	},
 	/*{
 		coords: [49.426782, 20.474926],
@@ -89,6 +101,7 @@ export const places = [
 		title: 'Pod Czeremchą',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>Nadana w  2022?',
+		//symbol: '',
 	},*/
 	/*{
 		coords: [49.426782, 20.474926],
@@ -96,6 +109,7 @@ export const places = [
 		title: 'Pod dębem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>',
+		//symbol: '',
 	},*/
 	/*{
 		coords: [49.426782, 20.474926],
@@ -103,6 +117,7 @@ export const places = [
 		title: 'Pod Diabłem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>',
+		//symbol: '',
 	},*/
 	/*{
 		coords: [49.426782, 20.474926],
@@ -110,6 +125,7 @@ export const places = [
 		title: 'Pod Doboszem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>',
+		//symbol: '',
 	},*/
 	{
 		coords: [49.423298, 20.48738],
@@ -117,6 +133,7 @@ export const places = [
 		title: 'Pod dziadkiem',
 		address: '<b>Adres:</b> Szalaya 50',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.427056, 20.473211],
@@ -124,6 +141,7 @@ export const places = [
 		title: 'Pod dzwonem',
 		address: '<b>Adres:</b> Glówna 37',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	/*{
 		coords: [49.425678,20.462774],
@@ -131,6 +149,7 @@ export const places = [
 		title: 'Pod figurą',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},*/
 	{
 		coords: [49.426272, 20.476756],
@@ -138,6 +157,7 @@ export const places = [
 		title: 'Pod gackiem',
 		address: '<b>Adres:</b> Główna 25',
 		description:
+		//symbol: '',
 			'<b>Opis: </b>Tablica nadana w 2022r dla budynku Hotel Szczawnica Park ',
 	},
 	/*{
@@ -146,6 +166,7 @@ export const places = [
 		title: 'Pod gawędą',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>Nadana w 2022r',
+		//symbol: '',
 	},*/
 	/*{
 		coords: [49.425678,20.462774],
@@ -153,6 +174,7 @@ export const places = [
 		title: 'Pod gęślami',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},*/
 	{
 		coords: [49.421955, 20.485953],
@@ -160,6 +182,7 @@ export const places = [
 		title: 'Pod gołąbiem',
 		address: '<b>Adres:</b> Zawodzie 12',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.42359, 20.485812],
@@ -167,6 +190,7 @@ export const places = [
 		title: 'Pod góralem',
 		address: '<b>Adres:</b> Szalaya 27',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	/*{
 		coords: [49.425678,20.462774],
@@ -174,6 +198,7 @@ export const places = [
 		title: 'Pod góralką',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},*/
 	{
 		coords: [49.426485, 20.465965],
@@ -181,6 +206,7 @@ export const places = [
 		title: 'Pod Grajcarkiem',
 		address: '<b>Adres:</b> Nad Grajcarkiem 14',
 		description: '<b>Opis: </b>Nadana w 2022r',
+		//symbol: '',
 	},
 	{
 		coords: [49.424805, 20.483966],
@@ -188,6 +214,7 @@ export const places = [
 		title: 'Pod gwiazdą',
 		address: '<b>Adres:</b> Szalaya 19',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.430466, 20.488638],
@@ -195,6 +222,7 @@ export const places = [
 		title: 'Pod hamernikiem',
 		address: '<b>Adres:</b> Kowalczyk 3b',
 		description: '<b>Opis: </b>Nadana w 2022',
+		//symbol: '',
 	},
 	{
 		coords: [49.427347, 20.472779],
@@ -202,6 +230,7 @@ export const places = [
 		title: 'Pod hiszpanem',
 		address: '<b>Adres:</b> Glówna 62',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.423, 20.48606],
@@ -209,6 +238,7 @@ export const places = [
 		title: 'Pod Huzarem',
 		address: '<b>Adres:</b> Szalaya 38',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.422455, 20.488759],
@@ -216,6 +246,7 @@ export const places = [
 		title: 'Pod jabłkiem',
 		address: '<b>Adres:</b> Szalaya 75',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.424599, 20.483393],
@@ -223,6 +254,7 @@ export const places = [
 		title: 'Pod jałowcem',
 		address: '<b>Adres:</b> Szlaya 15',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.423006, 20.486579],
@@ -230,6 +262,7 @@ export const places = [
 		title: 'Pod jarzębiną',
 		address: '<b>Adres:</b> Szlaya 41a',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	/*{
 		coords: [49.427357,20.472679],
@@ -237,6 +270,7 @@ export const places = [
 		title: 'Pod jeleniem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},*/
 	{
 		coords: [49.42854, 20.495899],
@@ -244,6 +278,7 @@ export const places = [
 		title: 'Pod jemiołą',
 		address: '<b>Adres:</b> Św. Krzyża  49',
 		description: '<b>Opis: </b>Nadana w 2022r',
+		//symbol: '',
 	},
 	{
 		coords: [49.424591, 20.499702],
@@ -251,6 +286,7 @@ export const places = [
 		title: 'Pod kapliczką',
 		address: '<b>Adres:</b> Sopotnicka 22c',
 		description: '<b>Opis: </b>Nadana w 2022r',
+		//symbol: '',
 	},
 	{
 		coords: [49.424756, 20.487441],
@@ -258,6 +294,7 @@ export const places = [
 		title: 'Pod klonem',
 		address: '<b>Adres:</b> Park Górny 16',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.419802, 20.500657],
@@ -265,6 +302,7 @@ export const places = [
 		title: 'Pod kogutkiem',
 		address: '<b>Adres: Szlachtowska 68</b> ',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.427184, 20.472474],
@@ -272,6 +310,7 @@ export const places = [
 		title: 'Pod kołem',
 		address: '<b>Adres:</b> Glówna 45',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.422873, 20.487953],
@@ -279,6 +318,7 @@ export const places = [
 		title: 'Pod konikiem',
 		address: '<b>Adres:</b> Szalaya 55',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.420747, 20.48984],
@@ -286,6 +326,7 @@ export const places = [
 		title: 'Pod kosynierem',
 		address: '<b>Adres:</b> Szalaya 96',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	/*{
 		coords: [49.427357,20.472679],
@@ -293,6 +334,7 @@ export const places = [
 		title: 'Pod Kościuszką',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},*/
 	{
 		coords: [49.423004, 20.487296],
@@ -300,6 +342,7 @@ export const places = [
 		title: 'Pod kotwicą',
 		address: '<b>Adres:</b> Szalaya 53',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.422348, 20.488928],
@@ -307,6 +350,7 @@ export const places = [
 		title: 'Pod kozakiem',
 		address: '<b>Adres:</b> Szalaya 77',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	/*{
 		coords: [49.427357,20.472679],
@@ -314,6 +358,7 @@ export const places = [
 		title: 'Pod kozicą',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},*/
 	{
 		coords: [49.429906, 20.50032],
@@ -321,6 +366,7 @@ export const places = [
 		title: 'Pod krakowiakiem',
 		address: '<b>Adres:</b> Sopotnicka 28',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	/*{
 		coords: [49.427357,20.472679],
@@ -328,6 +374,7 @@ export const places = [
 		title: 'Pod księżycem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},*/
 	{
 		coords: [49.40747, 20.565529],
@@ -335,6 +382,7 @@ export const places = [
 		title: 'Pod kukucką',
 		address: '<b>Adres:</b> Biała Woda 57',
 		description: '<b>Opis: </b>Nadana w 2022r',
+		//symbol: '',
 	},
 	{
 		coords: [49.427336, 20.47281],
@@ -342,6 +390,7 @@ export const places = [
 		title: 'Pod lirą',
 		address: '<b>Adres:</b> Główna 62',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.422877, 20.488168],
@@ -349,6 +398,7 @@ export const places = [
 		title: 'Pod lisem',
 		address: '<b>Adres:</b> Szalaya 62',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.424663, 20.483179],
@@ -356,6 +406,7 @@ export const places = [
 		title: 'Pod łukiem',
 		address: '<b>Adres:</b> Szalaya 13',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	/*{
 		coords: [49.427357,20.472679],
@@ -363,6 +414,7 @@ export const places = [
 		title: 'Pod makiem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},*/
 	{
 		coords: [49.427002, 20.474226],
@@ -370,6 +422,7 @@ export const places = [
 		title: 'Pod Matką Boską',
 		address: '<b>Adres:</b> Glówna 38',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.420638, 20.489704],
@@ -377,6 +430,7 @@ export const places = [
 		title: 'Pod matroną',
 		address: '<b>Adres:</b> Szalaya 96',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	/*{
 		coords: [49.427357,20.472679],
@@ -384,6 +438,7 @@ export const places = [
 		title: 'Pod Mickiewiczem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},*/
 	{
 		coords: [49.425419, 20.488147],
@@ -391,6 +446,7 @@ export const places = [
 		title: 'Pod Modrzejewską',
 		address: '<b>Adres: Park Górny 7</b> ',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	/*{
 		coords: [49.427357,20.472679],
@@ -398,6 +454,7 @@ export const places = [
 		title: 'Pod niedźwiedziem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},*/
 	{
 		coords: [49.427448, 20.471997],
@@ -405,6 +462,7 @@ export const places = [
 		title: 'Pod owocami',
 		address: '<b>Adres:</b> Główna 70',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.424614, 20.482802],
@@ -412,6 +470,7 @@ export const places = [
 		title: 'Pod Palenicą',
 		address: '<b>Adres:</b> Szalaya 11 ?',
 		description: '<b>Opis: </b>Nadana w 2022',
+		//symbol: '',
 	},
 	{
 		coords: [49.42715, 20.472689],
@@ -419,6 +478,7 @@ export const places = [
 		title: 'Pod pielgrzymem',
 		address: '<b>Adres:</b> Glówna 43',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.423653, 20.486731],
@@ -426,6 +486,7 @@ export const places = [
 		title: 'Pod pieskiem',
 		address: '<b>Adres:</b> Szalaya 44a',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.42279, 20.488796],
@@ -433,6 +494,7 @@ export const places = [
 		title: 'Pod polską koroną',
 		address: '<b>Adres:</b> Szalaya 69',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.42724, 20.484642],
@@ -440,6 +502,7 @@ export const places = [
 		title: 'Pod pomarańczą',
 		address: '<b>Adres:</b> Zdrojowa 19',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	/*{
 		coords: [49.427357,20.472679],
@@ -447,6 +510,7 @@ export const places = [
 		title: 'Pod Prusem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},*/
 	{
 		coords: [49.423246, 20.486753],
@@ -454,6 +518,7 @@ export const places = [
 		title: 'Pod rakiem',
 		address: '<b>Adres:</b> Szalaya 43',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.423444, 20.48661],
@@ -461,6 +526,7 @@ export const places = [
 		title: 'Pod różą',
 		address: '<b>Adres:</b> Szalaya 39',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.423, 20.486468],
@@ -468,6 +534,7 @@ export const places = [
 		title: 'Pod rybą',
 		address: '<b>Adres:</b> Szalaya 41',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.425678, 20.462774],
@@ -475,6 +542,7 @@ export const places = [
 		title: 'Pod sarenką',
 		address: '<b>Adres:</b> Główna 162',
 		description: '<b>Opis: </b>Nadana w 2022r',
+		//symbol: '',
 	},
 	{
 		coords: [49.42719, 20.473456],
@@ -482,6 +550,7 @@ export const places = [
 		title: 'Pod sercem',
 		address: '<b>Adres:</b> Główna 56',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.425743, 20.484381],
@@ -489,6 +558,7 @@ export const places = [
 		title: 'Pod siekierkami',
 		address: '<b>Adres:</b> Zdrojowa 12',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.426514, 20.481012],
@@ -496,6 +566,7 @@ export const places = [
 		title: 'Pod Sienkiewiczem',
 		address: '<b>Adres: Główna 12</b> ',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.428761, 20.466021],
@@ -503,6 +574,7 @@ export const places = [
 		title: 'Pod skrzypkiem',
 		address: '<b>Adres:</b> Pod Sadami 9b',
 		description: '<b>Opis: </b>Nadana w 2022r',
+		//symbol: '',
 	},
 	{
 		coords: [49.424639, 20.483683],
@@ -510,6 +582,7 @@ export const places = [
 		title: 'Pod słońcem',
 		address: '<b>Adres:</b> Szlaya 17',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.427909, 20.474298],
@@ -517,6 +590,7 @@ export const places = [
 		title: 'Pod Słowackim',
 		address: '<b>Adres:</b> Aleja parkowa 7',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.427088, 20.473007],
@@ -524,6 +598,7 @@ export const places = [
 		title: 'Pod słowikiem',
 		address: '<b>Adres:</b> Główna 39',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.427408, 20.472248],
@@ -531,6 +606,7 @@ export const places = [
 		title: 'Pod sokołem',
 		address: '<b>Adres:</b> Główna 68',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	/*{
 			coords: [49.427357,20.472679],
@@ -538,6 +614,7 @@ export const places = [
 		title: 'Pod sosnami',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},*/
 	{
 		coords: [49.427582, 20.479576],
@@ -545,6 +622,7 @@ export const places = [
 		title: 'Pod sową',
 		address: '<b>Adres:</b> Park Dolny 16',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.424368, 20.48323],
@@ -552,6 +630,7 @@ export const places = [
 		title: 'Pod srebrnym orłem',
 		address: '<b>Adres:</b> Szalaya 14',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.427219, 20.473138],
@@ -559,6 +638,7 @@ export const places = [
 		title: 'Pod sroką',
 		address: '<b>Adres:</b> Główna 58',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.422681, 20.488498],
@@ -566,6 +646,7 @@ export const places = [
 		title: 'Pod strzelbą',
 		address: '<b>Adres:</b> Szalaya 73',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.423361, 20.486178],
@@ -573,6 +654,7 @@ export const places = [
 		title: 'Pod strzelcem',
 		address: '<b>Adres:</b> Szlaya 30',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	/*{
 		coords: [49.427357,20.472679],
@@ -580,6 +662,7 @@ export const places = [
 		title: 'Pod szablą',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},*/
 	/*{
 		coords: [49.427357,20.472679],
@@ -587,6 +670,7 @@ export const places = [
 		title: 'Pod św. Józefem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},*/
 	{
 		coords: [49.42295, 20.486195],
@@ -594,6 +678,7 @@ export const places = [
 		title: 'Pod św. Teresą',
 		address: '<b>Adres:</b> Szlaya 38',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.426375, 20.452098],
@@ -601,6 +686,7 @@ export const places = [
 		title: 'Pod świerkami',
 		address: '<b>Adres:</b> Główna 212',
 		description: '<b>Opis: </b>Nadana w 2022r.',
+		//symbol: '',
 	},
 	{
 		coords: [49.427379, 20.472524],
@@ -608,6 +694,7 @@ export const places = [
 		title: 'Pod topolą',
 		address: '<b>Adres:</b> Główna 66',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.427287, 20.471398],
@@ -615,6 +702,7 @@ export const places = [
 		title: 'Pod trzema koronami',
 		address: '<b>Adres:</b> Glówna 59',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	/*{
 		coords: [49.427357,20.472679],
@@ -622,6 +710,7 @@ export const places = [
 		title: 'Pod trzema liliami',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},*/
 	{
 		coords: [49.42517, 20.482248],
@@ -629,6 +718,7 @@ export const places = [
 		title: 'Pod trzema różami',
 		address: '<b>Adres: Główna 1</b> ',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	/*{
 		coords: [49.427357,20.472679],
@@ -636,6 +726,7 @@ export const places = [
 		title: 'Pod turkiem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},*/
 	{
 		coords: [49.427474, 20.471408],
@@ -643,6 +734,7 @@ export const places = [
 		title: 'Pod tygrysem',
 		address: '<b>Adres:</b> Glówna 78',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.422141, 20.488935],
@@ -650,6 +742,7 @@ export const places = [
 		title: 'Pod ułanem',
 		address: '<b>Adres:</b> Szalaya 81',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	/*{
 			coords: [49.427357,20.472679],
@@ -657,6 +750,7 @@ export const places = [
 		title: 'Pod wagą,
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},*/
 	{
 		coords: [49.42586, 20.481793],
@@ -664,6 +758,7 @@ export const places = [
 		title: 'Pod węgierską koroną',
 		address: '<b>Adres: Główna 6</b> ',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.422507, 20.488168],
@@ -671,6 +766,7 @@ export const places = [
 		title: 'Pod węgrzynem',
 		address: '<b>Adres:</b> Szalaya 72',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.42321, 20.483915],
@@ -678,6 +774,7 @@ export const places = [
 		title: 'Pod wężem',
 		address: '<b>Adres:</b> Zawodzie 17',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.422597, 20.489099],
@@ -685,6 +782,7 @@ export const places = [
 		title: 'Pod wieńcem',
 		address: '<b>Adres:</b> Szalaya 70',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.427207, 20.472332],
@@ -692,6 +790,7 @@ export const places = [
 		title: 'Pod wietrznym młynem',
 		address: '<b>Adres:</b> Glówna 47',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.422923, 20.488747],
@@ -699,6 +798,7 @@ export const places = [
 		title: 'Pod wilkiem',
 		address: '<b>Adres:</b> Szalaya 68',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.42728, 20.471583],
@@ -706,6 +806,7 @@ export const places = [
 		title: 'Pod winogronem',
 		address: '<b>Adres:</b> Glówna 57',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.424102, 20.487836],
@@ -713,6 +814,7 @@ export const places = [
 		title: 'Pod wiosłem',
 		address: '<b>Adres:</b> Park Górny 17a',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.430775, 20.500279],
@@ -720,6 +822,7 @@ export const places = [
 		title: 'Pod wodospadem',
 		address: '<b>Adres:</b> Sopotnicka 35a',
 		description: '<b>Opis: </b>Nadana w 2022r',
+		//symbol: '',
 	},
 	{
 		coords: [49.427732, 20.46863],
@@ -727,6 +830,7 @@ export const places = [
 		title: 'Pod wykrotem',
 		address: '<b>Adres:</b> Skotnicka 6a',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.422761, 20.488024],
@@ -734,6 +838,7 @@ export const places = [
 		title: 'Pod zającem',
 		address: '<b>Adres:</b> Szalaya 61',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.427786, 20.480304],
@@ -741,6 +846,7 @@ export const places = [
 		title: 'Pod Zawiszą',
 		address: '<b>Adres:</b> Park Dolny 12',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	{
 		coords: [49.428622, 20.473626],
@@ -748,6 +854,7 @@ export const places = [
 		title: 'Pod zbójem Pipikasem',
 		address: '<b>Adres:</b> Zielona 1a ?',
 		description: '<b>Opis: </b>Nadana w 2022r',
+		//symbol: '',
 	},
 	/*{
 	
@@ -756,6 +863,7 @@ export const places = [
 		title: 'Pod zegarem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},*/
 	{
 		coords: [49.422655, 20.487639],
@@ -763,6 +871,7 @@ export const places = [
 		title: 'Pod złotym lwem',
 		address: '<b>Adres:</b> Szalaya 56',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},
 	/*{
 	
@@ -771,6 +880,7 @@ export const places = [
 		title: 'Pod złotym krzyżem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},*/
 	/*{
 	
@@ -779,6 +889,7 @@ export const places = [
 		title: 'Pod ',
 		address: '<b>Adres:</b> Aleja Parkowa 13',
 		description: '<b>Opis: </b>...',
+		//symbol: '',
 	},*/
 	/*{
 	
@@ -787,5 +898,6 @@ export const places = [
 		title: 'Pod kajakiem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>Nadana w 2022r',
+		//symbol: '',
 	},*/
 ];
