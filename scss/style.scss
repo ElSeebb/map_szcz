@@ -48,6 +48,10 @@ html {
 	transition: background 0.5s ease;
 	z-index: 1100;
 	cursor: pointer;
+	max-width: 90vw;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .theme-btn:hover{
@@ -69,6 +73,10 @@ html {
 	transition: background 0.5s ease;
 	z-index: 1500;
 	cursor: pointer;
+	max-width: 90vw;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 
 }
 
@@ -562,6 +570,7 @@ html {
 }
 
 @media (max-width: 562px) {
+
 	#map {
 		position: absolute;
 		height: 100%;
