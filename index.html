@@ -18,9 +18,8 @@
 		<button id="theme-toggle" class="theme-btn">
 			<span class="label">Tryb nocny</span>
 		</button>
-		<button class="error-btn" title="Zgłoś błąd">
-			<img src="./img/icon/alert-triangle.svg" alt="" />
-		</button>
+		
+
 		<div id="night-overlay" class="night hidden"></div>
 		<div id="panel" class="panel-mob hidden"></div>
 		<div class="title-box">
@@ -44,11 +43,7 @@
 			<div class="list-header">
 				<h2>Lista Godeł</h2>
 				<div class="search-wrapper">
-					<input
-						type="text"
-						id="search-input"
-						placeholder="Szukaj godła"
-					/>
+					<input type="text" id="search-input" placeholder="Szukaj godła" />
 				</div>
 			</div>
 			<div class="emblem-list-box">
@@ -65,10 +60,35 @@
 				</button> -->
 			</div>
 		</aside>
+
+		<button disable class="error-btn" title="Zgłoś błąd">
+			<img src="./img/icon/alert-triangle.svg" alt="" />
+		</button>
+
+		<form action="" method="get" class="form-box">
+			<div class="form-title"><h3>Znalazłeś błąd, podziel się!</h3></div>
+			<div class="form-name">
+				<label for="name">Podaj imię: </label>
+				<input type="text" name="name" id="name" required />
+			</div>
+			<div class="form-email">
+				<label for="email">Podaj e-mail: </label>
+				<input type="email" name="email" id="email" required />
+			</div>
+			<div class="form-msg">
+				<label for="msg">Wiadomość:</label>
+				<textarea name="msg" id="msg" required></textarea>
+			</div>
+			<div class="form-send-btn">
+				<input type="submit" value="Wyślij" />
+			</div>
+		</form>
+
 		<script type="module" src="js/map.js"></script>
 		<script type="module" src="js/list.js"></script>
 		<script type="module" src="js/markerGen.js"></script>
 		<script src="./js/burger.js"></script>
 		<script src="./js/dark.js"></script>
+		<script src="./js/error.js"></script>
 	</body>
 </html>
