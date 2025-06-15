@@ -52,6 +52,7 @@ places.forEach((place) => {
 function openPanel(panel, place) {
 	panel.innerHTML = `
 		<img src="${place.img}" alt="Tablica ${place.title}" style="width: 100%; height: auto; border-radius: 8px;">
+		<p class='author'>${place.author}
 		<h2>${place.title}</h2> 
 		<p>${place.address}</p>
 		<p>${place.description}</p>

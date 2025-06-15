@@ -2,6 +2,7 @@ export const places = [
 	/*{
     	coords: [49.426782, 20.474926],
 		img: 'img/tablica/zdj/pod_akacja1.jpg',
+		//author:'',
 		title: 'Pod akacją',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>',
@@ -10,6 +11,7 @@ export const places = [
 	{
 		coords: [49.426782, 20.474926],
 		img: 'img/tablica/zdj/pod_aniolem_strozem1.webp',
+		//author:'',
 		title: 'Pod Aniołem Stróżem',
 		address: '<b>Adres:</b> Glówna 29',
 		description: '<b>Opis: </b>Orginał znajduje się w Muzeum Pienińskim',
@@ -18,6 +20,7 @@ export const places = [
 	{
 		coords: [49.423419, 20.486438],
 		img: 'img/tablica/zdj/pod_aniolkiem.jpg',
+		//author:'',
 		title: 'Pod aniołkiem',
 		address: '<b>Adres:</b> Glówna 31',
 		description: '<b>Opis: </b>',
@@ -26,6 +29,7 @@ export const places = [
 	{
 		coords: [49.420609, 20.490922],
 		img: 'img/tablica/zdj/pod_basami1.jpg',
+		//author:'',
 		title: 'Pod basami',
 		address: '<b>Adres:</b> Szalaya 110',
 		description: '<b>Opis: </b>',
@@ -34,6 +38,7 @@ export const places = [
 	{
 		coords: [49.425506, 20.486935],
 		img: 'img/tablica/zdj/pod_batorym.png',
+		//author:'',
 		title: 'Pod Batorym',
 		address: '<b>Adres:</b> Park Górny 13',
 		description: '<b>Opis: </b>Nadana w 2022r',
@@ -42,6 +47,7 @@ export const places = [
 	{
 		coords: [49.42002, 20.496491],
 		img: 'img/tablica/zdj/pod_beczka1.jpg',
+		//author:'',
 		title: 'Pod beczką',
 		address: '<b>Adres:</b> Szlachtowska 28',
 		description: '<b>Opis: </b>Nadana w 2022',
@@ -50,6 +56,7 @@ export const places = [
 	/*{
 		coords: [49.426782, 20.474926],
 		img: 'img/tablica/zdj/pod_bialym_orlem.jpg',
+		//author:'',
 		title: 'Pod Białym Orłem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>',
@@ -58,6 +65,7 @@ export const places = [
 	/*{
 		coords: [49.426782, 20.474926],
 		img: 'img/tablica/zdj/pod_bogurodzica.jpg',
+		//author:'',
 		title: 'Pod Bogurodzicą',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>',
@@ -66,6 +74,7 @@ export const places = [
 	{
 		coords: [49.427029, 20.473863],
 		img: 'img/tablica/zdj/pod_boza_opatrznoscia1.jpg',
+		//author:'',
 		title: 'Pod Bożą Opatrznością',
 		address: '<b>Adres:</b> Glówna 46',
 		description: '<b>Opis: </b>',
@@ -74,6 +83,7 @@ export const places = [
 	{
 		coords: [49.424651, 20.463701],
 		img: 'img/tablica/zdj/pod_bucikiem1.webp',
+		//author:'',
 		title: 'Pod bucikiem',
 		address: '<b>Adres:</b> Flisacka 25a',
 		description: '<b>Opis: </b>Nadana w 2022r',
@@ -82,6 +92,7 @@ export const places = [
 	{
 		coords: [49.427649, 20.469984],
 		img: 'img/tablica/zdj/pod_bzem1.jpg',
+		//author:'',
 		title: 'Pod Bzem',
 		address: '<b>Adres:</b> Glówna 94',
 		description: '<b>Opis: </b>',
@@ -90,6 +101,7 @@ export const places = [
 	{
 		coords: [49.423162, 20.486919],
 		img: 'img/tablica/zdj/pod_capkiem1.jpg',
+		//author:'',
 		title: 'Pod capkiem',
 		address: '<b>Adres:</b> Glówna 48',
 		description: '<b>Opis: </b>',
@@ -98,6 +110,7 @@ export const places = [
 	/*{
 		coords: [49.426782, 20.474926],
 		img: 'img/tablica/zdj/pod_czeremcha.jpg',
+		//author:'',
 		title: 'Pod Czeremchą',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>Nadana w  2022?',
@@ -106,6 +119,7 @@ export const places = [
 	/*{
 		coords: [49.426782, 20.474926],
 		img: 'img/tablica/zdj/pod_debem.jpg',
+		//author:'',
 		title: 'Pod dębem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>',
@@ -114,6 +128,7 @@ export const places = [
 	/*{
 		coords: [49.426782, 20.474926],
 		img: 'img/tablica/zdj/pod_diablem.jpg',
+		//author:'',
 		title: 'Pod Diabłem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>',
@@ -122,6 +137,7 @@ export const places = [
 	/*{
 		coords: [49.426782, 20.474926],
 		img: 'img/tablica/zdj/pod_doboszem.jpg',
+		//author:'',
 		title: 'Pod Doboszem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>',
@@ -130,6 +146,7 @@ export const places = [
 	{
 		coords: [49.423298, 20.48738],
 		img: 'img/tablica/zdj/pod_dziadkiem1.png',
+		//author:'',
 		title: 'Pod dziadkiem',
 		address: '<b>Adres:</b> Szalaya 50',
 		description: '<b>Opis: </b>...',
@@ -138,6 +155,7 @@ export const places = [
 	{
 		coords: [49.427056, 20.473211],
 		img: 'img/tablica/zdj/pod_dzwonem.jpg',
+		//author:'',
 		title: 'Pod dzwonem',
 		address: '<b>Adres:</b> Glówna 37',
 		description: '<b>Opis: </b>...',
@@ -146,6 +164,7 @@ export const places = [
 	/*{
 		coords: [49.425678,20.462774],
 		img: 'img/tablica/zdj/pod_figura.jpg',
+		//author:'',
 		title: 'Pod figurą',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
@@ -154,6 +173,7 @@ export const places = [
 	{
 		coords: [49.426272, 20.476756],
 		img: 'img/tablica/zdj/pod_gackiem2.jpg',
+		//author:'',
 		title: 'Pod gackiem',
 		address: '<b>Adres:</b> Główna 25',
 		description:'<b>Opis: </b>Tablica nadana w 2022r dla budynku Hotel Szczawnica Park ',
@@ -162,6 +182,7 @@ export const places = [
 	/*{
 		coords: [49.425678,20.462774],
 		img: 'img/tablica/zdj/pod_gaweda.jpg',
+		//author:'',
 		title: 'Pod gawędą',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>Nadana w 2022r',
@@ -170,6 +191,7 @@ export const places = [
 	/*{
 		coords: [49.425678,20.462774],
 		img: 'img/tablica/zdj/pod_geslami.jpg',
+		//author:'',
 		title: 'Pod gęślami',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
@@ -178,6 +200,7 @@ export const places = [
 	{
 		coords: [49.421955, 20.485953],
 		img: 'img/tablica/zdj/pod_golobkiem1.jpg',
+		//author:'',
 		title: 'Pod gołąbiem',
 		address: '<b>Adres:</b> Zawodzie 12',
 		description: '<b>Opis: </b>...',
@@ -186,6 +209,7 @@ export const places = [
 	{
 		coords: [49.42359, 20.485812],
 		img: 'img/tablica/zdj/pod_goralem1.jpg',
+		//author:'',
 		title: 'Pod góralem',
 		address: '<b>Adres:</b> Szalaya 27',
 		description: '<b>Opis: </b>...',
@@ -194,6 +218,7 @@ export const places = [
 	/*{
 		coords: [49.425678,20.462774],
 		img: 'img/tablica/zdj/pod_geslka.jpg',
+		//author:'',
 		title: 'Pod góralką',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
@@ -202,6 +227,7 @@ export const places = [
 	{
 		coords: [49.426485, 20.465965],
 		img: 'img/tablica/zdj/pod_grajcarkiem.jpg',
+		//author:'',
 		title: 'Pod Grajcarkiem',
 		address: '<b>Adres:</b> Nad Grajcarkiem 14',
 		description: '<b>Opis: </b>Nadana w 2022r',
@@ -210,6 +236,7 @@ export const places = [
 	{
 		coords: [49.424805, 20.483966],
 		img: 'img/tablica/zdj/pod_gwizda1.jpg',
+		//author:'',
 		title: 'Pod gwiazdą',
 		address: '<b>Adres:</b> Szalaya 19',
 		description: '<b>Opis: </b>...',
@@ -218,6 +245,7 @@ export const places = [
 	{
 		coords: [49.430466, 20.488638],
 		img: 'img/tablica/zdj/pod_hamernikiem1.jpg',
+		//author:'',
 		title: 'Pod hamernikiem',
 		address: '<b>Adres:</b> Kowalczyk 3b',
 		description: '<b>Opis: </b>Nadana w 2022',
@@ -226,6 +254,7 @@ export const places = [
 	{
 		coords: [49.427347, 20.472779],
 		img: 'img/tablica/zdj/pod_hiszpanem1.jpg',
+		//author:'',
 		title: 'Pod hiszpanem',
 		address: '<b>Adres:</b> Glówna 62',
 		description: '<b>Opis: </b>...',
@@ -234,6 +263,7 @@ export const places = [
 	{
 		coords: [49.423, 20.48606],
 		img: 'img/tablica/zdj/pod_huzarem1.png',
+		//author:'',
 		title: 'Pod Huzarem',
 		address: '<b>Adres:</b> Szalaya 38',
 		description: '<b>Opis: </b>...',
@@ -242,6 +272,7 @@ export const places = [
 	{
 		coords: [49.422455, 20.488759],
 		img: 'img/tablica/zdj/pod_jablkiem1.jpg',
+		//author:'',
 		title: 'Pod jabłkiem',
 		address: '<b>Adres:</b> Szalaya 75',
 		description: '<b>Opis: </b>...',
@@ -250,6 +281,7 @@ export const places = [
 	{
 		coords: [49.424599, 20.483393],
 		img: 'img/tablica/zdj/pod_jalowcem1.jpg',
+		//author:'',
 		title: 'Pod jałowcem',
 		address: '<b>Adres:</b> Szlaya 15',
 		description: '<b>Opis: </b>...',
@@ -258,6 +290,7 @@ export const places = [
 	{
 		coords: [49.423006, 20.486579],
 		img: 'img/tablica/zdj/pod_jarzebina1.jpg',
+		//author:'',
 		title: 'Pod jarzębiną',
 		address: '<b>Adres:</b> Szlaya 41a',
 		description: '<b>Opis: </b>...',
@@ -266,6 +299,7 @@ export const places = [
 	/*{
 		coords: [49.427357,20.472679],
 		img: 'img/tablica/zdj/pod_jeleniem.jpg',
+		//author:'',
 		title: 'Pod jeleniem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
@@ -274,6 +308,7 @@ export const places = [
 	{
 		coords: [49.42854, 20.495899],
 		img: 'img/tablica/zdj/pod_jemiola.jpg',
+		author:'zdj. własne',
 		title: 'Pod jemiołą',
 		address: '<b>Adres:</b> Św. Krzyża  49',
 		description: '<b>Opis: </b>Nadana w 2022r',
@@ -282,6 +317,7 @@ export const places = [
 	{
 		coords: [49.424591, 20.499702],
 		img: 'img/tablica/zdj/pod_kapliczka1.jpg',
+		//author:'',
 		title: 'Pod kapliczką',
 		address: '<b>Adres:</b> Sopotnicka 22c',
 		description: '<b>Opis: </b>Nadana w 2022r',
@@ -290,6 +326,7 @@ export const places = [
 	{
 		coords: [49.424756, 20.487441],
 		img: 'img/tablica/zdj/pod_klonem1.jpg',
+		//author:'',
 		title: 'Pod klonem',
 		address: '<b>Adres:</b> Park Górny 16',
 		description: '<b>Opis: </b>...',
@@ -298,6 +335,7 @@ export const places = [
 	{
 		coords: [49.419802, 20.500657],
 		img: 'img/tablica/zdj/pod_kogutkiem1.jpg',
+		//author:'',
 		title: 'Pod kogutkiem',
 		address: '<b>Adres: Szlachtowska 68</b> ',
 		description: '<b>Opis: </b>...',
@@ -306,6 +344,7 @@ export const places = [
 	{
 		coords: [49.427184, 20.472474],
 		img: 'img/tablica/zdj/pod_kolem1.jpg',
+		//author:'',
 		title: 'Pod kołem',
 		address: '<b>Adres:</b> Glówna 45',
 		description: '<b>Opis: </b>...',
@@ -314,6 +353,7 @@ export const places = [
 	{
 		coords: [49.422873, 20.487953],
 		img: 'img/tablica/zdj/pod_konikiem1.jpg',
+		//author:'',
 		title: 'Pod konikiem',
 		address: '<b>Adres:</b> Szalaya 55',
 		description: '<b>Opis: </b>...',
@@ -322,6 +362,7 @@ export const places = [
 	{
 		coords: [49.420747, 20.48984],
 		img: 'img/tablica/zdj/pod_kosynierem1.jpg',
+		//author:'',
 		title: 'Pod kosynierem',
 		address: '<b>Adres:</b> Szalaya 96',
 		description: '<b>Opis: </b>...',
@@ -330,6 +371,7 @@ export const places = [
 	/*{
 		coords: [49.427357,20.472679],
 		img: 'img/tablica/zdj/pod_kosciuszka1.jpg',
+		//author:'',
 		title: 'Pod Kościuszką',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
@@ -338,6 +380,7 @@ export const places = [
 	{
 		coords: [49.423004, 20.487296],
 		img: 'img/tablica/zdj/pod_kotwica1.jpg',
+		//author:'',
 		title: 'Pod kotwicą',
 		address: '<b>Adres:</b> Szalaya 53',
 		description: '<b>Opis: </b>...',
@@ -346,6 +389,7 @@ export const places = [
 	{
 		coords: [49.422348, 20.488928],
 		img: 'img/tablica/zdj/pod_kozakiem1.jpg',
+		//author:'',
 		title: 'Pod kozakiem',
 		address: '<b>Adres:</b> Szalaya 77',
 		description: '<b>Opis: </b>...',
@@ -354,6 +398,7 @@ export const places = [
 	/*{
 		coords: [49.427357,20.472679],
 		img: 'img/tablica/zdj/pod_kozica1.jpg',
+		//author:'',
 		title: 'Pod kozicą',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
@@ -362,6 +407,7 @@ export const places = [
 	{
 		coords: [49.429906, 20.50032],
 		img: 'img/tablica/zdj/pod_krakowiakiem1.jpg',
+		//author:'',
 		title: 'Pod krakowiakiem',
 		address: '<b>Adres:</b> Sopotnicka 28',
 		description: '<b>Opis: </b>...',
@@ -370,6 +416,7 @@ export const places = [
 	/*{
 		coords: [49.427357,20.472679],
 		img: 'img/tablica/zdj/pod_ksiezycem1.jpg',
+		//author:'',
 		title: 'Pod księżycem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
@@ -378,6 +425,7 @@ export const places = [
 	{
 		coords: [49.40747, 20.565529],
 		img: 'img/tablica/zdj/pod_kukucka1.jpg',
+		//author:'',
 		title: 'Pod kukucką',
 		address: '<b>Adres:</b> Biała Woda 57',
 		description: '<b>Opis: </b>Nadana w 2022r',
@@ -386,6 +434,7 @@ export const places = [
 	{
 		coords: [49.427336, 20.47281],
 		img: 'img/tablica/zdj/pod_lira1.jpg',
+		//author:'',
 		title: 'Pod lirą',
 		address: '<b>Adres:</b> Główna 62',
 		description: '<b>Opis: </b>...',
@@ -394,6 +443,7 @@ export const places = [
 	{
 		coords: [49.422877, 20.488168],
 		img: 'img/tablica/zdj/pod_lisem1.jpg',
+		//author:'',
 		title: 'Pod lisem',
 		address: '<b>Adres:</b> Szalaya 62',
 		description: '<b>Opis: </b>...',
@@ -402,6 +452,7 @@ export const places = [
 	{
 		coords: [49.424663, 20.483179],
 		img: 'img/tablica/zdj/pod_lukiem1.jpg',
+		//author:'',
 		title: 'Pod łukiem',
 		address: '<b>Adres:</b> Szalaya 13',
 		description: '<b>Opis: </b>...',
@@ -410,6 +461,7 @@ export const places = [
 	/*{
 		coords: [49.427357,20.472679],
 		img: 'img/tablica/zdj/pod_makiem.jpg',
+		//author:'',
 		title: 'Pod makiem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
@@ -418,6 +470,7 @@ export const places = [
 	{
 		coords: [49.427002, 20.474226],
 		img: 'img/tablica/zdj/pod_matka_boska.jpg',
+		//author:'',
 		title: 'Pod Matką Boską',
 		address: '<b>Adres:</b> Glówna 38',
 		description: '<b>Opis: </b>...',
@@ -426,6 +479,7 @@ export const places = [
 	{
 		coords: [49.420638, 20.489704],
 		img: 'img/tablica/zdj/pod_matrona1.jpg',
+		//author:'',
 		title: 'Pod matroną',
 		address: '<b>Adres:</b> Szalaya 96',
 		description: '<b>Opis: </b>...',
@@ -434,6 +488,7 @@ export const places = [
 	/*{
 		coords: [49.427357,20.472679],
 		img: 'img/tablica/zdj/pod_mickiewiczem.jpg',
+		//author:'',
 		title: 'Pod Mickiewiczem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
@@ -442,6 +497,7 @@ export const places = [
 	{
 		coords: [49.425419, 20.488147],
 		img: 'img/tablica/zdj/pod_modrzejewska1.jpg',
+		//author:'',
 		title: 'Pod Modrzejewską',
 		address: '<b>Adres: Park Górny 7</b> ',
 		description: '<b>Opis: </b>...',
@@ -450,6 +506,7 @@ export const places = [
 	/*{
 		coords: [49.427357,20.472679],
 		img: 'img/tablica/zdj/pod_niedzwiedziem.jpg',
+		//author:'',
 		title: 'Pod niedźwiedziem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
@@ -458,6 +515,7 @@ export const places = [
 	{
 		coords: [49.427448, 20.471997],
 		img: 'img/tablica/zdj/pod_owocami1.jpg',
+		//author:'',
 		title: 'Pod owocami',
 		address: '<b>Adres:</b> Główna 70',
 		description: '<b>Opis: </b>...',
@@ -466,6 +524,7 @@ export const places = [
 	{
 		coords: [49.424614, 20.482802],
 		img: 'img/tablica/zdj/pod_palenica1.jpg',
+		//author:'',
 		title: 'Pod Palenicą',
 		address: '<b>Adres:</b> Szalaya 11 ?',
 		description: '<b>Opis: </b>Nadana w 2022',
@@ -474,6 +533,7 @@ export const places = [
 	{
 		coords: [49.42715, 20.472689],
 		img: 'img/tablica/zdj/pod_pielgrzymem1.jpg',
+		//author:'',
 		title: 'Pod pielgrzymem',
 		address: '<b>Adres:</b> Glówna 43',
 		description: '<b>Opis: </b>...',
@@ -482,6 +542,7 @@ export const places = [
 	{
 		coords: [49.423653, 20.486731],
 		img: 'img/tablica/zdj/pod_pieskiem1.jpg',
+		//author:'',
 		title: 'Pod pieskiem',
 		address: '<b>Adres:</b> Szalaya 44a',
 		description: '<b>Opis: </b>...',
@@ -490,6 +551,7 @@ export const places = [
 	{
 		coords: [49.42279, 20.488796],
 		img: 'img/tablica/zdj/pod_polska_korona1.jpg',
+		//author:'',
 		title: 'Pod polską koroną',
 		address: '<b>Adres:</b> Szalaya 69',
 		description: '<b>Opis: </b>...',
@@ -498,6 +560,7 @@ export const places = [
 	{
 		coords: [49.42724, 20.484642],
 		img: 'img/tablica/zdj/pod_pomarancza1.jpg',
+		//author:'',
 		title: 'Pod pomarańczą',
 		address: '<b>Adres:</b> Zdrojowa 19',
 		description: '<b>Opis: </b>...',
@@ -506,6 +569,7 @@ export const places = [
 	/*{
 		coords: [49.427357,20.472679],
 		img: 'img/tablica/zdj/pod_prusem.jpg',
+		//author:'',
 		title: 'Pod Prusem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
@@ -514,6 +578,7 @@ export const places = [
 	{
 		coords: [49.423246, 20.486753],
 		img: 'img/tablica/zdj/pod_rakiem1.jpg',
+		//author:'',
 		title: 'Pod rakiem',
 		address: '<b>Adres:</b> Szalaya 43',
 		description: '<b>Opis: </b>...',
@@ -522,6 +587,7 @@ export const places = [
 	{
 		coords: [49.423444, 20.48661],
 		img: 'img/tablica/zdj/pod_roza1.jpg',
+		//author:'',
 		title: 'Pod różą',
 		address: '<b>Adres:</b> Szalaya 39',
 		description: '<b>Opis: </b>...',
@@ -530,6 +596,7 @@ export const places = [
 	{
 		coords: [49.423, 20.486468],
 		img: 'img/tablica/zdj/pod_ryba1.jpg',
+		//author:'',
 		title: 'Pod rybą',
 		address: '<b>Adres:</b> Szalaya 41',
 		description: '<b>Opis: </b>...',
@@ -538,6 +605,7 @@ export const places = [
 	{
 		coords: [49.425678, 20.462774],
 		img: 'img/tablica/zdj/pod_sarenka1.jpg',
+		//author:'',
 		title: 'Pod sarenką',
 		address: '<b>Adres:</b> Główna 162',
 		description: '<b>Opis: </b>Nadana w 2022r',
@@ -546,6 +614,7 @@ export const places = [
 	{
 		coords: [49.42719, 20.473456],
 		img: 'img/tablica/zdj/pod_sercem1.jpg',
+		//author:'',
 		title: 'Pod sercem',
 		address: '<b>Adres:</b> Główna 56',
 		description: '<b>Opis: </b>...',
@@ -554,6 +623,7 @@ export const places = [
 	{
 		coords: [49.425743, 20.484381],
 		img: 'img/tablica/zdj/pod_siekierkami1.jpg',
+		//author:'',
 		title: 'Pod siekierkami',
 		address: '<b>Adres:</b> Zdrojowa 12',
 		description: '<b>Opis: </b>...',
@@ -562,6 +632,7 @@ export const places = [
 	{
 		coords: [49.426514, 20.481012],
 		img: 'img/tablica/zdj/pod_sienkiewiczem.jpg',
+		//author:'',
 		title: 'Pod Sienkiewiczem',
 		address: '<b>Adres: Główna 12</b> ',
 		description: '<b>Opis: </b>...',
@@ -570,6 +641,7 @@ export const places = [
 	{
 		coords: [49.428761, 20.466021],
 		img: 'img/tablica/zdj/pod_skrzypkiem1.jpg',
+		//author:'',
 		title: 'Pod skrzypkiem',
 		address: '<b>Adres:</b> Pod Sadami 9b',
 		description: '<b>Opis: </b>Nadana w 2022r',
@@ -578,6 +650,7 @@ export const places = [
 	{
 		coords: [49.424639, 20.483683],
 		img: 'img/tablica/zdj/pod_sloncem1.jpg',
+		//author:'',
 		title: 'Pod słońcem',
 		address: '<b>Adres:</b> Szlaya 17',
 		description: '<b>Opis: </b>...',
@@ -586,6 +659,7 @@ export const places = [
 	{
 		coords: [49.427909, 20.474298],
 		img: 'img/tablica/zdj/pod_slowackim1.jpg',
+		//author:'',
 		title: 'Pod Słowackim',
 		address: '<b>Adres:</b> Aleja parkowa 7',
 		description: '<b>Opis: </b>...',
@@ -594,6 +668,7 @@ export const places = [
 	{
 		coords: [49.427088, 20.473007],
 		img: 'img/tablica/zdj/pod_slowikiem1.jpg',
+		//author:'',
 		title: 'Pod słowikiem',
 		address: '<b>Adres:</b> Główna 39',
 		description: '<b>Opis: </b>...',
@@ -602,6 +677,7 @@ export const places = [
 	{
 		coords: [49.427408, 20.472248],
 		img: 'img/tablica/zdj/pod_sokolem1.jpg',
+		//author:'',
 		title: 'Pod sokołem',
 		address: '<b>Adres:</b> Główna 68',
 		description: '<b>Opis: </b>...',
@@ -610,6 +686,7 @@ export const places = [
 	/*{
 			coords: [49.427357,20.472679],
 		img: 'img/tablica/zdj/pod_sosnami.jpg',
+		//author:'',
 		title: 'Pod sosnami',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
@@ -618,6 +695,7 @@ export const places = [
 	{
 		coords: [49.427582, 20.479576],
 		img: 'img/tablica/zdj/pod_sowa1.jpg',
+		//author:'',
 		title: 'Pod sową',
 		address: '<b>Adres:</b> Park Dolny 16',
 		description: '<b>Opis: </b>...',
@@ -626,6 +704,7 @@ export const places = [
 	{
 		coords: [49.424368, 20.48323],
 		img: 'img/tablica/zdj/pod_srebrnym_orlem1.jpg',
+		//author:'',
 		title: 'Pod srebrnym orłem',
 		address: '<b>Adres:</b> Szalaya 14',
 		description: '<b>Opis: </b>...',
@@ -634,6 +713,7 @@ export const places = [
 	{
 		coords: [49.427219, 20.473138],
 		img: 'img/tablica/zdj/pod_sroka1.jpg',
+		//author:'',
 		title: 'Pod sroką',
 		address: '<b>Adres:</b> Główna 58',
 		description: '<b>Opis: </b>...',
@@ -642,6 +722,7 @@ export const places = [
 	{
 		coords: [49.422681, 20.488498],
 		img: 'img/tablica/zdj/pod_strzelba1.jpg',
+		//author:'',
 		title: 'Pod strzelbą',
 		address: '<b>Adres:</b> Szalaya 73',
 		description: '<b>Opis: </b>...',
@@ -650,6 +731,7 @@ export const places = [
 	{
 		coords: [49.423361, 20.486178],
 		img: 'img/tablica/zdj/pod_strzelcem1.jpg',
+		//author:'',
 		title: 'Pod strzelcem',
 		address: '<b>Adres:</b> Szlaya 30',
 		description: '<b>Opis: </b>...',
@@ -658,6 +740,7 @@ export const places = [
 	/*{
 		coords: [49.427357,20.472679],
 		img: 'img/tablica/zdj/pod_szabla.jpg',
+		//author:'',
 		title: 'Pod szablą',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
@@ -666,6 +749,7 @@ export const places = [
 	/*{
 		coords: [49.427357,20.472679],
 		img: 'img/tablica/zdj/pod_sw_jozefem.jpg',
+		//author:'',
 		title: 'Pod św. Józefem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
@@ -674,6 +758,7 @@ export const places = [
 	{
 		coords: [49.42295, 20.486195],
 		img: 'img/tablica/zdj/pod_sw_teresa.jpg',
+		//author:'',
 		title: 'Pod św. Teresą',
 		address: '<b>Adres:</b> Szlaya 38',
 		description: '<b>Opis: </b>...',
@@ -682,6 +767,7 @@ export const places = [
 	{
 		coords: [49.426375, 20.452098],
 		img: 'img/tablica/zdj/pod_swierkami1.jpg',
+		//author:'',
 		title: 'Pod świerkami',
 		address: '<b>Adres:</b> Główna 212',
 		description: '<b>Opis: </b>Nadana w 2022r.',
@@ -690,6 +776,7 @@ export const places = [
 	{
 		coords: [49.427379, 20.472524],
 		img: 'img/tablica/zdj/pod_topola1.jpg',
+		//author:'',
 		title: 'Pod topolą',
 		address: '<b>Adres:</b> Główna 66',
 		description: '<b>Opis: </b>...',
@@ -698,6 +785,7 @@ export const places = [
 	{
 		coords: [49.427287, 20.471398],
 		img: 'img/tablica/zdj/pod_trzema_koronami1.jpg',
+		//author:'',
 		title: 'Pod trzema koronami',
 		address: '<b>Adres:</b> Glówna 59',
 		description: '<b>Opis: </b>...',
@@ -706,6 +794,7 @@ export const places = [
 	/*{
 		coords: [49.427357,20.472679],
 		img: 'img/tablica/zdj/',
+		//author:'',
 		title: 'Pod trzema liliami',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
@@ -714,6 +803,7 @@ export const places = [
 	{
 		coords: [49.42517, 20.482248],
 		img: 'img/tablica/zdj/',
+		//author:'',
 		title: 'Pod trzema różami',
 		address: '<b>Adres: Główna 1</b> ',
 		description: '<b>Opis: </b>...',
@@ -722,6 +812,7 @@ export const places = [
 	/*{
 		coords: [49.427357,20.472679],
 		img: 'img/tablica/zdj/',
+		//author:'',
 		title: 'Pod turkiem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
@@ -730,6 +821,7 @@ export const places = [
 	{
 		coords: [49.427474, 20.471408],
 		img: 'img/tablica/zdj/pod_tygrysem1.jpg',
+		//author:'',
 		title: 'Pod tygrysem',
 		address: '<b>Adres:</b> Glówna 78',
 		description: '<b>Opis: </b>...',
@@ -738,6 +830,7 @@ export const places = [
 	{
 		coords: [49.422141, 20.488935],
 		img: 'img/tablica/zdj/pod_ulanem1.jpg',
+		//author:'',
 		title: 'Pod ułanem',
 		address: '<b>Adres:</b> Szalaya 81',
 		description: '<b>Opis: </b>...',
@@ -746,6 +839,7 @@ export const places = [
 	/*{
 			coords: [49.427357,20.472679],
 		img: 'img/tablica/zdj/',
+		//author:'',
 		title: 'Pod wagą,
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
@@ -754,6 +848,7 @@ export const places = [
 	{
 		coords: [49.42586, 20.481793],
 		img: 'img/tablica/zdj/',
+		//author:'',
 		title: 'Pod węgierską koroną',
 		address: '<b>Adres: Główna 6</b> ',
 		description: '<b>Opis: </b>...',
@@ -762,6 +857,7 @@ export const places = [
 	{
 		coords: [49.422507, 20.488168],
 		img: 'img/tablica/zdj/pod_wegrzynem1.jpg',
+		//author:'',
 		title: 'Pod węgrzynem',
 		address: '<b>Adres:</b> Szalaya 72',
 		description: '<b>Opis: </b>...',
@@ -770,6 +866,7 @@ export const places = [
 	{
 		coords: [49.42321, 20.483915],
 		img: 'img/tablica/zdj/pod_wezem1.jpg',
+		//author:'',
 		title: 'Pod wężem',
 		address: '<b>Adres:</b> Zawodzie 17',
 		description: '<b>Opis: </b>...',
@@ -778,6 +875,7 @@ export const places = [
 	{
 		coords: [49.422597, 20.489099],
 		img: 'img/tablica/zdj/pod_wiencem1.jpg',
+		//author:'',
 		title: 'Pod wieńcem',
 		address: '<b>Adres:</b> Szalaya 70',
 		description: '<b>Opis: </b>...',
@@ -786,6 +884,7 @@ export const places = [
 	{
 		coords: [49.427207, 20.472332],
 		img: 'img/tablica/zdj/pod_wietrznym_mlynem1.jpg',
+		//author:'',
 		title: 'Pod wietrznym młynem',
 		address: '<b>Adres:</b> Glówna 47',
 		description: '<b>Opis: </b>...',
@@ -794,6 +893,7 @@ export const places = [
 	{
 		coords: [49.422923, 20.488747],
 		img: 'img/tablica/zdj/pod_wilkiem1.jpg',
+		//author:'',
 		title: 'Pod wilkiem',
 		address: '<b>Adres:</b> Szalaya 68',
 		description: '<b>Opis: </b>...',
@@ -802,6 +902,7 @@ export const places = [
 	{
 		coords: [49.42728, 20.471583],
 		img: 'img/tablica/zdj/pod_winogronem1.jpg',
+		//author:'',
 		title: 'Pod winogronem',
 		address: '<b>Adres:</b> Glówna 57',
 		description: '<b>Opis: </b>...',
@@ -810,6 +911,7 @@ export const places = [
 	{
 		coords: [49.424102, 20.487836],
 		img: 'img/tablica/zdj/pod_wioslem1.jpg',
+		//author:'',
 		title: 'Pod wiosłem',
 		address: '<b>Adres:</b> Park Górny 17a',
 		description: '<b>Opis: </b>...',
@@ -818,6 +920,7 @@ export const places = [
 	{
 		coords: [49.430775, 20.500279],
 		img: 'img/tablica/zdj/pod_wodospadem1.jpg',
+		//author:'',
 		title: 'Pod wodospadem',
 		address: '<b>Adres:</b> Sopotnicka 35a',
 		description: '<b>Opis: </b>Nadana w 2022r',
@@ -826,6 +929,7 @@ export const places = [
 	{
 		coords: [49.427732, 20.46863],
 		img: 'img/tablica/zdj/pod_wykrotem1.jpg',
+		//author:'',
 		title: 'Pod wykrotem',
 		address: '<b>Adres:</b> Skotnicka 6a',
 		description: '<b>Opis: </b>...',
@@ -834,6 +938,7 @@ export const places = [
 	{
 		coords: [49.422761, 20.488024],
 		img: 'img/tablica/zdj/pod_zajacem1.jpg',
+		//author:'',
 		title: 'Pod zającem',
 		address: '<b>Adres:</b> Szalaya 61',
 		description: '<b>Opis: </b>...',
@@ -842,6 +947,7 @@ export const places = [
 	{
 		coords: [49.427786, 20.480304],
 		img: 'img/tablica/zdj/pod_zawisza1.jpg',
+		//author:'',
 		title: 'Pod Zawiszą',
 		address: '<b>Adres:</b> Park Dolny 12',
 		description: '<b>Opis: </b>...',
@@ -850,6 +956,7 @@ export const places = [
 	{
 		coords: [49.428622, 20.473626],
 		img: 'img/tablica/zdj/pod_zbojem_pipikasem1.jpg',
+		//author:'',
 		title: 'Pod zbójem Pipikasem',
 		address: '<b>Adres:</b> Zielona 1a ?',
 		description: '<b>Opis: </b>Nadana w 2022r',
@@ -859,6 +966,7 @@ export const places = [
 	
 		coords: [49.427357,20.472679],
 		img: 'img/tablica/zdj/',
+		//author:'',
 		title: 'Pod zegarem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
@@ -867,6 +975,7 @@ export const places = [
 	{
 		coords: [49.422655, 20.487639],
 		img: 'img/tablica/zdj/pod_zlotym_lwem1.jpg',
+		//author:'',
 		title: 'Pod złotym lwem',
 		address: '<b>Adres:</b> Szalaya 56',
 		description: '<b>Opis: </b>...',
@@ -876,6 +985,7 @@ export const places = [
 	
 		coords: [49.427357,20.472679],
 		img: 'img/tablica/zdj/',
+		//author:'',
 		title: 'Pod złotym krzyżem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>...',
@@ -885,6 +995,7 @@ export const places = [
 	
 		coords: [49.428830,20.473977],
 		img: 'img/tablica/zdj/',
+		//author:'',
 		title: 'Pod ',
 		address: '<b>Adres:</b> Aleja Parkowa 13',
 		description: '<b>Opis: </b>...',
@@ -894,6 +1005,7 @@ export const places = [
 	
 		coords: [49.427357,20.472679],
 		img: 'img/tablica/zdj/',
+		//author:'',
 		title: 'Pod kajakiem',
 		address: '<b>Adres:</b> ',
 		description: '<b>Opis: </b>Nadana w 2022r',
