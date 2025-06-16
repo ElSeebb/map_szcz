@@ -168,6 +168,56 @@ html {
   opacity: 0;
   z-index: 1000;
 }
+#panel .image-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#panel .img-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#panel .img-wrapper img.carousel-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+#panel .img-author {
+  font-size: 1.1rem;
+  color: #777676;
+}
+#panel .arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0.5rem;
+  height: 100%;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  z-index: 2;
+  transition: background 0.3s ease;
+  color: #838383;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#panel .arrow.left {
+  left: 0;
+  border-radius: 8px 0 0 8px;
+}
+#panel .arrow.right {
+  right: 0;
+  border-radius: 0 8px 8px 0;
+}
+#panel .arrow:hover {
+  background: rgba(255, 255, 255, 0.445);
+}
 #panel h2 {
   font-size: 2rem;
 }
@@ -271,7 +321,9 @@ html {
   background-color: #fff;
   z-index: 1500;
 }
-.form-box .form-name, .form-box .form-email, .form-box .form-msg {
+.form-box .form-name,
+.form-box .form-email,
+.form-box .form-msg {
   margin: 10px;
 }
 .form-box textarea {

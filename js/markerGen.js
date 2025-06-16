@@ -50,16 +50,50 @@ places.forEach((place) => {
 //panel
 
 function openPanel(panel, place) {
+	panel.classList.add('aktywny');
+
+	let currentImg = 0;
+	const images = Array.isArray(place.img)
+		? place.img
+		: [{ src: place.img, author: place.author || 'brak danych' }];
+
 	panel.innerHTML = `
-		<img src="${place.img}" alt="Tablica ${place.title}" style="width: 100%; height: auto; border-radius: 8px;">
-		<p class='author'>${place.author}
+		<div class="image-carousel">
+    		${images.length > 1 ? '<button class="arrow left"><img src="./img/icon/chevron-left.svg" alt=""></button>' : ''}
+    
+    		<div class="img-wrapper">
+      			<img class="carousel-img" src="${images[0].src}" />
+				  </div>
+				  
+				  ${images.length > 1 ? '<button class="arrow right"><img src="./img/icon/chevron-right.svg" alt=""></button>' : ''}
+				  </div>
+      			<p class="img-author">autor: ${images[0].author}</p>
+
 		<h2>${place.title}</h2> 
 		<p>${place.address}</p>
 		<p>${place.description}</p>
 		<button id="zamknij-btn">Zamknij</button>
 	`;
-	panel.classList.add('aktywny');
 
+	// zmiana zdjęć
+	if (images.length > 1) {
+		const imgEl = panel.querySelector('.carousel-img');
+		const authorEl = panel.querySelector('.img-author');
+
+		panel.querySelector('.arrow.left').addEventListener('click', () => {
+			currentImg = (currentImg - 1 + images.length) % images.length;
+			imgEl.src = images[currentImg].src;
+			authorEl.textContent = `autor: ${images[currentImg].author}`;
+		});
+
+		panel.querySelector('.arrow.right').addEventListener('click', () => {
+			currentImg = (currentImg + 1) % images.length;
+			imgEl.src = images[currentImg].src;
+			authorEl.textContent = `autor: ${images[currentImg].author}`;
+		});
+	}
+
+	// zamykanie panelu
 	document.getElementById('zamknij-btn').addEventListener('click', () => {
 		panel.classList.remove('aktywny');
 		if (activeMarker) {
@@ -80,9 +114,9 @@ function handlePlaceClick(place) {
 	const isMobile = window.innerWidth < 768;
 
 	if (isMobile) {
-		centerMapWithOffset(place.coords, -110, 0); 
+		centerMapWithOffset(place.coords, -110, 0);
 	} else {
-		map.setView(place.coords); 
+		map.setView(place.coords);
 	}
 
 	// reset markera
