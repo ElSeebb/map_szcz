@@ -32,13 +32,47 @@ html {
 
 //tryb nocny
 
+body.dark-mode{
+	background-color: #333;
+	#emblem-list{
+		background-color: black;
+		.list-header{
+			background-color: black;
+			color: white;
+		}
+		.emblem-list-box{
+			background-color: #535353;
+			
+			.emblem-btn{
+				background-color: #353434;
+				color: white;
+			}
+		}
+	}
+	#panel{
+		background-color: rgba(0, 0, 0,);
+		color: white;
+	}
+
+	.title-box{
+		background-color: #000000a1;
+		.title{
+			color: white;
+		}
+	}
+	.text-box{
+		background-color: black;
+		color: white;
+	}
+}
+
 .night {
 	position: fixed;
 	top: 0;
 	left: 0;
 	height: 100vh;
 	width: 100vw;
-	background-color: rgba($color: #000000, $alpha: 0.5);
+	background-color: rgba($color: #000000, $alpha: 0.3);
 	z-index: 1001;
 	pointer-events: none;
 	transition: opacity 0.5s ease;
@@ -99,12 +133,25 @@ html {
 		z-index: 10;
 
 		.search-wrapper {
+			margin: 1rem 0;
 			input {
 				width: 84%;
 				padding: 0.5rem;
 				border: 1px solid rgba($color: #000000, $alpha: 0.1);
 				border-radius: 5px;
 				box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+			}
+		}
+
+		.sort-option {
+			
+			.street-heading {
+				font-size: 1rem;
+				font-weight: bold;
+				padding: 0.5rem 0.5rem 0.2rem;
+				margin-top: 0.5rem;
+				background-color: #f0f0f0;
+				color: #333;
 			}
 		}
 	}
@@ -197,7 +244,6 @@ html {
 		flex-direction: column;
 		align-items: center;
 
-		
 		img.carousel-img {
 			width: 100%;
 			height: auto;
@@ -205,7 +251,7 @@ html {
 			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 		}
 	}
-	.img-author{
+	.img-author {
 		font-size: 1.1rem;
 		color: #777676;
 	}
@@ -216,13 +262,12 @@ html {
 		bottom: 0;
 		width: 0.5rem;
 		height: 100%;
-		background: rgba(255, 255, 255, 0);
+		background: none;
 		border: none;
 		cursor: pointer;
 		font-size: 2rem;
 		z-index: 2;
 		transition: background 0.3s ease;
-		color: #838383;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -368,6 +413,7 @@ html {
 // media
 
 @media (min-width: 992px) and (max-width: 1200px) {
+	
 	#map {
 		position: absolute;
 		height: 100dvh;

@@ -1,21 +1,44 @@
-//import { places } from '../date/marker.js';
 import { handlePlaceClick } from './markerGen.js';
 import { getSortedPlacesWithId } from './sort.js';
 const places = getSortedPlacesWithId();
 
-function generateList(filter = '') {
-	const filtered = places.filter((place) => {
-		const title = (place.title || '').toLowerCase();
-		return title.includes(filter.toLowerCase().trim());
-	});
+let currentSortMode = 'title';
+let currentSearchQuery = '';
 
-	let emblemsHTML = '';
+//porównanie nuumerów
+function compareHouseNumbers(a, b) {
+	const aNum = extractHouseNumber(a.address);
+	const bNum = extractHouseNumber(b.address);
+	return aNum.localeCompare(bNum, undefined, { numeric: true, sensitivity: 'base' });
+}
 
-	if (filtered.length === 0) {
-		emblemsHTML = '<p class="no-results">Brak wyników.</p>';
-	} else {
-		filtered.forEach((place) => {
-			emblemsHTML += `
+//wyciągnaie numerów
+function extractHouseNumber(addressHTML) {
+	const match = addressHTML.match(/<b>Adres:<\/b>\s*[^<]*?(\d+[a-zA-Z]?)/i);
+	return match ? match[1].toLowerCase() : '';
+}
+
+///wyciągniae ulic
+function extractStreet(addressHTML) {
+	const match = addressHTML.match(/<b>Adres:<\/b>\s*([^0-9<]+)/i);
+	return match ? match[1].trim() : 'Inna ulica';
+}
+
+//generator listy
+function generateList({ sortMode = 'title', filter = '' } = {}) {
+	let html = '';
+
+	//wyszukiwarka
+	const filtered = places.filter((place) =>
+		place.title.toLowerCase().includes(filter.toLowerCase())
+	);
+
+	//sortowanie
+	if (sortMode === 'title') {
+		const sorted = [...filtered].sort((a, b) => a.title.localeCompare(b.title));
+
+		sorted.forEach((place) => {
+			html += `
 				<button class="emblem-btn" data-id="${place.id}">
 					<div class="emblem-btn-symbol">
 						<img src="${place.symbol}" style="width: 100%;" />
@@ -24,45 +47,73 @@ function generateList(filter = '') {
 				</button>
 			`;
 		});
+	} else if (sortMode === 'street') {
+		const groupedByStreet = {};
+
+		filtered.forEach((place) => {
+			const street = extractStreet(place.address);
+			if (!groupedByStreet[street]) {
+				groupedByStreet[street] = [];
+			}
+			groupedByStreet[street].push(place);
+		});
+
+		Object.keys(groupedByStreet)
+			.sort((a, b) => a.localeCompare(b))
+			.forEach((street) => {
+				html += `<h3 class="street-heading">${street}</h3>`;
+
+				groupedByStreet[street]
+					.sort(compareHouseNumbers)
+					.forEach((place) => {
+						html += `
+						<div class="emblem-btn-number">${extractHouseNumber(place.address)}</div>
+							<button class="emblem-btn" data-id="${place.id}">
+								<div class="emblem-btn-symbol">
+									<img src="${place.symbol}" style="width: 100%;" />
+								</div>
+								<div class="emblem-btn-name"><p>${place.title}</p></div>
+							</button>
+						`;
+					});
+			});
 	}
 
-	document.querySelector('.emblem-list-box').innerHTML = emblemsHTML;
+	document.querySelector('.emblem-list-box').innerHTML = html;
 
-	// przypięcie kliknięć
+	// chowanie listy po kliknięciu na przycisk
 	document.querySelectorAll('.emblem-btn').forEach((btn) => {
 		btn.addEventListener('click', () => {
 			const id = parseInt(btn.dataset.id);
 			const place = places.find((p) => p.id === id);
 			if (place) handlePlaceClick(place);
+
+			const listBox = document.getElementById('emblem-list');
+			if (listBox && listBox.classList.contains('active')) {
+				listBox.classList.remove('active');
+			}
 		});
 	});
-
-	
 }
 
-document.getElementById('search-input').addEventListener('input', (e) => {
-	const query = e.target.value;
-	generateList(query);
-});
-
-generateList()
-
-
-//zamykanie listy po kliknięciu przycisku
-document.querySelectorAll('.emblem-btn').forEach((btn) => {
-	btn.addEventListener('click', () => {
-		const id = parseInt(btn.dataset.id);
-		const place = places.find((p) => p.id === id);
-		if (place) handlePlaceClick(place);
-
-		const listBox = document.getElementById('emblem-list');
-		if (listBox && listBox.classList.contains('active')) {
-			listBox.classList.remove('active');
-		}
+// obsługa sortowania
+document.querySelectorAll('input[name="sort-mode"]').forEach((input) => {
+	input.addEventListener('change', () => {
+		currentSortMode = input.value;
+		generateList({ sortMode: currentSortMode, filter: currentSearchQuery });
 	});
 });
 
-// zamykanie listy po kliknięciu poza
+// obsługa wyszukiwania
+document.getElementById('search-input').addEventListener('input', (e) => {
+	currentSearchQuery = e.target.value;
+	generateList({ sortMode: currentSortMode, filter: currentSearchQuery });
+});
+
+// start funkcji
+generateList({ sortMode: currentSortMode, filter: currentSearchQuery });
+
+// chowanie listy po kliknięciu poza
 document.addEventListener('click', (e) => {
 	const listBox = document.getElementById('emblem-list');
 	const burgerBtn = document.getElementById('burger-btn');
@@ -70,7 +121,12 @@ document.addEventListener('click', (e) => {
 	const clickedOutsideList = !listBox.contains(e.target);
 	const clickedOutsideBurger = !burgerBtn.contains(e.target);
 
-	if (listBox.classList.contains('active') && clickedOutsideList && clickedOutsideBurger) {
+	if (
+		listBox.classList.contains('active') &&
+		clickedOutsideList &&
+		clickedOutsideBurger
+	) {
 		listBox.classList.remove('active');
 	}
 });
+
