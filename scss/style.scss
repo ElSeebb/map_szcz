@@ -32,36 +32,49 @@ html {
 
 //tryb nocny
 
-body.dark-mode{
+body.dark-mode {
 	background-color: #333;
-	#emblem-list{
+	#emblem-list {
 		background-color: black;
-		.list-header{
+		.list-header {
 			background-color: black;
 			color: white;
 		}
-		.emblem-list-box{
+		.emblem-list-box {
 			background-color: #535353;
-			
-			.emblem-btn{
+
+			.emblem-btn {
 				background-color: #353434;
 				color: white;
 			}
 		}
 	}
-	#panel{
-		background-color: rgba(0, 0, 0,);
+	#panel {
+		background-color: rgba(0, 0, 0);
+		box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.2);
 		color: white;
 	}
+	@media (max-width: 1200px) {
+		#panel {
+			background: rgba($color: #000000, $alpha: 0.7);
+			
+			box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+		}
+	}
 
-	.title-box{
+	.title-box {
 		background-color: #000000a1;
-		.title{
+		box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.2);
+		.title {
+			color: white;
+		}
+		p {
 			color: white;
 		}
 	}
-	.text-box{
+	.text-box {
 		background-color: black;
+		box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.2);
 		color: white;
 	}
 }
@@ -144,7 +157,6 @@ body.dark-mode{
 		}
 
 		.sort-option {
-			
 			.street-heading {
 				font-size: 1rem;
 				font-weight: bold;
@@ -318,7 +330,7 @@ body.dark-mode{
 //tytuł i opis
 
 .title-box {
-	position: absolute;
+	position: fixed;
 	top: 1rem;
 	right: 2rem;
 	padding: 0.5rem 1rem;
@@ -335,6 +347,13 @@ body.dark-mode{
 		text-align: center;
 		align-items: center;
 		font-size: 1.5rem;
+	}
+	p {
+		position: relative;
+		top: -2rem;
+		display: flex;
+		justify-content: center;
+		font-size: 1.3rem;
 	}
 }
 
@@ -413,7 +432,6 @@ body.dark-mode{
 // media
 
 @media (min-width: 992px) and (max-width: 1200px) {
-	
 	#map {
 		position: absolute;
 		height: 100dvh;
