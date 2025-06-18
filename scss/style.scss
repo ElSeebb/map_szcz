@@ -35,6 +35,7 @@ html {
 body.dark-mode {
 	background-color: #333;
 	#emblem-list {
+		color: white;
 		background-color: black;
 		.list-header {
 			background-color: black;
@@ -70,6 +71,9 @@ body.dark-mode {
 		}
 		p {
 			color: white;
+			a{
+				color: rgb(219, 166, 166);
+			}
 		}
 	}
 	.text-box {
@@ -354,6 +358,12 @@ body.dark-mode {
 		display: flex;
 		justify-content: center;
 		font-size: 1.3rem;
+		a{
+			margin: 0 1rem;
+			font-size: 1.4rem;
+			text-decoration: none;
+			font-weight: bold;
+		}
 	}
 }
 

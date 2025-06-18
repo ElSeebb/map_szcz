@@ -18,6 +18,7 @@ body.dark-mode {
   background-color: #333;
 }
 body.dark-mode #emblem-list {
+  color: white;
   background-color: black;
 }
 body.dark-mode #emblem-list .list-header {
@@ -51,6 +52,9 @@ body.dark-mode .title-box .title {
 }
 body.dark-mode .title-box p {
   color: white;
+}
+body.dark-mode .title-box p a {
+  color: rgb(219, 166, 166);
 }
 body.dark-mode .text-box {
   background-color: black;
@@ -327,6 +331,12 @@ body.dark-mode .text-box {
   display: flex;
   justify-content: center;
   font-size: 1.3rem;
+}
+.title-box p a {
+  margin: 0 1rem;
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .text-box {

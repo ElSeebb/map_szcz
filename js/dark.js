@@ -27,3 +27,4 @@ toggleBtn.addEventListener('click', () => {
 		localStorage.setItem('theme', 'night');
 	}
 });
+
