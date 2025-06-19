@@ -84,7 +84,7 @@ function generateList({ sortMode = 'title', filter = '' } = {}) {
 				`;
 				});
 
-				html += `</div></div>`; // zamykamy .street-list i .street-group
+				html += `</div></div>`;
 			});
 	}
 
@@ -115,7 +115,7 @@ function generateList({ sortMode = 'title', filter = '' } = {}) {
 			const isHidden = list.classList.contains('hidden');
 			list.classList.toggle('hidden');
 
-			// zmień ikonę + −
+			
 			icon.textContent = isHidden ? '−' : '+';
 		});
 	});

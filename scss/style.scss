@@ -222,6 +222,7 @@ body.dark-mode {
 
 	&:hover {
 		background: #757474;
+		color: white;
 	}
 
 	.arrow-icon {
@@ -398,9 +399,9 @@ body.dark-mode {
 		a{
 			margin: 0 1rem;
 			font-size: 1.4rem;
-			text-decoration: none;
+			//text-decoration: none;
 			font-weight: bold;
-			color: #fcddb0;
+			color: #fa9600;
 		}
 	}
 }
@@ -413,6 +414,7 @@ body.dark-mode {
 	margin: 1rem 0;
 	width: 17vw;
 	height: fit-content;
+	line-height: 2rem;
 	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
 	border-radius: 5px;
 	background-color: #f7f7f7;
@@ -421,6 +423,9 @@ body.dark-mode {
 	p {
 		padding: 1.2rem;
 		text-align: center;
+		a{
+			font-style: italic;
+		}
 	}
 }
 

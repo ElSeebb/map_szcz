@@ -204,6 +204,7 @@ body.dark-mode .street-heading {
 }
 .street-heading:hover {
   background: #757474;
+  color: white;
 }
 .street-heading .arrow-icon {
   font-weight: bold;
@@ -368,9 +369,8 @@ body.dark-mode .street-heading {
 .title-box p a {
   margin: 0 1rem;
   font-size: 1.4rem;
-  text-decoration: none;
   font-weight: bold;
-  color: #fcddb0;
+  color: #fa9600;
 }
 
 .text-box {
@@ -382,6 +382,7 @@ body.dark-mode .street-heading {
   width: 17vw;
   height: -moz-fit-content;
   height: fit-content;
+  line-height: 2rem;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   background-color: #f7f7f7;
@@ -391,6 +392,9 @@ body.dark-mode .street-heading {
 .text-box p {
   padding: 1.2rem;
   text-align: center;
+}
+.text-box p a {
+  font-style: italic;
 }
 
 .error-btn {
