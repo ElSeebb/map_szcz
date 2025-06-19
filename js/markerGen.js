@@ -13,7 +13,7 @@ console.log('places:', places);
 const markers = {};
 let activeMarker = null;
 
-//ikony
+//ikony markerów
 
 const defaultIcon = L.icon({
 	iconUrl: './img/icon/inactive-pin.svg',
@@ -75,7 +75,7 @@ function openPanel(panel, place) {
 		<button id="zamknij-btn">Zamknij</button>
 	`;
 
-	// zmiana zdjęć
+	// zmiana zdjęć - karuzela
 	if (images.length > 1) {
 		const imgEl = panel.querySelector('.carousel-img');
 		const authorEl = panel.querySelector('.img-author');
@@ -130,7 +130,7 @@ function handlePlaceClick(place) {
 	marker.setZIndexOffset(1000);
 	activeMarker = marker;
 
-	//podświetlanie przycisku z listy
+	// podświetlanie przycisku z listy
 	document.querySelectorAll('.emblem-btn').forEach((btn) => {
 		const id = parseInt(btn.dataset.id);
 		const isActive = id === place.id;

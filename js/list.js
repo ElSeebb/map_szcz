@@ -9,7 +9,10 @@ let currentSearchQuery = '';
 function compareHouseNumbers(a, b) {
 	const aNum = extractHouseNumber(a.address);
 	const bNum = extractHouseNumber(b.address);
-	return aNum.localeCompare(bNum, undefined, { numeric: true, sensitivity: 'base' });
+	return aNum.localeCompare(bNum, undefined, {
+		numeric: true,
+		sensitivity: 'base',
+	});
 }
 
 //wyciągnaie numerów
@@ -61,21 +64,27 @@ function generateList({ sortMode = 'title', filter = '' } = {}) {
 		Object.keys(groupedByStreet)
 			.sort((a, b) => a.localeCompare(b))
 			.forEach((street) => {
-				html += `<h3 class="street-heading">${street}</h3>`;
+				html += `
+					<div class="street-group">
+						<h3 class="street-heading" data-street="${street}">
+							<span class="arrow-icon">+</span> ${street}
+						</h3>
+					<div class="street-list hidden" data-list="${street}">
+					`;
 
-				groupedByStreet[street]
-					.sort(compareHouseNumbers)
-					.forEach((place) => {
-						html += `
+				groupedByStreet[street].sort(compareHouseNumbers).forEach((place) => {
+					html += `
+					<button class="emblem-btn" data-id="${place.id}">
 						<div class="emblem-btn-number">${extractHouseNumber(place.address)}</div>
-							<button class="emblem-btn" data-id="${place.id}">
-								<div class="emblem-btn-symbol">
-									<img src="${place.symbol}" style="width: 100%;" />
-								</div>
-								<div class="emblem-btn-name"><p>${place.title}</p></div>
-							</button>
-						`;
-					});
+						<div class="emblem-btn-symbol">
+							<img src="${place.symbol}" style="width: 100%;" />
+						</div>
+						<div class="emblem-btn-name"><p>${place.title}</p></div>
+					</button>
+				`;
+				});
+
+				html += `</div></div>`; // zamykamy .street-list i .street-group
 			});
 	}
 
@@ -94,6 +103,23 @@ function generateList({ sortMode = 'title', filter = '' } = {}) {
 			}
 		});
 	});
+	// obsługa rozwijania grup ulic
+	document.querySelectorAll('.street-heading').forEach((heading) => {
+		heading.addEventListener('click', () => {
+			const street = heading.dataset.street;
+			const list = document.querySelector(
+				`.street-list[data-list="${street}"]`
+			);
+			const icon = heading.querySelector('.arrow-icon');
+
+			const isHidden = list.classList.contains('hidden');
+			list.classList.toggle('hidden');
+
+			// zmień ikonę + −
+			icon.textContent = isHidden ? '−' : '+';
+		});
+	});
+
 }
 
 // obsługa sortowania
@@ -129,4 +155,3 @@ document.addEventListener('click', (e) => {
 		listBox.classList.remove('active');
 	}
 });
-
