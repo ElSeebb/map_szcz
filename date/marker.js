@@ -45,7 +45,7 @@ export const places = [
 		title: 'Pod beczką',
 		address: '<b>Adres:</b> Szlachtowska 28',
 		description: '<b>Opis: </b>Nadana w 2022',
-		//symbol: '',
+		//symbol: 'img/symbol/beczka.svg',
 	},
 	/*{
 		coords: [49.426782, 20.474926],
@@ -77,7 +77,7 @@ export const places = [
 		title: 'Pod bucikiem',
 		address: '<b>Adres:</b> Flisacka 25a',
 		description: '<b>Opis: </b>Nadana w 2022r',
-		//symbol: '',
+		//symbol: 'img/symbol/bucik.svg',
 	},
 	{
 		coords: [49.427649, 20.469984],
@@ -93,7 +93,7 @@ export const places = [
 		title: 'Pod capkiem',
 		address: '<b>Adres:</b> Główna 48',
 		description: '<b>Opis: </b>',
-		//symbol: '',
+		//symbol: 'img/symbol/capek.svg',
 	},
 	/*{
 		coords: [49.426782, 20.474926],
@@ -133,7 +133,7 @@ export const places = [
 		title: 'Pod dziadkiem',
 		address: '<b>Adres:</b> Szalaya 50',
 		description: '<b>Opis: </b>...',
-		//symbol: '',
+		//symbol: 'img/symbol/dziadek.svg',
 	},
 	{
 		coords: [49.427056, 20.473211],
@@ -141,7 +141,7 @@ export const places = [
 		title: 'Pod dzwonem',
 		address: '<b>Adres:</b> Główna 37',
 		description: '<b>Opis: </b>...',
-		//symbol: '',
+		//symbol: 'img/symbol/dzwon.svg',
 	},
 	/*{
 		coords: [49.425678,20.462774],
@@ -157,7 +157,7 @@ export const places = [
 		title: 'Pod gackiem',
 		address: '<b>Adres:</b> Główna 25',
 		description:'<b>Opis: </b>Tablica nadana w 2022r dla budynku Hotel Szczawnica Park ',
-		//symbol: 'img/symbol/po_gackiem_sym.svg',
+		//symbol: 'img/symbol/gacek.svg',
 	},
 	/*{
 		coords: [49.425678,20.462774],
@@ -181,7 +181,7 @@ export const places = [
 		title: 'Pod gołąbiem',
 		address: '<b>Adres:</b> Zawodzie 12',
 		description: '<b>Opis: </b>...',
-		//symbol: '',
+		//symbol: 'img/symbol/gołąb.svg',
 	},
 	{
 		coords: [49.42359, 20.485812],
@@ -213,7 +213,7 @@ export const places = [
 		title: 'Pod gwiazdą',
 		address: '<b>Adres:</b> Szalaya 19',
 		description: '<b>Opis: </b>...',
-		//symbol: '',
+		//symbol: 'img/symbol/gwiazda.svg',
 	},
 	{
 		coords: [49.430466, 20.488638],
@@ -221,7 +221,7 @@ export const places = [
 		title: 'Pod hamernikiem',
 		address: '<b>Adres:</b> Kowalczyk 3b',
 		description: '<b>Opis: </b>Nadana w 2022',
-		//symbol: '',
+		//symbol: 'img/symbol/hamernik.svg',
 	},
 	{
 		coords: [49.427347, 20.472779],
@@ -245,7 +245,7 @@ export const places = [
 		title: 'Pod jabłkiem',
 		address: '<b>Adres:</b> Szalaya 75',
 		description: '<b>Opis: </b>...',
-		//symbol: '',
+		//symbol: 'img/symbol/jabłko.svg',
 	},
 	{
 		coords: [49.424599, 20.483393],

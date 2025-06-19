@@ -190,6 +190,8 @@ body.dark-mode {
 			cursor: pointer;
 
 			.emblem-btn-symbol {
+				position: relative;
+				
 				width: 4rem;
 				height: 4rem;
 				object-fit: contain;

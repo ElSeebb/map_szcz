@@ -44,7 +44,7 @@ function generateList({ sortMode = 'title', filter = '' } = {}) {
 			html += `
 				<button class="emblem-btn" data-id="${place.id}">
 					<div class="emblem-btn-symbol">
-						<img src="${place.symbol}" style="width: 100%;" />
+						<img src="${place.symbol} alt="" style="width: 100%;" />
 					</div>
 					<div class="emblem-btn-name"><p>${place.title}</p></div>
 				</button>

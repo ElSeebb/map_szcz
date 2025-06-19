@@ -175,6 +175,7 @@ body.dark-mode .street-heading {
   cursor: pointer;
 }
 #emblem-list .emblem-list-box .emblem-btn .emblem-btn-symbol {
+  position: relative;
   width: 4rem;
   height: 4rem;
   -o-object-fit: contain;
