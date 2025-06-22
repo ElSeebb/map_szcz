@@ -386,14 +386,14 @@ export const places = [
 		description: '<b>Opis: </b>Nadana w 2022r',
 		//symbol: '',
 	},
-	{
+	/*{
 		coords: [49.427336, 20.47281],
 		img: [{src : 'img/tablica/zdj/pod_lira1.jpg', author : ''},],
 		title: 'Pod lirą',
 		address: '<b>Adres:</b> Główna 62',
 		description: '<b>Opis: </b>...',
 		//symbol: '',
-	},
+	},*/
 	{
 		coords: [49.422877, 20.488168],
 		img: [{src : 'img/tablica/zdj/pod_lisem1.jpg', author : ''},],
@@ -442,14 +442,14 @@ export const places = [
 		description: '<b>Opis: </b>...',
 		//symbol: '',
 	},*/
-	{
+	/*{
 		coords: [49.425419, 20.488147],
 		img: [{src : 'img/tablica/zdj/pod_modrzejewska1.jpg', author : ''},],
 		title: 'Pod Modrzejewską',
 		address: '<b>Adres:</b> Park Górny 7',
-		description: '<b>Opis: </b>...',
+		description: '<b>Opis: </b>',
 		//symbol: '',
-	},
+	},*/
 	/*{
 		coords: [49.427357,20.472679],
 		img: [{src : 'img/tablica/zdj/pod_niedzwiedziem.jpg', author : ''},],

@@ -565,7 +565,7 @@ body.dark-mode {
 	}
 	#burger-btn {
 		position: fixed;
-		bottom: 5vh;
+		bottom: 10vh;
 		right: 3vh;
 		width: 8vh;
 		height: 8vh;
@@ -616,15 +616,15 @@ body.dark-mode {
 		max-height: 75vh;
 	}
 	#burger-btn {
-		position: absolute;
-		bottom: 9dvh;
+		position: fixed;
+		bottom: 5vh;
 		right: 3dvh;
 		width: 8vh;
 		height: 8vh;
 	}
 
 	.burger-btn {
-		height: 2rem;
+		height: 3rem;
 	}
 }
 
@@ -657,7 +657,7 @@ body.dark-mode {
 		max-height: 75vh;
 	}
 	#burger-btn {
-		position: absolute;
+		position: fixed;
 		bottom: 9dvh;
 		right: 3dvh;
 		width: 8vh;
@@ -668,5 +668,33 @@ body.dark-mode {
 		position: relative;
 		height: 3rem;
 		top: 2px;
+	}
+}
+
+@media (orientation: landscape){
+	#panel {
+		top: 0;
+		width: 40vw;
+		max-height: 75vh;
+		
+	}
+	#emblem-list {
+		width: 30vw;
+		height: 100dvh;
+		.list-header{
+			font-size: 0.9rem;
+			h2{
+				font-size: 1.2rem;
+			}
+		}
+		
+		
+	}
+	#burger-btn {
+		position: fixed;
+		bottom: 19dvh;
+		right: 3dvh;
+		width: 18vh;
+		height: 18vh;
 	}
 }
