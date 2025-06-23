@@ -484,6 +484,22 @@ body.dark-mode {
 }
 
 // media
+@media (max-width: 1510px){
+	#panel{
+		width: 25vw;
+	}
+	.title-box{
+		width: 20vw;
+		.title{
+			font-size: 1.2rem;
+		}
+	}
+	.text-box{
+		width: 20vw;
+		font-size: 1.3rem;
+	}
+}
+
 
 @media (max-width: 1200px) {
 	#map {
