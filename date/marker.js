@@ -516,7 +516,7 @@ export const places = [
 	},*/
 	{
 		coords: [49.423246, 20.486753],
-		img: [{src : 'img/tablica/zdj/pod_rakiem1.jpg', author : ''},],
+		img: [{src : 'img/tablica/zdj/pod_rakiem1.jpg', author : 'zdj. własne'},],
 		title: 'Pod rakiem',
 		address: '<b>Adres:</b> Szalaya 43',
 		description: '<b>Opis: </b>...',
@@ -764,7 +764,7 @@ export const places = [
 	},
 	{
 		coords: [49.422507, 20.488168],
-		img: [{src : 'img/tablica/zdj/pod_wegrzynem1.jpg', author : ''},],
+		img: [{src : 'img/tablica/zdj/pod_wegrzynem1.jpg', author : 'zdj. własne'},],
 		title: 'Pod węgrzynem',
 		address: '<b>Adres:</b> Szalaya 72',
 		description: '<b>Opis: </b>...',
