@@ -671,7 +671,7 @@ body.dark-mode {
 	}
 }
 
-@media (orientation: landscape){
+@media (orientation: landscape) and (max-width: 768px){
 	#panel {
 		top: 0;
 		width: 40vw;
