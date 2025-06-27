@@ -84,6 +84,20 @@ body.dark-mode {
 	.street-heading {
 		background-color: #494949;
 	}
+	.form-box{
+		background-color: #474747;
+		color: #ffffff;
+		.form-name,.form-email{
+			input{
+				color: #ffffff;
+				background-color: #6d6d6d;
+			}
+		}
+		textarea{
+			color: #ffffff;
+			background-color: #6d6d6d;
+		}
+	}
 }
 
 .night {
@@ -462,20 +476,60 @@ body.dark-mode {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	transform: translate(-50%, -50%);
 	display: none;
 	padding: 20px;
 	border: 1px solid black;
+	border-radius: 5px;
+	box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.15);
 	background-color: #fff;
 	z-index: 1500;
+	
 	.form-name,
 	.form-email,
 	.form-msg {
+		position: relative;
+		display: grid;
 		margin: 10px;
+		input{
+			width: 300px;
+			padding: 10px;
+			border: 1px,solid black;
+			border-radius: 2px;
+		}
+		label{
+			margin: 5px 0;
+			font-size: 1.2rem;
+		}
 	}
+	.form-title{
+		font-size: 1.5rem;
+	}
+	
 	textarea {
+		padding: 10px;
 		max-width: 300px;
 		min-width: 300px;
+		height: 100px;
 	}
+	.form-send-btn {
+		input {
+			position: relative;
+			left: 50%;
+			bottom: 10%;
+			transform: translate(-50%);
+			padding: 1rem 2rem;
+			border: none;
+			border-radius: 3px;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+			transition: background 0.5s ease;
+			cursor: pointer;
+		}
+		input:hover{
+			background-color: #c0c0c0;
+		}
+	}
+	
 }
 
 .active {
@@ -484,22 +538,21 @@ body.dark-mode {
 }
 
 // media
-@media (max-width: 1510px){
-	#panel{
+@media (max-width: 1510px) {
+	#panel {
 		width: 25vw;
 	}
-	.title-box{
+	.title-box {
 		width: 20vw;
-		.title{
+		.title {
 			font-size: 1.2rem;
 		}
 	}
-	.text-box{
+	.text-box {
 		width: 20vw;
 		font-size: 1.3rem;
 	}
 }
-
 
 @media (max-width: 1200px) {
 	#map {
@@ -687,24 +740,21 @@ body.dark-mode {
 	}
 }
 
-@media (orientation: landscape) and (max-width: 768px){
+@media (orientation: landscape) and (max-width: 768px) {
 	#panel {
 		top: 0;
 		width: 40vw;
 		max-height: 75vh;
-		
 	}
 	#emblem-list {
 		width: 30vw;
 		height: 100dvh;
-		.list-header{
+		.list-header {
 			font-size: 0.9rem;
-			h2{
+			h2 {
 				font-size: 1.2rem;
 			}
 		}
-		
-		
 	}
 	#burger-btn {
 		position: fixed;
