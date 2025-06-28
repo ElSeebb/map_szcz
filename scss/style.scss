@@ -84,16 +84,17 @@ body.dark-mode {
 	.street-heading {
 		background-color: #494949;
 	}
-	.form-box{
+	.form-box {
 		background-color: #474747;
 		color: #ffffff;
-		.form-name,.form-email{
-			input{
+		.form-name,
+		.form-email {
+			input {
 				color: #ffffff;
 				background-color: #6d6d6d;
 			}
 		}
-		textarea{
+		textarea {
 			color: #ffffff;
 			background-color: #6d6d6d;
 		}
@@ -484,34 +485,44 @@ body.dark-mode {
 	box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.15);
 	background-color: #fff;
 	z-index: 1500;
-	
+
 	.form-name,
 	.form-email,
 	.form-msg {
 		position: relative;
 		display: grid;
 		margin: 10px;
-		input{
+		input {
 			width: 300px;
 			padding: 10px;
-			border: 1px,solid black;
+			border: 1px, solid black;
 			border-radius: 2px;
 		}
-		label{
+		label {
 			margin: 5px 0;
 			font-size: 1.2rem;
 		}
 	}
-	.form-title{
+	.form-title {
 		font-size: 1.5rem;
 	}
-	
+
 	textarea {
 		padding: 10px;
 		max-width: 300px;
 		min-width: 300px;
 		height: 100px;
 	}
+	.form-checkbox {
+		max-width: 300px;
+		padding: 10px;
+		margin: 10px;
+		label{
+			font-size: 1.2rem;
+			
+		}
+	}
+
 	.form-send-btn {
 		input {
 			position: relative;
@@ -525,16 +536,15 @@ body.dark-mode {
 			transition: background 0.5s ease;
 			cursor: pointer;
 		}
-		input:hover{
+		input:hover {
 			background-color: #c0c0c0;
 		}
 	}
-	
 }
 
 .active {
-	//display: block;
-	display: none;
+	display: block;
+	//display: none;
 }
 
 // media
