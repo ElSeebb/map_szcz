@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Godła</title>
+		<title>Godła Szalayowskie</title>
 		<link
 			rel="stylesheet"
 			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -15,9 +15,17 @@
 
 	<body>
 		<div id="map"></div>
-		<button id="theme-toggle" class="theme-btn">
-			<span class="label">Tryb nocny</span>
-		</button>
+		<div class="button-box">
+			<button id="theme-toggle" class="theme-btn">
+				<span class="label">Tryb nocny</span>
+			</button>
+			<button disabled class="game-btn" title="Gra przygodowa">
+				<img src="./img/icon/compass.svg" alt="" />
+			</button>
+			<button class="error-btn" title="Zgłoś błąd">
+				<img src="./img/icon/alert-triangle.svg" alt="" />
+			</button>
+		</div>
 
 		<div id="night-overlay" class="night hidden"></div>
 		<div id="panel" class="panel-mob hidden"></div>
@@ -86,11 +94,11 @@
 			</div>
 		</aside>
 
-		<button disable class="error-btn" title="Zgłoś błąd">
-			<img src="./img/icon/alert-triangle.svg" alt="" />
-		</button>
-
-		<form action="https://formspree.io/f/xdkzybkz" method="post" class="form-box">
+		<form
+			action="https://formspree.io/f/xdkzybkz"
+			method="post"
+			class="form-box"
+		>
 			<div class="form-title">
 				<h3>Znalazłeś błąd, brakujące dane? Podziel się!</h3>
 			</div>
@@ -108,7 +116,7 @@
 			</div>
 			<div class="form-checkbox">
 				<label>
-					<input type="checkbox" name="privacy" required>
+					<input type="checkbox" name="privacy" required />
 					Podając swoje dane, wyrażasz zgodę na ich przetwarzanie wyłącznie w
 					celu udzielenia odpowiedzi na przesłane zgłoszenie. Dane nie będą
 					udostępniane innym podmiotom.</label
