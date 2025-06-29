@@ -99,6 +99,7 @@ body.dark-mode {
 			background-color: #6d6d6d;
 		}
 	}
+	
 }
 
 .night {
@@ -516,6 +517,8 @@ body.dark-mode {
 
 	.theme-btn {
 		@include btn-style;
+		
+		color: rgb(0, 0, 0);
 		align-items: center;
 		padding: 1rem 2rem;
 		gap: 0.5rem;
@@ -523,10 +526,10 @@ body.dark-mode {
 	}
 
 	.theme-btn:hover {
-		background: #dbdada;
+		background: #b4b4b4;
 	}
 	.game-btn {
-		//display: none;
+		display: none;
 		align-items: center;
 		padding: 0.5rem;
 		background: #35a800;

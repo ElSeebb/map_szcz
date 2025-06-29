@@ -274,8 +274,7 @@ export const places = [
 	{
 		coords: [49.42854, 20.495899],
 		img: [
-			{src : 'img/tablica/zdj/pod_jemiola.jpg', author : 'zdj. własne'},
-			{src : 'img/tablica/zdj/pod_gackiem2.jpg', author : ''}
+			{src : 'img/tablica/zdj/pod_jemiola1w.jpg', author : 'zdj. własne'}			
 		],
 		title: 'Pod jemiołą',
 		address: '<b>Adres:</b> Św. Krzyża  49',
@@ -340,7 +339,7 @@ export const places = [
 	},*/
 	{
 		coords: [49.423004, 20.487296],
-		img: [{src : 'img/tablica/zdj/pod_kotwica1.jpg', author : ''},],
+		img: [{src : 'img/tablica/zdj/pod_kotwica1w.jpg', author : 'zdj. własne'},],
 		title: 'Pod kotwicą',
 		address: '<b>Adres:</b> Szalaya 53',
 		description: '<b>Opis: </b>...',
@@ -516,7 +515,7 @@ export const places = [
 	},*/
 	{
 		coords: [49.423246, 20.486753],
-		img: [{src : 'img/tablica/zdj/pod_rakiem1.jpg', author : 'zdj. własne'},],
+		img: [{src : 'img/tablica/zdj/pod_rakiem1w.jpg', author : 'zdj. własne'},],
 		title: 'Pod rakiem',
 		address: '<b>Adres:</b> Szalaya 43',
 		description: '<b>Opis: </b>...',
@@ -764,7 +763,7 @@ export const places = [
 	},
 	{
 		coords: [49.422507, 20.488168],
-		img: [{src : 'img/tablica/zdj/pod_wegrzynem1.jpg', author : 'zdj. własne'},],
+		img: [{src : 'img/tablica/zdj/pod_wegrzynem1w.jpg', author : 'zdj. własne'},],
 		title: 'Pod węgrzynem',
 		address: '<b>Adres:</b> Szalaya 72',
 		description: '<b>Opis: </b>...',
@@ -836,7 +835,7 @@ export const places = [
 	},
 	{
 		coords: [49.422761, 20.488024],
-		img: [{src : 'img/tablica/zdj/pod_zajacem1.jpg', author : ''},],
+		img: [{src : 'img/tablica/zdj/pod_zajacem1w.jpg', author : 'zdj. własne'},],
 		title: 'Pod zającem',
 		address: '<b>Adres:</b> Szalaya 61',
 		description: '<b>Opis: </b>...',
