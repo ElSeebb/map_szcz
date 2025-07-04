@@ -1,7 +1,7 @@
 //import { places } from '../date/marker.js';
 import { map } from '../js/map.js';
-import { getSortedPlacesWithId } from './sort.js';
-const places = getSortedPlacesWithId();
+
+
 
 function centerMapWithOffset(latlng, offsetX = 0, offsetY = 0) {
 	const point = map.project(latlng, map.getZoom()).subtract([offsetX, offsetY]);
@@ -9,7 +9,7 @@ function centerMapWithOffset(latlng, offsetX = 0, offsetY = 0) {
 	map.panTo(newLatLng, { animate: true });
 }
 
-console.log('places:', places);
+//console.log('places:', places);
 const markers = {};
 let activeMarker = null;
 
@@ -31,21 +31,23 @@ const activeIcon = L.icon({
 
 //generator markerów
 
-places.forEach((place) => {
-	const marker = L.marker(place.coords, { icon: defaultIcon }).addTo(map);
-	markers[place.id] = marker;
+function generateMarkers(places) {
+	places.forEach((place) => {
+		const marker = L.marker(place.coords, { icon: defaultIcon }).addTo(map);
+		markers[place.id] = marker;
 
-	marker.on('click', () => {
-		handlePlaceClick(place);
-	});
+		marker.on('click', () => {
+			handlePlaceClick(place);
+		});
 
-	marker.bindTooltip(place.title, {
-		permanent: false,
-		direction: 'top',
-		offset: [0, -30],
-		opacity: 0.7,
+		marker.bindTooltip(place.title, {
+			permanent: false,
+			direction: 'top',
+			offset: [0, -30],
+			opacity: 0.7,
+		});
 	});
-});
+}
 
 //panel
 
@@ -59,13 +61,21 @@ function openPanel(panel, place) {
 
 	panel.innerHTML = `
 		<div class="image-carousel">
-    		${images.length > 1 ? '<button class="arrow left"><img src="./img/icon/chevron-left.svg" alt=""></button>' : ''}
+    		${
+					images.length > 1
+						? '<button class="arrow left"><img src="./img/icon/chevron-left.svg" alt=""></button>'
+						: ''
+				}
     
     		<div class="img-wrapper">
       			<img class="carousel-img" src="${images[0].src}" />
 				  </div>
 				  
-				  ${images.length > 1 ? '<button class="arrow right"><img src="./img/icon/chevron-right.svg" alt=""></button>' : ''}
+				  ${
+						images.length > 1
+							? '<button class="arrow right"><img src="./img/icon/chevron-right.svg" alt=""></button>'
+							: ''
+					}
 				  </div>
       			<p class="img-author">autor: ${images[0].author}</p>
 
@@ -154,4 +164,4 @@ function handlePlaceClick(place) {
 	}
 }
 
-export { markers, defaultIcon, activeIcon, handlePlaceClick };
+export { generateMarkers, markers, defaultIcon, activeIcon, handlePlaceClick };

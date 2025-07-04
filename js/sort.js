@@ -1,6 +1,6 @@
-import { places } from '../date/marker.js';
 
-export function getSortedPlacesWithId() {
+
+export function getSortedPlacesWithId(places) {
 	const sorted = [...places].sort((a, b) =>
 		a.title.localeCompare(b.title, 'pl', { sensitivity: 'base' })
 	);

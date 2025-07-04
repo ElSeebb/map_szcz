@@ -522,7 +522,7 @@ body.dark-mode .form-box textarea {
 .button-box .error-btn:hover {
   background: #f39494;
 }
-.button-box .lang-btn {
+.button-box #lang-btn {
   align-items: center;
   padding: 1rem;
   background: rgb(51, 51, 245);
@@ -538,7 +538,7 @@ body.dark-mode .form-box textarea {
   transform: none;
   cursor: pointer;
 }
-.button-box .lang-btn:hover {
+.button-box #lang-btn:hover {
   background: #bcbdf7;
 }
 

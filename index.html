@@ -28,8 +28,8 @@
 			<button class="error-btn" title="Zgłoś błąd">
 				<img src="./img/icon/alert-triangle.svg" alt="" />
 			</button>
-			<button class="lang-btn" title="Przełącz język">
-				<span>PL</span>
+			<button id="lang-btn" title="Przełącz język">
+				PL
 			</button>
 		</div>
 
@@ -37,9 +37,9 @@
 		<div id="panel" class="panel-mob hidden"></div>
 		<div class="title-box">
 			<div class="title">
-				<h1>Godła Szalayowskie</h1>
+				<h1 id="page-title">Godła Szalayowskie</h1>
 			</div>
-			<p>
+			<p id="map-author">
 				Autor mapy:
 				<a href="https://portfolioseebb.wordpress.com/glowna/" target="_blank"
 					>Sebastian</a
@@ -48,7 +48,7 @@
 		</div>
 
 		<div class="text-box">
-			<p>
+			<p id="emblem-descr">
 				Są to szyldy na drewnianych tablicach, których tradycja sięga XIXw,
 				przedstawiają malowidła i podpisy okreslające nazwę domu, na cześć
 				twórcy i właściciela uzdrowiska w Szczawnicy, któremu przypisuje się
@@ -74,12 +74,12 @@
 					<input type="text" id="search-input" placeholder="Szukaj godła" />
 				</div>
 				<div class="sort-options">
-					<label>
+					<label id="sort-label_alph">
 						<input type="radio" name="sort-mode" value="title" checked />
 						Sortuj alfabetycznie
 					</label>
 					<br />
-					<label>
+					<label id="sort-label-street">
 						<input type="radio" name="sort-mode" value="street" />
 						Sortuj wg ulic
 					</label>
@@ -106,10 +106,10 @@
 			class="form-box"
 		>
 			<div class="form-title">
-				<h3>Znalazłeś błąd, brakujące dane? Podziel się!</h3>
+				<h3 id="form-title">Znalazłeś błąd, brakujące dane? Podziel się!</h3>
 			</div>
 			<div class="form-name">
-				<label for="name">Imię: </label>
+				<label for="name" id="form-name">Imię: </label>
 				<input type="text" name="name" id="name" />
 			</div>
 			<div class="form-email">
@@ -117,11 +117,11 @@
 				<input type="email" name="email" id="email" required />
 			</div>
 			<div class="form-msg">
-				<label for="msg">Wiadomość:</label>
+				<label for="msg" id="form-msg">Wiadomość:</label>
 				<textarea name="msg" id="msg" required></textarea>
 			</div>
 			<div class="form-checkbox">
-				<label>
+				<label id="form-privacy">
 					<input type="checkbox" name="privacy" required />
 					Podając swoje dane, wyrażasz zgodę na ich przetwarzanie wyłącznie w
 					celu udzielenia odpowiedzi na przesłane zgłoszenie. Dane nie będą
@@ -139,5 +139,7 @@
 		<script src="./js/burger.js"></script>
 		<script src="./js/dark.js"></script>
 		<script src="./js/error.js"></script>
+		<script type="module" src="js/lang.js"></script>
+		
 	</body>
 </html>

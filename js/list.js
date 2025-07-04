@@ -1,6 +1,13 @@
 import { handlePlaceClick } from './markerGen.js';
-import { getSortedPlacesWithId } from './sort.js';
-const places = getSortedPlacesWithId();
+let currentPlaces = [];
+
+export function setCurrentPlaces(newPlaces) {
+    currentPlaces = newPlaces;
+}
+
+export function getCurrentPlaces() {
+    return currentPlaces;
+}
 
 let currentSortMode = 'title';
 let currentSearchQuery = '';
@@ -17,18 +24,19 @@ function compareHouseNumbers(a, b) {
 
 //wyciągnaie numerów
 function extractHouseNumber(addressHTML) {
-	const match = addressHTML.match(/<b>Adres:<\/b>\s*[^<]*?(\d+[a-zA-Z]?)/i);
-	return match ? match[1].toLowerCase() : '';
+	const match = addressHTML.match(/<b>(Adres|Address):<\/b>\s*[^<]*?(\d+[a-zA-Z]?)/i);
+	return match ? match[2].toLowerCase() : '';
 }
 
 ///wyciągniae ulic
 function extractStreet(addressHTML) {
-	const match = addressHTML.match(/<b>Adres:<\/b>\s*([^0-9<]+)/i);
-	return match ? match[1].trim() : 'Inna ulica';
+	const match = addressHTML.match(/<b>(Adres|Address):<\/b>\s*([^0-9<]+)/i);
+	return match ? match[2].trim() : 'Inna ulica';
 }
 
 //generator listy
-function generateList({ sortMode = 'title', filter = '' } = {}) {
+function generateList(places, { sortMode = 'title', filter = '' } = {}) {
+	console.log('places w generateList:', places);
 	let html = '';
 
 	//wyszukiwarka
@@ -121,23 +129,42 @@ function generateList({ sortMode = 'title', filter = '' } = {}) {
 	});
 
 }
+// funkcja do generowania dynamicznego filtra listy ulic
+function setupStreetAccordions() {
+    document.querySelectorAll('.street-heading').forEach(heading => {
+        heading.addEventListener('click', () => {
+            heading.classList.toggle('open');
+            const street = heading.dataset.street;
+            const list = document.querySelector(`.street-list[data-list="${street}"]`);
+            if (list) {
+                list.classList.toggle('hidden');
+
+                // zmiana strzałki
+                const arrow = heading.querySelector('.arrow-icon');
+                arrow.textContent = list.classList.contains('hidden') ? '+' : '–';
+            }
+        });
+    });
+}
 
 // obsługa sortowania
 document.querySelectorAll('input[name="sort-mode"]').forEach((input) => {
 	input.addEventListener('change', () => {
 		currentSortMode = input.value;
-		generateList({ sortMode: currentSortMode, filter: currentSearchQuery });
+		generateList(getCurrentPlaces(), { sortMode: currentSortMode, filter: currentSearchQuery });
+		//setupStreetAccordions();
 	});
 });
 
 // obsługa wyszukiwania
 document.getElementById('search-input').addEventListener('input', (e) => {
 	currentSearchQuery = e.target.value;
-	generateList({ sortMode: currentSortMode, filter: currentSearchQuery });
+	generateList(getCurrentPlaces(), { sortMode: currentSortMode, filter: currentSearchQuery });
+	
 });
 
 // start funkcji
-generateList({ sortMode: currentSortMode, filter: currentSearchQuery });
+//generateList(places, { sortMode: currentSortMode, filter: currentSearchQuery });
 
 // chowanie listy po kliknięciu poza
 document.addEventListener('click', (e) => {
@@ -155,3 +182,6 @@ document.addEventListener('click', (e) => {
 		listBox.classList.remove('active');
 	}
 });
+
+
+export {generateList, setupStreetAccordions};
