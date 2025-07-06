@@ -1,3 +1,19 @@
 [Map](https://elseebb.github.io/map_szcz/)
 
-In the future it will be supported on mobile devices or in low resolutions, currently not yet ready
+Goal met:
+- alphabetical and street sorting option 
+- error form
+- dark mode
+
+Current goal:
+- english version
+
+Future goal:
+- map version for kids
+- geolocalization
+- address Geocoding
+- sharing a marker
+- showing visit history
+- displaying the route to the destination
+- comment system
+- gamification/ quiz/ puzzle for young
