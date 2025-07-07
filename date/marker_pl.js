@@ -1,5 +1,6 @@
 export const places = [
 	/*{
+		id:'pod-akacja',
     	coords: [49.426782, 20.474926],
 		img: [{src : 'img/tablica/zdj/pod_akacja1.jpg', author : ''},],
 		title: 'Pod akacją',
@@ -8,6 +9,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	{
+		id:'pod-aniolem-strozem',
 		coords: [49.426782, 20.474926],
 		img: [{src : 'img/tablica/zdj/pod_aniolem_strozem1.webp', author : ''},],
 		title: 'Pod Aniołem Stróżem',
@@ -16,6 +18,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-aniolkiem',
 		coords: [49.423419, 20.486438],
 		img: [{src : 'img/tablica/zdj/pod_aniolkiem.jpg', author : ''},],
 		title: 'Pod aniołkiem',
@@ -24,6 +27,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-basami',
 		coords: [49.420609, 20.490922],
 		img: [{src : 'img/tablica/zdj/pod_basami1.jpg', author : ''},],
 		title: 'Pod basami',
@@ -32,6 +36,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-batorym',
 		coords: [49.425506, 20.486935],
 		img: [{src : 'img/tablica/zdj/pod_batorym.png', author : ''},],
 		title: 'Pod Batorym',
@@ -40,6 +45,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-beczka',
 		coords: [49.42002, 20.496491],
 		img: [{src : 'img/tablica/zdj/pod_beczka1.jpg', author : ''},],
 		title: 'Pod beczką',
@@ -48,6 +54,7 @@ export const places = [
 		//symbol: 'img/symbol/beczka.svg',
 	},
 	/*{
+		id:'pod-bialym-orlem',
 		coords: [49.426782, 20.474926],
 		img: [{src : 'img/tablica/zdj/pod_bialym_orlem.jpg', author : ''},],
 		title: 'Pod Białym Orłem',
@@ -56,6 +63,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	/*{
+		id:'pod-bogurodzica',
 		coords: [49.426782, 20.474926],
 		img: [{src : 'img/tablica/zdj/pod_bogurodzica.jpg', author : ''},],
 		title: 'Pod Bogurodzicą',
@@ -64,6 +72,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	{
+		id:'pod-boza-opatrznoscia',
 		coords: [49.427029, 20.473863],
 		img: [{src : 'img/tablica/zdj/pod_boza_opatrznoscia1.jpg', author : ''},],
 		title: 'Pod Bożą Opatrznością',
@@ -72,6 +81,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-bucikiem',
 		coords: [49.424651, 20.463701],
 		img: [{src : 'img/tablica/zdj/pod_bucikiem1.webp', author : ''},],
 		title: 'Pod bucikiem',
@@ -80,6 +90,7 @@ export const places = [
 		//symbol: 'img/symbol/bucik.svg',
 	},
 	{
+		id:'pod-bzem',
 		coords: [49.427649, 20.469984],
 		img: [{src : 'img/tablica/zdj/pod_bzem1.jpg', author : ''},],
 		title: 'Pod Bzem',
@@ -88,6 +99,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-capkiem',
 		coords: [49.423162, 20.486919],
 		img: [{src : 'img/tablica/zdj/pod_capkiem1.jpg', author : ''},],
 		title: 'Pod capkiem',
@@ -96,6 +108,7 @@ export const places = [
 		//symbol: 'img/symbol/capek.svg',
 	},
 	/*{
+		id:'pod-czeremcha',
 		coords: [49.426782, 20.474926],
 		img: [{src : 'img/tablica/zdj/pod_czeremcha.jpg', author : ''},],
 		title: 'Pod Czeremchą',
@@ -104,6 +117,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	/*{
+		id:'pod-debem',
 		coords: [49.426782, 20.474926],
 		img: [{src : 'img/tablica/zdj/pod_debem.jpg', author : ''},],
 		title: 'Pod dębem',
@@ -112,6 +126,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	/*{
+		id:'pod-diablem',
 		coords: [49.426782, 20.474926],
 		img: [{src : 'img/tablica/zdj/pod_diablem.jpg', author : ''},],
 		title: 'Pod Diabłem',
@@ -120,6 +135,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	/*{
+		id:'pod-doboszem',
 		coords: [49.426782, 20.474926],
 		img: [{src : 'img/tablica/zdj/pod_doboszem.jpg', author : ''},],
 		title: 'Pod Doboszem',
@@ -128,6 +144,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	{
+		id:'pod-dziadkiem',
 		coords: [49.423298, 20.48738],
 		img: [{src : 'img/tablica/zdj/pod_dziadkiem1.png', author : ''},],
 		title: 'Pod dziadkiem',
@@ -136,6 +153,7 @@ export const places = [
 		//symbol: 'img/symbol/dziadek.svg',
 	},
 	{
+		id:'pod-dzwonem',
 		coords: [49.427056, 20.473211],
 		img: [{src : 'img/tablica/zdj/pod_dzwonem.jpg', author : ''},],
 		title: 'Pod dzwonem',
@@ -144,6 +162,7 @@ export const places = [
 		//symbol: 'img/symbol/dzwon.svg',
 	},
 	/*{
+		id:'pod-figura',
 		coords: [49.425678,20.462774],
 		img: [{src : 'img/tablica/zdj/pod_figura.jpg', author : ''},],
 		title: 'Pod figurą',
@@ -152,6 +171,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	{
+		id:'pod-gackiem',
 		coords: [49.426272, 20.476756],
 		img: [{src : 'img/tablica/zdj/pod_gackiem2.jpg', author : ''},],
 		title: 'Pod gackiem',
@@ -160,6 +180,7 @@ export const places = [
 		//symbol: 'img/symbol/gacek.svg',
 	},
 	/*{
+		id:'pod-gaweda',
 		coords: [49.425678,20.462774],
 		img: [{src : 'img/tablica/zdj/pod_gaweda.jpg', author : ''},],
 		title: 'Pod gawędą',
@@ -168,6 +189,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	/*{
+		id:'pod-geslami',
 		coords: [49.425678,20.462774],
 		img: [{src : 'img/tablica/zdj/pod_geslami.jpg', author : ''},],
 		title: 'Pod gęślami',
@@ -175,15 +197,17 @@ export const places = [
 		description: '<b>Opis: </b>...',
 		//symbol: '',
 	},*/
-	{
+	{	
+		id:'pod-golabkiem',
 		coords: [49.421955, 20.485953],
 		img: [{src : 'img/tablica/zdj/pod_golobkiem1.jpg', author : ''},],
-		title: 'Pod gołąbiem',
+		title: 'Pod gołąbkiem',
 		address: '<b>Adres:</b> Zawodzie 12',
 		description: '<b>Opis: </b>...',
 		//symbol: 'img/symbol/gołąb.svg',
 	},
 	{
+		id:'pod-goralem',
 		coords: [49.42359, 20.485812],
 		img: [{src : 'img/tablica/zdj/pod_goralem1.jpg', author : 'zdj. własne'},],
 		title: 'Pod góralem',
@@ -192,6 +216,7 @@ export const places = [
 		//symbol: '',
 	},
 	/*{
+		id:'pod-goralka',
 		coords: [49.425678,20.462774],
 		img: [{src : 'img/tablica/zdj/pod_geslka.jpg', author : ''},],
 		title: 'Pod góralką',
@@ -200,6 +225,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	{
+		id:'pod-grajcarkiem',
 		coords: [49.426485, 20.465965],
 		img: [{src : 'img/tablica/zdj/pod_grajcarkiem.jpg', author : ''},],
 		title: 'Pod Grajcarkiem',
@@ -208,6 +234,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-gwiazda',
 		coords: [49.424805, 20.483966],
 		img: [{src : 'img/tablica/zdj/pod_gwizda1.jpg', author : ''},],
 		title: 'Pod gwiazdą',
@@ -216,6 +243,7 @@ export const places = [
 		//symbol: 'img/symbol/gwiazda.svg',
 	},
 	{
+		id:'pod-hamernikiem',
 		coords: [49.430466, 20.488638],
 		img: [{src : 'img/tablica/zdj/pod_hamernikiem1.jpg', author : ''},],
 		title: 'Pod hamernikiem',
@@ -224,6 +252,7 @@ export const places = [
 		//symbol: 'img/symbol/hamernik.svg',
 	},
 	{
+		id:'pod-hiszpanem',
 		coords: [49.427347, 20.472779],
 		img: [{src : 'img/tablica/zdj/pod_hiszpanem1.jpg', author : ''},],
 		title: 'Pod hiszpanem',
@@ -232,6 +261,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-huzarem',
 		coords: [49.423, 20.48606],
 		img: [{src : 'img/tablica/zdj/pod_huzarem1.png', author : ''},],
 		title: 'Pod Huzarem',
@@ -240,6 +270,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-jablkiem',
 		coords: [49.422455, 20.488759],
 		img: [{src : 'img/tablica/zdj/pod_jablkiem1.jpg', author : ''},],
 		title: 'Pod jabłkiem',
@@ -248,6 +279,7 @@ export const places = [
 		//symbol: 'img/symbol/jabłko.svg',
 	},
 	{
+		id:'pod-jalowcem',
 		coords: [49.424599, 20.483393],
 		img: [{src : 'img/tablica/zdj/pod_jalowcem1.jpg', author : ''},],
 		title: 'Pod jałowcem',
@@ -256,14 +288,16 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-jarzebinka',
 		coords: [49.423006, 20.486579],
-		img: [{src : 'img/tablica/zdj/pod_jarzebina1.jpg', author : 'zdj. własne'},],
-		title: 'Pod jarzębiną',
+		img: [{src : 'img/tablica/zdj/pod_jarzebinka1.jpg', author : 'zdj. własne'},],
+		title: 'Pod jarzębinką',
 		address: '<b>Adres:</b> Szalaya 41a',
 		description: '<b>Opis: </b>...',
 		//symbol: '',
 	},
 	/*{
+		id:'pod-jeleniem',
 		coords: [49.427357,20.472679],
 		img: [{src : 'img/tablica/zdj/pod_jeleniem.jpg', author : ''},],
 		title: 'Pod jeleniem',
@@ -272,6 +306,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	{
+		id:'pod-jemiola',
 		coords: [49.42854, 20.495899],
 		img: [
 			{src : 'img/tablica/zdj/pod_jemiola1.jpg', author : 'zdj. własne'}			
@@ -282,6 +317,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-kapliczka',
 		coords: [49.424591, 20.499702],
 		img: [{src : 'img/tablica/zdj/pod_kapliczka1.jpg', author : ''},],
 		title: 'Pod kapliczką',
@@ -290,6 +326,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-klonem',
 		coords: [49.424756, 20.487441],
 		img: [{src : 'img/tablica/zdj/pod_klonem1.jpg', author : ''},],
 		title: 'Pod klonem',
@@ -298,6 +335,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-kogutkiem',
 		coords: [49.419802, 20.500657],
 		img: [{src : 'img/tablica/zdj/pod_kogutkiem1.jpg', author : ''},],
 		title: 'Pod kogutkiem',
@@ -306,6 +344,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-kolem',
 		coords: [49.427184, 20.472474],
 		img: [{src : 'img/tablica/zdj/pod_kolem1.jpg', author : ''},],
 		title: 'Pod kołem',
@@ -314,6 +353,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-konikiem',
 		coords: [49.422873, 20.487953],
 		img: [{src : 'img/tablica/zdj/pod_konikiem1.jpg', author : ''},],
 		title: 'Pod konikiem',
@@ -322,6 +362,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-kosynierem',
 		coords: [49.420747, 20.48984],
 		img: [{src : 'img/tablica/zdj/pod_kosynierem1.jpg', author : ''},],
 		title: 'Pod kosynierem',
@@ -330,6 +371,7 @@ export const places = [
 		//symbol: '',
 	},
 	/*{
+		id:'pod-kosciuszka',
 		coords: [49.427357,20.472679],
 		img: [{src : 'img/tablica/zdj/pod_kosciuszka1.jpg', author : ''},],
 		title: 'Pod Kościuszką',
@@ -338,6 +380,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	{
+		id:'pod-kotwica',
 		coords: [49.423004, 20.487296],
 		img: [{src : 'img/tablica/zdj/pod_kotwica1.jpg', author : 'zdj. własne'},],
 		title: 'Pod kotwicą',
@@ -346,6 +389,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-kozakiem',
 		coords: [49.422348, 20.488928],
 		img: [{src : 'img/tablica/zdj/pod_kozakiem1.jpg', author : ''},],
 		title: 'Pod kozakiem',
@@ -354,6 +398,7 @@ export const places = [
 		//symbol: '',
 	},
 	/*{
+		id:'pod-kozica',
 		coords: [49.427357,20.472679],
 		img: [{src : 'img/tablica/zdj/pod_kozica1.jpg', author : ''},],
 		title: 'Pod kozicą',
@@ -362,14 +407,16 @@ export const places = [
 		//symbol: '',
 	},*/
 	{
+		id:'pod-krakowiakiem',
 		coords: [49.429906, 20.50032],
 		img: [{src : 'img/tablica/zdj/pod_krakowiakiem1.jpg', author : ''},],
 		title: 'Pod krakowiakiem',
 		address: '<b>Adres:</b> Sopotnicka 28',
-		description: '<b>Opis: </b>...',
+		description: '<b>Opis: </b>Godło nadane za wygrany konkurs rzucania siekierą do celu w 2016 podczas rozpoczyna cykl uroczystości organizowanych z okazji Roku Szalayowskiego',
 		//symbol: '',
 	},
 	/*{
+		id:'pod-ksiezycem',
 		coords: [49.427357,20.472679],
 		img: [{src : 'img/tablica/zdj/pod_ksiezycem1.jpg', author : ''},],
 		title: 'Pod księżycem',
@@ -378,6 +425,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	{
+		id:'pod-kukucka',
 		coords: [49.40747, 20.565529],
 		img: [{src : 'img/tablica/zdj/pod_kukucka1.jpg', author : ''},],
 		title: 'Pod kukucką',
@@ -386,6 +434,7 @@ export const places = [
 		//symbol: '',
 	},
 	/*{
+		id:'pod-lira',
 		coords: [49.427336, 20.47281],
 		img: [{src : 'img/tablica/zdj/pod_lira1.jpg', author : ''},],
 		title: 'Pod lirą',
@@ -394,6 +443,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	{
+		id:'pod-lisem',
 		coords: [49.422877, 20.488168],
 		img: [{src : 'img/tablica/zdj/pod_lisem1.jpg', author : ''},],
 		title: 'Pod lisem',
@@ -402,6 +452,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-lukiem',
 		coords: [49.424663, 20.483179],
 		img: [{src : 'img/tablica/zdj/pod_lukiem1.jpg', author : ''},],
 		title: 'Pod łukiem',
@@ -410,6 +461,7 @@ export const places = [
 		//symbol: '',
 	},
 	/*{
+		id:'pod-makiem',
 		coords: [49.427357,20.472679],
 		img: [{src : 'img/tablica/zdj/pod_makiem.jpg', author : ''},],
 		title: 'Pod makiem',
@@ -418,6 +470,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	{
+		id:'pod-matka-boska',
 		coords: [49.427002, 20.474226],
 		img: [{src : 'img/tablica/zdj/pod_matka_boska.jpg', author : ''},],
 		title: 'Pod Matką Boską',
@@ -426,6 +479,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-matrona',
 		coords: [49.420638, 20.489704],
 		img: [{src : 'img/tablica/zdj/pod_matrona1.jpg', author : ''},],
 		title: 'Pod matroną',
@@ -434,6 +488,7 @@ export const places = [
 		//symbol: '',
 	},
 	/*{
+		id:'pod-mickiewiczem',
 		coords: [49.427357,20.472679],
 		img: [{src : 'img/tablica/zdj/pod_mickiewiczem.jpg', author : ''},],
 		title: 'Pod Mickiewiczem',
@@ -442,6 +497,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	/*{
+		id:'pod-modrzejewska',
 		coords: [49.425419, 20.488147],
 		img: [{src : 'img/tablica/zdj/pod_modrzejewska1.jpg', author : ''},],
 		title: 'Pod Modrzejewską',
@@ -450,6 +506,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	/*{
+		id:'pod-niedzwiedziem',
 		coords: [49.427357,20.472679],
 		img: [{src : 'img/tablica/zdj/pod_niedzwiedziem.jpg', author : ''},],
 		title: 'Pod niedźwiedziem',
@@ -458,6 +515,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	{
+		id:'pod-owocami',
 		coords: [49.427448, 20.471997],
 		img: [{src : 'img/tablica/zdj/pod_owocami1.jpg', author : ''},],
 		title: 'Pod owocami',
@@ -466,6 +524,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-palenica',
 		coords: [49.424614, 20.482802],
 		img: [{src : 'img/tablica/zdj/pod_palenica1.jpg', author : ''},],
 		title: 'Pod Palenicą',
@@ -474,6 +533,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-pielgrzymem',
 		coords: [49.42715, 20.472689],
 		img: [{src : 'img/tablica/zdj/pod_pielgrzymem1.jpg', author : ''},],
 		title: 'Pod pielgrzymem',
@@ -482,6 +542,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-pieskiem',
 		coords: [49.423653, 20.486731],
 		img: [{src : 'img/tablica/zdj/pod_pieskiem1.jpg', author : ''},],
 		title: 'Pod pieskiem',
@@ -490,6 +551,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-polska-korona',
 		coords: [49.42279, 20.488796],
 		img: [{src : 'img/tablica/zdj/pod_polska_korona1.jpg', author : ''},],
 		title: 'Pod polską koroną',
@@ -498,6 +560,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-pomarancza',
 		coords: [49.42724, 20.484642],
 		img: [{src : 'img/tablica/zdj/pod_pomarancza1.jpg', author : ''},],
 		title: 'Pod pomarańczą',
@@ -506,6 +569,7 @@ export const places = [
 		//symbol: '',
 	},
 	/*{
+		id:'pod-prusem',
 		coords: [49.427357,20.472679],
 		img: [{src : 'img/tablica/zdj/pod_prusem.jpg', author : ''},],
 		title: 'Pod Prusem',
@@ -514,6 +578,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	{
+		id:'pod-rakiem',
 		coords: [49.423246, 20.486753],
 		img: [{src : 'img/tablica/zdj/pod_rakiem1.jpg', author : 'zdj. własne'},],
 		title: 'Pod rakiem',
@@ -522,6 +587,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-roza',
 		coords: [49.423444, 20.48661],
 		img: [{src : 'img/tablica/zdj/pod_roza1.jpg', author : ''},],
 		title: 'Pod różą',
@@ -530,6 +596,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-ryba',
 		coords: [49.423, 20.486468],
 		img: [{src : 'img/tablica/zdj/pod_ryba1.jpg', author : ''},],
 		title: 'Pod rybą',
@@ -538,6 +605,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-sarenka',
 		coords: [49.425678, 20.462774],
 		img: [{src : 'img/tablica/zdj/pod_sarenka1.jpg', author : ''},],
 		title: 'Pod sarenką',
@@ -546,6 +614,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-sercem',
 		coords: [49.42719, 20.473456],
 		img: [{src : 'img/tablica/zdj/pod_sercem1.jpg', author : ''},],
 		title: 'Pod sercem',
@@ -554,6 +623,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-siekierkami',
 		coords: [49.425743, 20.484381],
 		img: [{src : 'img/tablica/zdj/pod_siekierkami1.jpg', author : ''},],
 		title: 'Pod siekierkami',
@@ -562,6 +632,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-sienkiewiczem',
 		coords: [49.426514, 20.481012],
 		img: [{src : 'img/tablica/zdj/pod_sienkiewiczem.jpg', author : ''},],
 		title: 'Pod Sienkiewiczem',
@@ -570,6 +641,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-skrzypkiem',
 		coords: [49.428761, 20.466021],
 		img: [{src : 'img/tablica/zdj/pod_skrzypkiem1.jpg', author : ''},],
 		title: 'Pod skrzypkiem',
@@ -578,6 +650,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-sloncem',
 		coords: [49.424639, 20.483683],
 		img: [{src : 'img/tablica/zdj/pod_sloncem1.jpg', author : 'zdj. własne'},],
 		title: 'Pod słońcem',
@@ -586,6 +659,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-slowackim',
 		coords: [49.427909, 20.474298],
 		img: [{src : 'img/tablica/zdj/pod_slowackim1.jpg', author : ''},],
 		title: 'Pod Słowackim',
@@ -594,6 +668,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-slowikiem',
 		coords: [49.427088, 20.473007],
 		img: [{src : 'img/tablica/zdj/pod_slowikiem1.jpg', author : ''},],
 		title: 'Pod słowikiem',
@@ -602,6 +677,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-sokolem',
 		coords: [49.427408, 20.472248],
 		img: [{src : 'img/tablica/zdj/pod_sokolem1.jpg', author : ''},],
 		title: 'Pod sokołem',
@@ -610,14 +686,16 @@ export const places = [
 		//symbol: '',
 	},
 	/*{
-			coords: [49.427357,20.472679],
+		id:'pod-sosnami',
+		coords: [49.427357,20.472679],
 		img: [{src : 'img/tablica/zdj/pod_sosnami.jpg', author : ''},],
 		title: 'Pod sosnami',
 		address: '<b>Adres:</b> ',
-		description: '<b>Opis: </b>...',
+		description: '<b>Opis: </b>Nadana w 2022r',
 		//symbol: '',
 	},*/
 	{
+		id:'pod-sowa',
 		coords: [49.427582, 20.479576],
 		img: [{src : 'img/tablica/zdj/pod_sowa1.jpg', author : ''},],
 		title: 'Pod sową',
@@ -626,6 +704,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-srebrnym-orlem',
 		coords: [49.424368, 20.48323],
 		img: [{src : 'img/tablica/zdj/pod_srebrnym_orlem1.jpg', author : ''},],
 		title: 'Pod srebrnym orłem',
@@ -634,6 +713,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-sroka',
 		coords: [49.427219, 20.473138],
 		img: [{src : 'img/tablica/zdj/pod_sroka1.jpg', author : ''},],
 		title: 'Pod sroką',
@@ -642,6 +722,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-strzelba',
 		coords: [49.422681, 20.488498],
 		img: [{src : 'img/tablica/zdj/pod_strzelba1.jpg', author : ''},],
 		title: 'Pod strzelbą',
@@ -650,6 +731,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-strzelcem',
 		coords: [49.423361, 20.486178],
 		img: [{src : 'img/tablica/zdj/pod_strzelcem1.jpg', author : ''},],
 		title: 'Pod strzelcem',
@@ -658,6 +740,7 @@ export const places = [
 		//symbol: '',
 	},
 	/*{
+		id:'pod-szabla',
 		coords: [49.427357,20.472679],
 		img: [{src : 'img/tablica/zdj/pod_szabla.jpg', author : ''},],
 		title: 'Pod szablą',
@@ -666,6 +749,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	/*{
+		id:'pod-sw-jozefem',
 		coords: [49.427357,20.472679],
 		img: [{src : 'img/tablica/zdj/pod_sw_jozefem.jpg', author : ''},],
 		title: 'Pod św. Józefem',
@@ -674,6 +758,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	{
+		id:'pod-sw-teresa',
 		coords: [49.42295, 20.486195],
 		img: [{src : 'img/tablica/zdj/pod_sw_teresa.jpg', author : ''},],
 		title: 'Pod św. Teresą',
@@ -682,6 +767,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-swierkami',
 		coords: [49.426375, 20.452098],
 		img: [{src : 'img/tablica/zdj/pod_swierkami1.jpg', author : ''},],
 		title: 'Pod świerkami',
@@ -690,6 +776,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-topola',
 		coords: [49.427379, 20.472524],
 		img: [{src : 'img/tablica/zdj/pod_topola1.jpg', author : ''},],
 		title: 'Pod topolą',
@@ -698,6 +785,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-trzema-koronami',
 		coords: [49.427287, 20.471398],
 		img: [{src : 'img/tablica/zdj/pod_trzema_koronami1.jpg', author : ''},],
 		title: 'Pod trzema koronami',
@@ -706,6 +794,7 @@ export const places = [
 		//symbol: '',
 	},
 	/*{
+		id:'pod-trzema-liliami',
 		coords: [49.427357,20.472679],
 		img:{ [src : 'img/tablica/zdj/', author : ''},],
 		title: 'Pod trzema liliami',
@@ -714,6 +803,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	{
+		id:'pod-trzema-rozami',
 		coords: [49.42517, 20.482248],
 		img: [{src : 'img/tablica/zdj/', author : ''},],
 		title: 'Pod trzema różami',
@@ -722,6 +812,7 @@ export const places = [
 		//symbol: '',
 	},
 	/*{
+		id:'pod-turkiem',
 		coords: [49.427357,20.472679],
 		img:[{src : 'img/tablica/zdj/', author : ''},],
 		title: 'Pod turkiem',
@@ -730,6 +821,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	{
+		id:'pod-tygrysem',
 		coords: [49.427474, 20.471408],
 		img: [{src : 'img/tablica/zdj/pod_tygrysem1.jpg', author : ''},],
 		title: 'Pod tygrysem',
@@ -738,6 +830,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-ulanem',
 		coords: [49.422141, 20.488935],
 		img: [{src : 'img/tablica/zdj/pod_ulanem1.jpg', author : ''},],
 		title: 'Pod ułanem',
@@ -746,7 +839,8 @@ export const places = [
 		//symbol: '',
 	},
 	/*{
-			coords: [49.427357,20.472679],
+		id:'pod-waga',
+		coords: [49.427357,20.472679],
 		img: [{src : 'img/tablica/zdj/', author : ''},],
 		title: 'Pod wagą,
 		address: '<b>Adres:</b> ',
@@ -754,6 +848,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	{
+		id:'pod-wegierska-korona',
 		coords: [49.42586, 20.481793],
 		img: [{src : 'img/tablica/zdj/', author : ''},],
 		title: 'Pod węgierską koroną',
@@ -762,6 +857,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-wegrzynem',
 		coords: [49.422507, 20.488168],
 		img: [{src : 'img/tablica/zdj/pod_wegrzynem1.jpg', author : 'zdj. własne'},],
 		title: 'Pod węgrzynem',
@@ -770,6 +866,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-wezem',
 		coords: [49.42321, 20.483915],
 		img: [{src : 'img/tablica/zdj/pod_wezem1.jpg', author : ''},],
 		title: 'Pod wężem',
@@ -778,6 +875,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-wiencem',
 		coords: [49.422597, 20.489099],
 		img: [{src : 'img/tablica/zdj/pod_wiencem1.jpg', author : ''},],
 		title: 'Pod wieńcem',
@@ -786,6 +884,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-wietrznym-mlynem',
 		coords: [49.427207, 20.472332],
 		img: [{src : 'img/tablica/zdj/pod_wietrznym_mlynem1.jpg', author : ''},],
 		title: 'Pod wietrznym młynem',
@@ -794,6 +893,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-wilkiem',
 		coords: [49.422923, 20.488747],
 		img: [{src : 'img/tablica/zdj/pod_wilkiem1.jpg', author : ''},],
 		title: 'Pod wilkiem',
@@ -802,6 +902,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-winogronem',
 		coords: [49.42728, 20.471583],
 		img: [{src : 'img/tablica/zdj/pod_winogronem1.jpg', author : ''},],
 		title: 'Pod winogronem',
@@ -810,6 +911,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-wioslem',
 		coords: [49.424102, 20.487836],
 		img: [{src : 'img/tablica/zdj/pod_wioslem1.jpg', author : ''},],
 		title: 'Pod wiosłem',
@@ -818,6 +920,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-wodospadem',
 		coords: [49.430775, 20.500279],
 		img: [{src : 'img/tablica/zdj/pod_wodospadem1.jpg', author : ''},],
 		title: 'Pod wodospadem',
@@ -826,6 +929,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-wykrotem',
 		coords: [49.427732, 20.46863],
 		img: [{src : 'img/tablica/zdj/pod_wykrotem1.jpg', author : ''},],
 		title: 'Pod wykrotem',
@@ -834,6 +938,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-zajacem',
 		coords: [49.422761, 20.488024],
 		img: [{src : 'img/tablica/zdj/pod_zajacem1.jpg', author : 'zdj. własne'},],
 		title: 'Pod zającem',
@@ -842,6 +947,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-zawisza',
 		coords: [49.427786, 20.480304],
 		img: [{src : 'img/tablica/zdj/pod_zawisza1.jpg', author : ''},],
 		title: 'Pod Zawiszą',
@@ -850,6 +956,7 @@ export const places = [
 		//symbol: '',
 	},
 	{
+		id:'pod-zbojem-pipikasem',
 		coords: [49.428622, 20.473626],
 		img: [{src : 'img/tablica/zdj/pod_zbojem_pipikasem1.jpg', author : ''},],
 		title: 'Pod zbójem Pipikasem',
@@ -858,7 +965,7 @@ export const places = [
 		//symbol: '',
 	},
 	/*{
-	
+		id:'pod-zegarem',
 		coords: [49.427357,20.472679],
 		img: [{src : 'img/tablica/zdj/', author : ''},],
 		title: 'Pod zegarem',
@@ -867,6 +974,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	{
+		id:'pod-zlotym-lwemm',
 		coords: [49.422655, 20.487639],
 		img: [{src : 'img/tablica/zdj/pod_zlotym_lwem1.jpg', author : 'zdj. własne'},],
 		title: 'Pod złotym lwem',
@@ -875,7 +983,7 @@ export const places = [
 		//symbol: '',
 	},
 	/*{
-	
+		id:'pod-zlotym-krzyzem',
 		coords: [49.427357,20.472679],
 		img: [{src : 'img/tablica/zdj/', author : ''},],
 		title: 'Pod złotym krzyżem',
@@ -884,7 +992,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	/*{
-	
+		id:'pod-',
 		coords: [49.428830,20.473977],
 		img: [{Prc : 'img/tablica/zdj/', author : ''},],
 		title: 'Pod ',
@@ -893,7 +1001,7 @@ export const places = [
 		//symbol: '',
 	},*/
 	/*{
-	
+		id:'pod-kajakiem',
 		coords: [49.427357,20.472679],
 		img: [{src : 'img/tablica/zdj/', author : ''},],
 		title: 'Pod kajakiem',

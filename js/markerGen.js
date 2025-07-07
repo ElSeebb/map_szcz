@@ -1,7 +1,7 @@
 //import { places } from '../date/marker.js';
 import { map } from '../js/map.js';
 
-
+export let currentOpenPlace = null;
 
 function centerMapWithOffset(latlng, offsetX = 0, offsetY = 0) {
 	const point = map.project(latlng, map.getZoom()).subtract([offsetX, offsetY]);
@@ -51,13 +51,16 @@ function generateMarkers(places) {
 
 //panel
 
-function openPanel(panel, place) {
+export function openPanel(panel, place) {
+	
 	panel.classList.add('aktywny');
-
+	
 	let currentImg = 0;
 	const images = Array.isArray(place.img)
-		? place.img
-		: [{ src: place.img, author: place.author || 'brak danych' }];
+	? place.img
+	: [{ src: place.img, author: place.author || 'brak danych' }];
+	
+	currentOpenPlace = place;
 
 	panel.innerHTML = `
 		<div class="image-carousel">
@@ -111,6 +114,7 @@ function openPanel(panel, place) {
 			activeMarker.setZIndexOffset(0);
 			activeMarker = null;
 		}
+		currentOpenPlace = null;
 	});
 }
 

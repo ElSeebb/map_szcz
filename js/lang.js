@@ -1,5 +1,5 @@
 import { getSortedPlacesWithId } from './sort.js';
-import { generateMarkers } from './markerGen.js';
+import { generateMarkers, currentOpenPlace, openPanel } from './markerGen.js';
 import {
 	generateList,
 	setupStreetAccordions,
@@ -13,75 +13,108 @@ const langToggle = document.getElementById('lang-btn');
 const translations = {
 	pl: {
 		title: 'Godła Szalayowskie',
-        author: 'Autor mapy: ',
-		describ: `Są to szyldy na drewnianych tablicach, których tradycja sięga XIXw,
-				przedstawiają malowidła i podpisy okreslające nazwę domu, na cześć
-				twórcy i właściciela uzdrowiska w Szczawnicy, któremu przypisuje się
-				pomysł tych szyldów oraz pierwotne ich wykonanie. W tamtych czasach
-				oznaczały one domu w których wynajmowano kwatery kuracjuszom. Dziś
-				również przyznawane są godła włascicielom nieuchomości wynajmującym
-				kwatery, obiektom gastronomicznym, szczególnie dbającym o wygląd swojej
-				nieruchomości lub zasłużonym dla Miasta i Gminy Szczawnica.`,
-        listTitle: 'Lista Godeł',
-		sortAlph: 'sortuj alfabetycznie',
+		author: 'Autor mapy: ',
+		describ: `Są to szyldy na drewnianych tablicach, których tradycja sięga XIXw, przedstawiają malowidła i podpisy okreslające nazwę domu. Nazwane na cześć twórcy i właściciela uzdrowiska w Szczawnicy, któremu przypisuje się pomysł tych szyldów oraz pierwotne ich wykonanie. W tamtych czasach oznaczały one domu w których wynajmowano kwatery kuracjuszom. Dziś również przyznawane są godła włascicielom nieuchomości wynajmującym kwatery, obiektom gastronomicznym, szczególnie dbającym o wygląd swojej nieruchomości lub zasłużonym dla Miasta i Gminy Szczawnica.`,
+		listTitle: 'Lista Godeł',
+		searchInput: 'Szukaj godła',
+		sortTitle: 'sortuj alfabetycznie',
 		sortStreet: 'sortuj wg ulic',
-		formTitle: 'Znalazłeś błąd, brakujące dane? Podziel się',
+		formTitle: 'Znalazłeś błąd, brakujące dane? Podziel się!',
 		formName: 'Imię:',
 		formMsg: 'Wiadomość:',
 		formPriv:
 			'Podając swoje dane, wyrażasz zgodę na ich przetwarzanie wyłącznie w celu udzielenia odpowiedzi na przesłane zgłoszenie. Dane nie będą udostępniane innym podmiotom.',
-        
+		formBtn: 'Wyślij',
 	},
 
 	en: {
-        title: '',
+		title: `Szalay's emblems`,
 		author: 'Map author: ',
-		describ: ``,
-        listTitle:'',
-		sortAlph: 'sort alphabetically',
-		sortStreet: 'sort by street',
-		formTitle: 'Found an error, missing data? Share',
+		describ: `These are signs on wooden boards, the tradition of which dates back to the 19th century, present paintings and signatures specifying the name of the house. Named in honour of the creator and owner of the health resort in Szczawnica, who is credited with the idea for these signs and their original execution. In those times, they marked houses in which quarters were rented to spa guests. Today, emblems are also awarded to property owners who rent quarters, catering facilities, who take special care of the appearance of their property or those who have made outstanding contributions to the City and Commune of Szczawnica.`,
+		listTitle: 'List of emblems',
+		searchInput: 'Search emblem',
+		sortTitle: 'Sort by title',
+		sortStreet: 'Sort by street',
+		formTitle: 'Found an error, missing data? Share!',
 		formName: 'Name:',
 		formMsg: 'Message:',
 		formPriv:
 			'By providing your data, you consent to their processing solely for the purpose of responding to the submitted application. The data will not be shared with other entities.',
-    },
+		formBtn: 'Send',
+	},
 };
 
 // sprawdzenie aktualnego języka
 let currentLang = localStorage.getItem('lang') || 'pl';
 langToggle.textContent = currentLang === 'pl' ? 'EN' : 'PL';
 
-// ładowanie tłumaczenia
-function applyTranslation(lang){
-    const t = translations[lang];
+// ładowanie tłumaczenia elementóew
+function applyTranslation(lang) {
+	const t = translations[lang];
 
-    if(!t) return;
+	if (!t) return;
 
-    const titleEl = document.getElementById('page-title');
-    if (titleEl) titleEl.textContent=t.title;
+	const titleTr = document.getElementById('page-title');
+	if (titleTr) titleTr.textContent = t.title;
 
-    const descEl = document.getElementById('emblem-descr');
-    if (descEl) descEl.textContent=t.describ;
+	const descTr = document.getElementById('emblem-descr');
+	if (descTr) descTr.textContent = t.describ;
 
+	const authorTr = document.getElementById('map-author');
+	if (authorTr) authorTr.textContent = t.author;
 
+	const listTitleTr = document.getElementById('list-title');
+	if (listTitleTr) listTitleTr.textContent = t.listTitle;
+
+	const searchInputTr = document.getElementById('search-input');
+	if (searchInputTr) searchInputTr.placeholder = t.searchInput;
+
+	const sortTitleTr = document.getElementById('sort-label-title');
+	if (sortTitleTr) sortTitleTr.textContent = t.sortTitle;
+
+	const sortStreetTr = document.getElementById('sort-label-street');
+	if (sortStreetTr) sortStreetTr.textContent = t.sortStreet;
+
+	const formTitleTr = document.getElementById('form-title');
+	if (formTitleTr) formTitleTr.textContent = t.formTitle;
+
+	const formNameTr = document.getElementById('form-name');
+	if (formNameTr) formNameTr.textContent = t.formName;
+
+	const formMsgTr = document.getElementById('form-msg');
+	if (formMsgTr) formMsgTr.textContent = t.formMsg;
+
+	const formPrivTr = document.getElementById('form-privacy');
+	if (formPrivTr) formPrivTr.textContent = t.formPriv;
+
+	const formBtnTr = document.getElementById('form-btn');
+	if (formBtnTr) formBtnTr.value = t.formBtn;
 }
 
-// przeładownaie języka
+// przeładownaie języka i markerów
 function reloadLanguage() {
 	import(`../date/marker_${currentLang}.js`).then((module) => {
 		const rawPlaces = module.places;
 
 		const places = getSortedPlacesWithId(rawPlaces);
-        
+
 		generateMarkers(places);
 		setCurrentPlaces(places);
 		generateList(getCurrentPlaces(), { sortMode: 'title', filter: '' });
 		setupStreetAccordions();
+
+		applyTranslation(currentLang);
+
+		//tłumaczenie otwartego panelu - nie działa bo auto id nadawane, dodać niezależne id do tablic pl/en WiP
+		// if (panel && panel.classList.contains('aktywny') && currentOpenPlace) {
+			
+		// 	const updatedPlace = places.find((p) => p.id === currentOpenPlace.id);
+		// 	if (updatedPlace) {
+		// 		openPanel(panel, updatedPlace);
+		// 	}
+		// }
 	});
 }
-
-
 
 // obsługa przycisku
 langToggle.addEventListener('click', () => {

@@ -39,8 +39,8 @@
 			<div class="title">
 				<h1 id="page-title">Godła Szalayowskie</h1>
 			</div>
-			<p id="map-author">
-				Autor mapy:
+			<p>
+				<span id="map-author">Autor mapy:</span> 
 				<a href="https://portfolioseebb.wordpress.com/glowna/" target="_blank"
 					>Sebastian</a
 				>
@@ -69,19 +69,19 @@
 		</button>
 		<aside id="emblem-list" class="js-emblem-list hidden">
 			<div class="list-header">
-				<h2>Lista Godeł</h2>
+				<h2 id="list-title">Lista Godeł</h2>
 				<div class="search-wrapper">
-					<input type="text" id="search-input" placeholder="Szukaj godła" />
+					<input id="search-input" type="text" id="search-input" placeholder="Szukaj godła" />
 				</div>
 				<div class="sort-options">
-					<label id="sort-label_alph">
-						<input type="radio" name="sort-mode" value="title" checked />
-						Sortuj alfabetycznie
+					<label >
+						<input id="sort-title" type="radio" name="sort-mode" value="title" checked />
+						<span id="sort-label-title">Sortuj alfabetycznie</span>
 					</label>
 					<br />
-					<label id="sort-label-street">
-						<input type="radio" name="sort-mode" value="street" />
-						Sortuj wg ulic
+					<label>
+						<input id="sort-street" type="radio" name="sort-mode" value="street" />
+						<span id="sort-label-street">Sortuj wg ulic</span>
 					</label>
 				</div>
 			</div>
@@ -129,7 +129,7 @@
 				>
 			</div>
 			<div class="form-send-btn">
-				<input type="submit" value="Wyślij" />
+				<input id="form-btn" type="submit" value="Wyślij" />
 			</div>
 		</form>
 
