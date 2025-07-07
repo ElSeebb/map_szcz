@@ -36,6 +36,7 @@ function extractStreet(addressHTML) {
 
 //generator listy
 function generateList(places, { sortMode = 'title', filter = '' } = {}) {
+	console.log("ID w places:", places.map(p => p.id));
 	console.log('places w generateList:', places);
 	let html = '';
 
@@ -101,7 +102,7 @@ function generateList(places, { sortMode = 'title', filter = '' } = {}) {
 	// chowanie listy po kliknięciu na przycisk
 	document.querySelectorAll('.emblem-btn').forEach((btn) => {
 		btn.addEventListener('click', () => {
-			const id = parseInt(btn.dataset.id);
+			const id = btn.dataset.id;
 			const place = places.find((p) => p.id === id);
 			if (place) handlePlaceClick(place);
 

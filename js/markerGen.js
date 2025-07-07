@@ -51,7 +51,7 @@ function generateMarkers(places) {
 
 //panel
 
-export function openPanel(panel, place) {
+export function openPanel(panel, place, closeBtnText = 'Zamknij') {
 	
 	panel.classList.add('aktywny');
 	
@@ -85,7 +85,7 @@ export function openPanel(panel, place) {
 		<h2>${place.title}</h2> 
 		<p>${place.address}</p>
 		<p>${place.description}</p>
-		<button id="zamknij-btn">Zamknij</button>
+		<button id="zamknij-btn">${closeBtnText}</button>
 	`;
 
 	// zmiana zdjęć - karuzela
@@ -146,7 +146,7 @@ function handlePlaceClick(place) {
 
 	// podświetlanie przycisku z listy
 	document.querySelectorAll('.emblem-btn').forEach((btn) => {
-		const id = parseInt(btn.dataset.id);
+		const id = btn.dataset.id;
 		const isActive = id === place.id;
 		btn.classList.toggle('active', isActive);
 

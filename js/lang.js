@@ -15,6 +15,7 @@ const translations = {
 		title: 'Godła Szalayowskie',
 		author: 'Autor mapy: ',
 		describ: `Są to szyldy na drewnianych tablicach, których tradycja sięga XIXw, przedstawiają malowidła i podpisy okreslające nazwę domu. Nazwane na cześć twórcy i właściciela uzdrowiska w Szczawnicy, któremu przypisuje się pomysł tych szyldów oraz pierwotne ich wykonanie. W tamtych czasach oznaczały one domu w których wynajmowano kwatery kuracjuszom. Dziś również przyznawane są godła włascicielom nieuchomości wynajmującym kwatery, obiektom gastronomicznym, szczególnie dbającym o wygląd swojej nieruchomości lub zasłużonym dla Miasta i Gminy Szczawnica.`,
+		closeBtn: 'Zamknij',
 		listTitle: 'Lista Godeł',
 		searchInput: 'Szukaj godła',
 		sortTitle: 'sortuj alfabetycznie',
@@ -31,6 +32,7 @@ const translations = {
 		title: `Szalay's emblems`,
 		author: 'Map author: ',
 		describ: `These are signs on wooden boards, the tradition of which dates back to the 19th century, present paintings and signatures specifying the name of the house. Named in honour of the creator and owner of the health resort in Szczawnica, who is credited with the idea for these signs and their original execution. In those times, they marked houses in which quarters were rented to spa guests. Today, emblems are also awarded to property owners who rent quarters, catering facilities, who take special care of the appearance of their property or those who have made outstanding contributions to the City and Commune of Szczawnica.`,
+		closeBtn: 'Close',
 		listTitle: 'List of emblems',
 		searchInput: 'Search emblem',
 		sortTitle: 'Sort by title',
@@ -59,6 +61,9 @@ function applyTranslation(lang) {
 
 	const descTr = document.getElementById('emblem-descr');
 	if (descTr) descTr.textContent = t.describ;
+
+	const closeBtnTr = document.getElementById('zamknij-btn');
+	if (closeBtnTr) closeBtnTr.textContent = t.closeBtn;
 
 	const authorTr = document.getElementById('map-author');
 	if (authorTr) authorTr.textContent = t.author;
@@ -104,15 +109,21 @@ function reloadLanguage() {
 		setupStreetAccordions();
 
 		applyTranslation(currentLang);
-
+		const closeBtnText = translations[currentLang].closeBtn;
 		//tłumaczenie otwartego panelu - nie działa bo auto id nadawane, dodać niezależne id do tablic pl/en WiP
-		// if (panel && panel.classList.contains('aktywny') && currentOpenPlace) {
-			
-		// 	const updatedPlace = places.find((p) => p.id === currentOpenPlace.id);
-		// 	if (updatedPlace) {
-		// 		openPanel(panel, updatedPlace);
-		// 	}
-		// }
+		if (panel && panel.classList.contains('aktywny') && currentOpenPlace) {
+			const updatedPlace = places.find((p) => p.id === currentOpenPlace.id);
+			if (updatedPlace) {
+				openPanel(panel, updatedPlace, closeBtnText);
+				const activeButton = document.querySelector(
+					`.emblem-btn[data-id="${currentOpenPlace.id}"]`
+				);
+				if (activeButton) {
+					activeButton.classList.add('active');
+					activeButton.scrollIntoView({ block: 'center', behavior: 'smooth' });
+				}
+			}
+		}
 	});
 }
 
