@@ -26,6 +26,7 @@ const translations = {
 		formPriv:
 			'Podając swoje dane, wyrażasz zgodę na ich przetwarzanie wyłącznie w celu udzielenia odpowiedzi na przesłane zgłoszenie. Dane nie będą udostępniane innym podmiotom.',
 		formBtn: 'Wyślij',
+		darkModeBtn: 'Tryb nocny',
 	},
 
 	en: {
@@ -43,6 +44,7 @@ const translations = {
 		formPriv:
 			'By providing your data, you consent to their processing solely for the purpose of responding to the submitted application. The data will not be shared with other entities.',
 		formBtn: 'Send',
+		darkModeBtn: 'Dark mode',
 	},
 };
 
@@ -94,6 +96,9 @@ function applyTranslation(lang) {
 
 	const formBtnTr = document.getElementById('form-btn');
 	if (formBtnTr) formBtnTr.value = t.formBtn;
+
+	const darkModeBtnTr = document.getElementById('dark-mode-btn');
+	if (darkModeBtnTr) darkModeBtnTr.textContent = t.darkModeBtn;
 }
 
 // przeładownaie języka i markerów
@@ -103,14 +108,15 @@ function reloadLanguage() {
 
 		const places = getSortedPlacesWithId(rawPlaces);
 
-		generateMarkers(places);
+		const closeBtnText = translations[currentLang].closeBtn;
+		generateMarkers(places, closeBtnText);
 		setCurrentPlaces(places);
 		generateList(getCurrentPlaces(), { sortMode: 'title', filter: '' });
 		setupStreetAccordions();
 
 		applyTranslation(currentLang);
-		const closeBtnText = translations[currentLang].closeBtn;
-		//tłumaczenie otwartego panelu - nie działa bo auto id nadawane, dodać niezależne id do tablic pl/en WiP
+		
+
 		if (panel && panel.classList.contains('aktywny') && currentOpenPlace) {
 			const updatedPlace = places.find((p) => p.id === currentOpenPlace.id);
 			if (updatedPlace) {
@@ -134,6 +140,13 @@ langToggle.addEventListener('click', () => {
 	langToggle.textContent = currentLang === 'pl' ? 'EN' : 'PL';
 	reloadLanguage();
 });
+
+export function getCloseBtnText() {
+	return translations[currentLang].closeBtn;
+}
+export function getTranslation(key) {
+    return translations[currentLang][key];
+}
 
 // uruchomienie
 reloadLanguage();

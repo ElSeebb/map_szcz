@@ -1,6 +1,9 @@
 //import { places } from '../date/marker.js';
 import { map } from '../js/map.js';
+import { getCloseBtnText } from './lang.js';
+import { getTranslation } from './lang.js';
 
+const closeBtnText = getCloseBtnText();
 export let currentOpenPlace = null;
 
 function centerMapWithOffset(latlng, offsetX = 0, offsetY = 0) {
@@ -51,7 +54,7 @@ function generateMarkers(places) {
 
 //panel
 
-export function openPanel(panel, place, closeBtnText = 'Zamknij') {
+export function openPanel(panel, place) {
 	
 	panel.classList.add('aktywny');
 	
@@ -85,7 +88,7 @@ export function openPanel(panel, place, closeBtnText = 'Zamknij') {
 		<h2>${place.title}</h2> 
 		<p>${place.address}</p>
 		<p>${place.description}</p>
-		<button id="zamknij-btn">${closeBtnText}</button>
+		<button id="zamknij-btn">${getTranslation('closeBtn')}</button>
 	`;
 
 	// zmiana zdjęć - karuzela

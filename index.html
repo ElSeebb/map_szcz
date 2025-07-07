@@ -17,20 +17,17 @@
 		<div id="map"></div>
 		<div class="button-box">
 			<button id="theme-toggle" class="theme-btn">
-				<span class="label">Tryb nocny</span>
+				<span id="dark-mode-btn" class="label">Tryb nocny</span>
 			</button>
 			<button disabled class="game-btn" title="Gra przygodowa">
 				<a href="/game.html">
-
 					<img src="./img/icon/device-gamepad-2.svg" alt="" />
 				</a>
 			</button>
 			<button class="error-btn" title="Zgłoś błąd">
 				<img src="./img/icon/alert-triangle.svg" alt="" />
 			</button>
-			<button id="lang-btn" title="Przełącz język">
-				PL
-			</button>
+			<button id="lang-btn" title="Przełącz język">PL</button>
 		</div>
 
 		<div id="night-overlay" class="night hidden"></div>
@@ -40,7 +37,7 @@
 				<h1 id="page-title">Godła Szalayowskie</h1>
 			</div>
 			<p>
-				<span id="map-author">Autor mapy:</span> 
+				<span id="map-author">Autor mapy:</span>
 				<a href="https://portfolioseebb.wordpress.com/glowna/" target="_blank"
 					>Sebastian</a
 				>
@@ -71,16 +68,32 @@
 			<div class="list-header">
 				<h2 id="list-title">Lista Godeł</h2>
 				<div class="search-wrapper">
-					<input id="search-input" type="text" id="search-input" placeholder="Szukaj godła" />
+					<input
+						id="search-input"
+						type="text"
+						id="search-input"
+						placeholder="Szukaj godła"
+					/>
 				</div>
 				<div class="sort-options">
-					<label >
-						<input id="sort-title" type="radio" name="sort-mode" value="title" checked />
+					<label>
+						<input
+							id="sort-title"
+							type="radio"
+							name="sort-mode"
+							value="title"
+							checked
+						/>
 						<span id="sort-label-title">Sortuj alfabetycznie</span>
 					</label>
 					<br />
 					<label>
-						<input id="sort-street" type="radio" name="sort-mode" value="street" />
+						<input
+							id="sort-street"
+							type="radio"
+							name="sort-mode"
+							value="street"
+						/>
 						<span id="sort-label-street">Sortuj wg ulic</span>
 					</label>
 				</div>
@@ -121,12 +134,14 @@
 				<textarea name="msg" id="msg" required></textarea>
 			</div>
 			<div class="form-checkbox">
-				<label id="form-privacy">
+				<label>
 					<input type="checkbox" name="privacy" required />
-					Podając swoje dane, wyrażasz zgodę na ich przetwarzanie wyłącznie w
-					celu udzielenia odpowiedzi na przesłane zgłoszenie. Dane nie będą
-					udostępniane innym podmiotom.</label
-				>
+					<span id="form-privacy">
+						Podając swoje dane, wyrażasz zgodę na ich przetwarzanie wyłącznie w
+						celu udzielenia odpowiedzi na przesłane zgłoszenie. Dane nie będą
+						udostępniane innym podmiotom.
+					</span>
+				</label>
 			</div>
 			<div class="form-send-btn">
 				<input id="form-btn" type="submit" value="Wyślij" />
@@ -140,6 +155,5 @@
 		<script src="./js/dark.js"></script>
 		<script src="./js/error.js"></script>
 		<script type="module" src="js/lang.js"></script>
-		
 	</body>
 </html>
