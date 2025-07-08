@@ -7,6 +7,7 @@ import {
 	getCurrentPlaces,
 } from './list.js';
 
+
 const langToggle = document.getElementById('lang-btn');
 
 //tłumaczenia
@@ -26,7 +27,11 @@ const translations = {
 		formPriv:
 			'Podając swoje dane, wyrażasz zgodę na ich przetwarzanie wyłącznie w celu udzielenia odpowiedzi na przesłane zgłoszenie. Dane nie będą udostępniane innym podmiotom.',
 		formBtn: 'Wyślij',
+		darkModeOn: 'Tryb nocny',
+		darkModeOff: 'Tryb dzienny',
+		submitErrorBtn: 'Zgłoś błąd',
 		darkModeBtn: 'Tryb nocny',
+		switchLangBtn: 'Przełącz język'
 	},
 
 	en: {
@@ -44,7 +49,11 @@ const translations = {
 		formPriv:
 			'By providing your data, you consent to their processing solely for the purpose of responding to the submitted application. The data will not be shared with other entities.',
 		formBtn: 'Send',
+		darkModeOn: 'Dark mode',
+		darkModeOff: 'Light mode',
+		submitErrorBtn: 'Submit error',
 		darkModeBtn: 'Dark mode',
+		switchLangBtn: 'Switch language'
 	},
 };
 
@@ -97,8 +106,20 @@ function applyTranslation(lang) {
 	const formBtnTr = document.getElementById('form-btn');
 	if (formBtnTr) formBtnTr.value = t.formBtn;
 
-	const darkModeBtnTr = document.getElementById('dark-mode-btn');
-	if (darkModeBtnTr) darkModeBtnTr.textContent = t.darkModeBtn;
+	const themeToggleLabel = document.getElementById('dark-mode-btn');
+	if (themeToggleLabel) {
+		const isNight = document.body.classList.contains('dark-mode');
+		themeToggleLabel.textContent = isNight ? t.darkModeOff : t.darkModeOn;
+	}
+
+	const submitErrorBtnTr = document.getElementById('submit-error-btn');
+	if (submitErrorBtnTr) submitErrorBtnTr.title = t.submitErrorBtn;
+
+	const darkModeBtnTr = document.getElementById('theme-toggle');
+	if (darkModeBtnTr) darkModeBtnTr.title = t.darkModeBtn;
+
+	const switchLangBtnTr = document.getElementById('lang-btn');
+	if (switchLangBtnTr) switchLangBtnTr.title = t.switchLangBtn;
 }
 
 // przeładownaie języka i markerów
@@ -115,7 +136,6 @@ function reloadLanguage() {
 		setupStreetAccordions();
 
 		applyTranslation(currentLang);
-		
 
 		if (panel && panel.classList.contains('aktywny') && currentOpenPlace) {
 			const updatedPlace = places.find((p) => p.id === currentOpenPlace.id);
@@ -145,7 +165,7 @@ export function getCloseBtnText() {
 	return translations[currentLang].closeBtn;
 }
 export function getTranslation(key) {
-    return translations[currentLang][key];
+	return translations[currentLang][key];
 }
 
 // uruchomienie

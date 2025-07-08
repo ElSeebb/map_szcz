@@ -16,7 +16,7 @@
 	<body>
 		<div id="map"></div>
 		<div class="button-box">
-			<button id="theme-toggle" class="theme-btn">
+			<button id="theme-toggle" class="theme-btn" title="Tryb nocny">
 				<span id="dark-mode-btn" class="label">Tryb nocny</span>
 			</button>
 			<button disabled class="game-btn" title="Gra przygodowa">
@@ -24,7 +24,7 @@
 					<img src="./img/icon/device-gamepad-2.svg" alt="" />
 				</a>
 			</button>
-			<button class="error-btn" title="Zgłoś błąd">
+			<button id="submit-error-btn" class="error-btn" title="Zgłoś błąd">
 				<img src="./img/icon/alert-triangle.svg" alt="" />
 			</button>
 			<button id="lang-btn" title="Przełącz język">PL</button>
@@ -152,7 +152,7 @@
 		<script type="module" src="js/list.js"></script>
 		<script type="module" src="js/markerGen.js"></script>
 		<script src="./js/burger.js"></script>
-		<script src="./js/dark.js"></script>
+		<script type="module" src="./js/dark.js"></script>
 		<script src="./js/error.js"></script>
 		<script type="module" src="js/lang.js"></script>
 	</body>

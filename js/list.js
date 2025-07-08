@@ -36,8 +36,7 @@ function extractStreet(addressHTML) {
 
 //generator listy
 function generateList(places, { sortMode = 'title', filter = '' } = {}) {
-	console.log("ID w places:", places.map(p => p.id));
-	console.log('places w generateList:', places);
+	
 	let html = '';
 
 	//wyszukiwarka

@@ -5,10 +5,11 @@ Goal met:
 - dark mode
 - error form
 - alphabetical and street sorting option 
+- english version
 
 Current goal:
-- english version
 - update photos
+- update description
 - geolocalization
 - address Geocoding
 - sharing a marker
