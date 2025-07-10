@@ -307,7 +307,8 @@ body.dark-mode .form-box textarea {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 2rem;
+  align-items: center;
+  margin: 5rem;
   width: -moz-fit-content;
   width: fit-content;
   padding: 1rem 3rem;
@@ -317,7 +318,12 @@ body.dark-mode .form-box textarea {
   border: none;
   border-radius: 5px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+#panel button:hover {
+  background-color: #a7a7a7;
 }
 #panel .author {
   font-size: 1rem;
@@ -329,16 +335,27 @@ body.dark-mode .form-box textarea {
   width: fit-content;
   align-items: center;
   gap: 1rem;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   border: none;
   border-radius: 5px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  color: rgb(1, 1, 78);
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.4s ease;
 }
 #panel a img {
   position: relative;
+  height: 1.7rem;
 }
 #panel a #nav-link {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+}
+#panel a:visited {
+  color: rgb(1, 1, 78);
+}
+#panel a:hover {
+  background-color: #a2a1f8;
 }
 
 #panel.aktywny {
