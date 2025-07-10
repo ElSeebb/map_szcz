@@ -55,14 +55,22 @@ function generateMarkers(places) {
 //panel
 
 export function openPanel(panel, place) {
-	
+	const [lat, lng] = place.coords;
+	const mapsLink = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+	//wykrywanie iOS
+	const isIOS =
+		/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+	if (isIOS) {
+		mapsLink = `http://maps.apple.com/?daddr=${lat},${lng}`;
+	}
+
 	panel.classList.add('aktywny');
-	
+
 	let currentImg = 0;
 	const images = Array.isArray(place.img)
-	? place.img
-	: [{ src: place.img, author: place.author || 'brak danych' }];
-	
+		? place.img
+		: [{ src: place.img, author: place.author || 'brak danych' }];
+
 	currentOpenPlace = place;
 
 	panel.innerHTML = `
@@ -88,7 +96,10 @@ export function openPanel(panel, place) {
 		<h2>${place.title}</h2> 
 		<p>${place.address}</p>
 		<p>${place.description}</p>
-		<button id="zamknij-btn">${getTranslation('closeBtn')}</button>
+		<a href="${mapsLink}" target="_blank" rel="noopener noreferrer" class="gmap-btn">
+   		<img src='../img/icon/navigation-2.svg'><span id="nav-link">Nawiguj</span>
+		</a>
+		<button id="close-btn">${getTranslation('closeBtn')}</button>
 	`;
 
 	// zmiana zdjęć - karuzela
@@ -110,7 +121,7 @@ export function openPanel(panel, place) {
 	}
 
 	// zamykanie panelu
-	document.getElementById('zamknij-btn').addEventListener('click', () => {
+	document.getElementById('close-btn').addEventListener('click', () => {
 		panel.classList.remove('aktywny');
 		if (activeMarker) {
 			activeMarker.setIcon(defaultIcon);

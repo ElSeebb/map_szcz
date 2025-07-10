@@ -304,6 +304,10 @@ body.dark-mode .form-box textarea {
 }
 #panel button {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem;
   width: -moz-fit-content;
   width: fit-content;
   padding: 1rem 3rem;
@@ -318,6 +322,23 @@ body.dark-mode .form-box textarea {
 #panel .author {
   font-size: 1rem;
   color: #838383;
+}
+#panel a {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+#panel a img {
+  position: relative;
+}
+#panel a #nav-link {
+  font-size: 1.5rem;
 }
 
 #panel.aktywny {

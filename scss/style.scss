@@ -99,7 +99,6 @@ body.dark-mode {
 			background-color: #6d6d6d;
 		}
 	}
-	
 }
 
 .night {
@@ -350,6 +349,10 @@ body.dark-mode {
 	}
 	button {
 		position: fixed;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 2rem;
 		width: fit-content;
 		padding: 1rem 3rem;
 		height: fit-content;
@@ -362,6 +365,24 @@ body.dark-mode {
 	.author {
 		font-size: 1rem;
 		color: #838383;
+	}
+
+	a {
+		display: flex;
+		width: fit-content;
+		align-items: center;
+		gap: 1rem;
+		padding: 1rem 3rem;
+		border: none;
+		border-radius: 5px;
+		box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+		img{
+			position: relative;
+			
+		}
+		#nav-link {
+			font-size: 1.5rem;
+		}
 	}
 }
 
@@ -517,7 +538,7 @@ body.dark-mode {
 
 	.theme-btn {
 		@include btn-style;
-		
+
 		color: rgb(0, 0, 0);
 		align-items: center;
 		padding: 1rem 2rem;
@@ -578,7 +599,7 @@ body.dark-mode {
 		border-radius: 50%;
 		color: rgb(255, 255, 255);
 		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-		transition: background 0.5s ease,;
+		transition: background 0.5s ease;
 		z-index: 1500;
 		max-width: 90vw;
 		text-overflow: ellipsis;
@@ -587,7 +608,7 @@ body.dark-mode {
 		cursor: pointer;
 	}
 
-	#lang-btn:hover{
+	#lang-btn:hover {
 		background: #bcbdf7;
 	}
 }
