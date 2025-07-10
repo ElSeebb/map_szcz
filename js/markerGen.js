@@ -97,7 +97,7 @@ export function openPanel(panel, place) {
 		<p>${place.address}</p>
 		<p>${place.description}</p>
 		<a href="${mapsLink}" target="_blank" rel="noopener noreferrer" class="gmap-btn">
-   		<img src='../img/icon/navigation-2.svg'><span id="nav-link">Nawiguj</span>
+   		<img src='img/icon/navigation-2.svg'><span id="nav-link">Nawiguj</span>
 		</a>
 		<button id="close-btn">${getTranslation('closeBtn')}</button>
 	`;
