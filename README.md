@@ -6,6 +6,7 @@ Goal met:
 - error form
 - alphabetical and street sorting option 
 - english version
+- Google/Apple Map navigation 
 
 Current goal:
 - update photos
@@ -17,6 +18,5 @@ Current goal:
 Future goal:
 - map version for kids
 - showing visit history
-- displaying the route to the destination
 - comment system
 - gamification/ quiz/ puzzle for young
