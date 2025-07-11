@@ -213,6 +213,29 @@ body.dark-mode .form-box textarea {
   display: none;
 }
 
+.locate-btn {
+  background: white;
+  border: 2px solid rgba(97, 97, 97, 0.76);
+  width: 3.2rem;
+  height: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  padding: 0.5rem 0.7rem;
+  font-size: 1.5rem;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1100;
+}
+.locate-btn img {
+  width: 2rem;
+}
+
+.locate-btn:hover {
+  background: #ececec;
+}
+
 #map {
   position: absolute;
   top: 1rem;

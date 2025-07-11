@@ -248,6 +248,29 @@ body.dark-mode {
 	display: none;
 }
 
+//geolokalizacja przycisk
+.locate-btn {
+    background: white;
+    border: 2px solid rgba(97, 97, 97, 0.76);
+	width: 3.2rem;
+	height: 3.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    border-radius: 3px;
+    padding: 0.5rem 0.7rem;
+    font-size: 1.5rem;
+    box-shadow: 1px 3px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    z-index: 1100;
+	img{
+		width: 2rem;
+	}
+}
+.locate-btn:hover{
+	background: #ececec;
+}
+
 //mapa
 
 #map {
