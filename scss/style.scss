@@ -121,6 +121,52 @@ body.dark-mode {
 	opacity: 0;
 }
 
+//info panel
+.info-panel {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.8);
+	color: white;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	line-height: 2.5rem;
+	z-index: 9999;
+	h1{
+		text-align: center;
+		line-height: 3rem;
+	}
+	button{	
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 5rem;
+		width: fit-content;
+		padding: 1rem 3rem;
+		height: fit-content;
+		justify-content: center;
+		border: none;
+		border-radius: 5px;
+		box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+		font-weight: bold;
+		cursor: pointer;
+		transition: background-color 0.4s ease;
+	}
+	button:hover{
+		background-color: #a5a3a3;
+	}
+}
+
+.info-panel.hidden{
+	display: none;
+}
+
 //lista
 
 #emblem-list {
@@ -250,24 +296,24 @@ body.dark-mode {
 
 //geolokalizacja przycisk
 .locate-btn {
-    background: white;
-    border: 2px solid rgba(97, 97, 97, 0.76);
+	background: white;
+	border: 2px solid rgba(97, 97, 97, 0.76);
 	width: 3.2rem;
 	height: 3.2rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    border-radius: 3px;
-    padding: 0.5rem 0.7rem;
-    font-size: 1.5rem;
-    box-shadow: 1px 3px 10px rgba(0,0,0,0.2);
-    cursor: pointer;
-    z-index: 1100;
-	img{
+	border-radius: 3px;
+	padding: 0.5rem 0.7rem;
+	font-size: 1.5rem;
+	box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	z-index: 1100;
+	img {
 		width: 2rem;
 	}
 }
-.locate-btn:hover{
+.locate-btn:hover {
 	background: #ececec;
 }
 
@@ -300,6 +346,7 @@ body.dark-mode {
 	height: 82vh;
 	float: right;
 	padding: 2rem;
+	padding-bottom: 4rem;
 	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
 	border-radius: 15px;
 	background-color: #f7f7f7;
@@ -388,7 +435,7 @@ body.dark-mode {
 		cursor: pointer;
 		transition: background-color 0.4s ease;
 	}
-	button:hover{
+	button:hover {
 		background-color: #a7a7a7;
 	}
 	.author {
@@ -410,7 +457,7 @@ body.dark-mode {
 		font-weight: bold;
 		text-decoration: none;
 		transition: background-color 0.4s ease;
-		img{
+		img {
 			position: relative;
 			height: 1.7rem;
 		}
@@ -418,12 +465,11 @@ body.dark-mode {
 			font-size: 1.4rem;
 		}
 	}
-	a:visited{
+	a:visited {
 		color: rgb(1, 1, 78);
 	}
-	a:hover{
+	a:hover {
 		background-color: #a2a1f8;
-		
 	}
 }
 

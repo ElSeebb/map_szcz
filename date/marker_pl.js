@@ -409,7 +409,7 @@ export const places = [
 	{
 		id:'pod-krakowiakiem',
 		coords: [49.429906, 20.50032],
-		img: [{src : 'img/tablica/zdj/pod_krakowiakiem1.jpg', author : ''},],
+		img: [{src : 'img/tablica/zdj/pod_krakowiakiem1.jpg', author : 'zdj. własne'},],
 		title: 'Pod krakowiakiem',
 		address: '<b>Adres:</b> Sopotnicka 28',
 		description: '<b>Opis: </b>Godło nadane za wygrany konkurs rzucania siekierą do celu w 2016 podczas rozpoczyna cykl uroczystości organizowanych z okazji Roku Szalayowskiego',
@@ -922,7 +922,7 @@ export const places = [
 	{
 		id:'pod-wodospadem',
 		coords: [49.430775, 20.500279],
-		img: [{src : 'img/tablica/zdj/pod_wodospadem1.jpg', author : ''},],
+		img: [{src : 'img/tablica/zdj/pod_wodospadem1.jpg', author : 'zdj. własne'},],
 		title: 'Pod wodospadem',
 		address: '<b>Adres:</b> Sopotnicka 35a',
 		description: '<b>Opis: </b>Nadana w 2022r',

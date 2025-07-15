@@ -409,7 +409,7 @@ export const places = [
 	{
 		id:'pod-krakowiakiem',
 		coords: [49.429906, 20.50032],
-		img: [{src : 'img/tablica/zdj/pod_krakowiakiem1.jpg', author : ''},],
+		img: [{src : 'img/tablica/zdj/pod_krakowiakiem1.jpg', author : 'own photo'},],
 		title: 'Under the Krakowiak',
 		address: '<b>Address:</b> Sopotnicka 28',
 		description: '<b>Description: </b>The emblem awarded for winning the axe throwing competition at the target in 2016 during the inauguration of a series of celebrations organized on the occasion of the Szalay Year',
@@ -922,7 +922,7 @@ export const places = [
 	{
 		id:'pod-wodospadem',
 		coords: [49.430775, 20.500279],
-		img: [{src : 'img/tablica/zdj/pod_wodospadem1.jpg', author : ''},],
+		img: [{src : 'img/tablica/zdj/pod_wodospadem1.jpg', author : 'own photo'},],
 		title: 'Under the waterfall',
 		address: '<b>Address:</b> Sopotnicka 35a',
 		description: '<b>Description: </b>Awarded in 2022r',

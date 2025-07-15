@@ -98,6 +98,53 @@ body.dark-mode .form-box textarea {
   opacity: 0;
 }
 
+.info-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 2.5rem;
+  z-index: 9999;
+}
+.info-panel h1 {
+  text-align: center;
+  line-height: 3rem;
+}
+.info-panel button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 3rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+.info-panel button:hover {
+  background-color: #a5a3a3;
+}
+
+.info-panel.hidden {
+  display: none;
+}
+
 #emblem-list {
   position: fixed;
   top: 1rem;
@@ -261,6 +308,7 @@ body.dark-mode .form-box textarea {
   height: 82vh;
   float: right;
   padding: 2rem;
+  padding-bottom: 4rem;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   background-color: #f7f7f7;
