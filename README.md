@@ -1,4 +1,4 @@
-# Map of Szalaya's Emblems in Szczawnica
+# Map of Szalay's Emblems in Szczawnica
 
 [Map](https://elseebb.github.io/map_szcz/)
 
