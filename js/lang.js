@@ -7,7 +7,6 @@ import {
 	getCurrentPlaces,
 } from './list.js';
 
-
 const langToggle = document.getElementById('lang-btn');
 
 //tłumaczenia
@@ -15,7 +14,7 @@ const translations = {
 	pl: {
 		title: 'Godła Szalayowskie',
 		//author: 'Autor mapy: ',
-		describ: `Są to szyldy na drewnianych tablicach, których tradycja sięga XIXw, przedstawiają malowidła i podpisy okreslające nazwę domu. Nazwane na cześć twórcy i właściciela uzdrowiska w Szczawnicy, któremu przypisuje się pomysł tych szyldów oraz pierwotne ich wykonanie. W tamtych czasach oznaczały one domu w których wynajmowano kwatery kuracjuszom. Dziś również przyznawane są godła włascicielom nieuchomości wynajmującym kwatery, obiektom gastronomicznym, szczególnie dbającym o wygląd swojej nieruchomości lub zasłużonym dla Miasta i Gminy Szczawnica.`,
+		describ: `Godła Szalayowskie są to szyldy na drewnianych tablicach, których tradycja sięga XIX wieku. Przedstawiają malowidła oraz podpisy określające nazwę domu. Zostały nazwane na cześć twórcy i właściciela uzdrowiska w Szczawnicy, któremu przypisuje się pomysł tych szyldów oraz ich pierwotne wykonanie. W tamtych czasach oznaczały domy, w których wynajmowano kwatery kuracjuszom. Dziś również przyznawane są godła włascicielom nieuchomości spełniającym określone warunki.`,
 		navLink: 'Nawiguj',
 		closeBtn: 'Zamknij',
 		listTitle: 'Lista Godeł',
@@ -32,13 +31,13 @@ const translations = {
 		darkModeOff: 'Tryb dzienny',
 		submitErrorBtn: 'Zgłoś błąd',
 		darkModeBtn: 'Tryb nocny',
-		switchLangBtn: 'Przełącz język'
+		switchLangBtn: 'Przełącz język',
 	},
 
 	en: {
 		title: `Szalay's emblems`,
 		//author: 'Map author: ',
-		describ: `These are signs on wooden boards, the tradition of which dates back to the 19th century, present paintings and signatures specifying the name of the house. Named in honour of the creator and owner of the health resort in Szczawnica, who is credited with the idea for these signs and their original execution. In those times, they marked houses in which quarters were rented to spa guests. Today, emblems are also awarded to property owners who rent quarters, catering facilities, who take special care of the appearance of their property or those who have made outstanding contributions to the City and Commune of Szczawnica.`,
+		describ: `Szalay's emblems are wooden plaques dating back to the 19th century. They depict paintings and inscriptions identifying the house's name. They were named after the creator and owner of the Szczawnica spa, who is credited with inventing them and creating their original design. At that time, they designated houses where accommodations were rented to spa guests. Today, emblems are also awarded to property owners who meet certain conditions.`,
 		navLink: 'Navigate',
 		closeBtn: 'Close',
 		listTitle: 'List of emblems',
@@ -55,7 +54,7 @@ const translations = {
 		darkModeOff: 'Light mode',
 		submitErrorBtn: 'Submit error',
 		darkModeBtn: 'Dark mode',
-		switchLangBtn: 'Switch language'
+		switchLangBtn: 'Switch language',
 	},
 };
 

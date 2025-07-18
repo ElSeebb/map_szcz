@@ -504,6 +504,7 @@ body.dark-mode {
 		top: -2rem;
 		display: flex;
 		justify-content: center;
+		
 		font-size: 1.3rem;
 		a {
 			margin: 0 1rem;
@@ -518,6 +519,7 @@ body.dark-mode {
 .text-box {
 	position: fixed;
 	display: flex;
+	flex-direction: column;
 	top: 12rem;
 	right: 2rem;
 	margin: 1rem 0;
@@ -527,12 +529,22 @@ body.dark-mode {
 	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
 	border-radius: 5px;
 	background-color: #f7f7f7;
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 	z-index: 900;
 	p {
 		padding: 1.2rem;
+		text-align: justify;
+	}
+	a {
 		text-align: center;
-		a {
+		font-style: italic;
+	}
+	#reference{
+		padding: 1.2rem;
+		text-align: justify;
+		font-size: 1.3rem;
+		color: #575757;
+		span{
 			font-style: italic;
 		}
 	}

@@ -471,6 +471,7 @@ body.dark-mode .form-box textarea {
 .text-box {
   position: fixed;
   display: flex;
+  flex-direction: column;
   top: 12rem;
   right: 2rem;
   margin: 1rem 0;
@@ -481,14 +482,24 @@ body.dark-mode .form-box textarea {
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   background-color: #f7f7f7;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   z-index: 900;
 }
 .text-box p {
   padding: 1.2rem;
-  text-align: center;
+  text-align: justify;
 }
-.text-box p a {
+.text-box a {
+  text-align: center;
+  font-style: italic;
+}
+.text-box #reference {
+  padding: 1.2rem;
+  text-align: justify;
+  font-size: 1.3rem;
+  color: #575757;
+}
+.text-box #reference span {
   font-style: italic;
 }
 

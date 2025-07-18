@@ -91,7 +91,7 @@ export function openPanel(panel, place) {
 							: ''
 					}
 				  </div>
-      			<p class="img-author">autor: ${images[0].author}</p>
+      			<p class="img-author">${images[0].author}</p>
 
 		<h2>${place.title}</h2> 
 		<p>${place.address}</p>
