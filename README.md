@@ -3,8 +3,12 @@
 [Map](https://elseebb.github.io/map_szcz/)
 
 Map of Szalaya's Emblems in Szczawnica (Poland). 
-For the project I used the [OpenStreetMap](www.openstreetmap.org) map base, [Leaflet](https://leafletjs.com) and [MapTiler](https://www.maptiler.com/copyright/).
 
+For the project I use: 
+- QGIS
+- [Leaflet](https://leafletjs.com) (MIT License)
+- [OpenStreetMap](www.openstreetmap.org) (ODbL)
+- [MapTiler](https://www.maptiler.com/copyright/)
 
 ## Goals
 

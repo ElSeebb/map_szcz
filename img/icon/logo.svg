@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="48"
+   height="48"
+   viewBox="0 0 48 48"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="16.979167"
+     inkscape:cx="24.029448"
+     inkscape:cy="24"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="3.2392638"
+       y="9.2466258"
+       width="44.760736"
+       height="21.909203"
+       id="rect5" />
+    <rect
+       x="8.7754601"
+       y="12.368098"
+       width="34.218405"
+       height="18.257669"
+       id="rect4" />
+  </defs>
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ececec"
+       id="rect1"
+       width="48.11779"
+       height="32.451534"
+       x="0"
+       y="8.1865034" />
+    <rect
+       style="fill:#000000"
+       id="rect2"
+       width="48.176685"
+       height="9.9533739"
+       x="0"
+       y="30.684662" />
+    <rect
+       style="fill:#ffffff"
+       id="rect3"
+       width="48.588959"
+       height="1.0601205"
+       x="-0.11779141"
+       y="30.213497"
+       ry="0.23558266"
+       rx="0" />
+    <text
+       xml:space="preserve"
+       id="text4"
+       style="font-size:16px;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect5);fill:#000000"
+       x="10.761719"
+       y="0"
+       transform="matrix(1.5801067,0,0,1.5611294,-16.975848,-8.7946931)"><tspan
+         x="15.500107"
+         y="23.843379"
+         id="tspan2"><tspan
+           style="font-weight:100;font-family:GoudyMedieval;-inkscape-font-specification:'GoudyMedieval Thin'"
+           id="tspan1">GS</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:100;font-stretch:normal;font-size:10.6667px;font-family:GoudyMedieval;-inkscape-font-specification:'GoudyMedieval Thin';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff"
+       x="23.146013"
+       y="39.695705"
+       id="text6"><tspan
+         sodipodi:role="line"
+         id="tspan6"
+         x="23.146013"
+         y="39.695705">MAPA</tspan></text>
+  </g>
+</svg>
