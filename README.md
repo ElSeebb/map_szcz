@@ -24,14 +24,22 @@ For the project I use:
 - update photos
 - update description
 - update english
-- address Geocoding
+- code optimization
 - sharing a marker
+- favorite emblems
 
 ### Future goal:
+- address Geocoding
+- trail walk option with multiple markers
 - map version for kids
-- showing visit history
+- visit history with progress %
+- adding historical layers
 - comment system
+- offline mode (Service Worker)
 - gamification/ quiz/ puzzle for young
+- administrator panel to adding or editing markers
+- analytical panel
+- lazy loading of photos
 
 ## License
 Copyright © 2025 [Sebastian](https://portfolioseebb.wordpress.com/glowna/)
