@@ -15,6 +15,7 @@ const translations = {
 		title: 'Godła Szalayowskie',
 		//author: 'Autor mapy: ',
 		describ: `Godła Szalayowskie są to szyldy na drewnianych tablicach, których tradycja sięga XIX wieku. Przedstawiają malowidła oraz podpisy określające nazwę domu. Zostały nazwane na cześć twórcy i właściciela uzdrowiska w Szczawnicy, któremu przypisuje się pomysł tych szyldów oraz ich pierwotne wykonanie. W tamtych czasach oznaczały domy, w których wynajmowano kwatery kuracjuszom. Dziś również przyznawane są godła włascicielom nieuchomości spełniającym określone warunki.`,
+		linkConditions: 'Sposób uzyskania tablicy na stronie CKSiP',
 		navLink: 'Nawiguj',
 		closeBtn: 'Zamknij',
 		listTitle: 'Lista Godeł',
@@ -38,6 +39,7 @@ const translations = {
 		title: `Szalay's emblems`,
 		//author: 'Map author: ',
 		describ: `Szalay's emblems are wooden plaques dating back to the 19th century. They depict paintings and inscriptions identifying the house's name. They were named after the creator and owner of the Szczawnica spa, who is credited with inventing them and creating their original design. At that time, they designated houses where accommodations were rented to spa guests. Today, emblems are also awarded to property owners who meet certain conditions.`,
+		linkConditions: 'How to obtain a emblem on the CKSiP website (pl)',
 		navLink: 'Navigate',
 		closeBtn: 'Close',
 		listTitle: 'List of emblems',
@@ -73,6 +75,9 @@ function applyTranslation(lang) {
 
 	const descTr = document.getElementById('emblem-descr');
 	if (descTr) descTr.textContent = t.describ;
+
+	const linkTr = document.getElementById('link-conditions');
+	if (linkTr) linkTr.textContent = t.linkConditions;
 
 	const navLinkTr = document.getElementById('nav-link');
 	if (navLinkTr) navLinkTr.textContent = t.navLink;
