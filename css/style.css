@@ -111,19 +111,25 @@ body.dark-mode .form-box textarea {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  line-height: 2.5rem;
+  line-height: 2rem;
   z-index: 9999;
+  overflow: scroll;
 }
 .info-panel h1 {
+  font-size: 2rem;
   text-align: center;
-  line-height: 3rem;
+  line-height: 2.5rem;
+}
+.info-panel p {
+  margin: 1rem;
+  text-align: center;
 }
 .info-panel button {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5rem;
+  margin: 1rem;
   width: -moz-fit-content;
   width: fit-content;
   padding: 1rem 3rem;
@@ -490,11 +496,13 @@ body.dark-mode .form-box textarea {
   text-align: justify;
 }
 .text-box a {
-  text-align: center;
+  text-align: start;
+  margin-left: 1rem;
   font-style: italic;
+  font-size: 1.3rem;
 }
 .text-box #reference {
-  padding: 1.2rem;
+  padding-left: 1.2rem;
   text-align: justify;
   font-size: 1.3rem;
   color: #575757;

@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Godła Szalayowskie</title>
-		<link rel="icon" type="image/png" href="img/icon/favicon.png">
+		<link rel="icon" type="image/png" href="img/icon/favicon.png" />
 		<link
 			rel="stylesheet"
 			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -37,23 +37,29 @@
 		</div>
 		<div class="info-panel" id="info-panel">
 			<h1>Aktualne plany rozwojowe</h1>
+			<p>
+				Mapa aktualnie zawiera 81 tablic ze 112 znanych lub znalezionych w
+				dostępnych źródłach. <br>Jeśli posiadasz informacje o godle którego tutaj
+				nie ma, możesz to zglosić klikając na czerwony przycisk w prawym dolnym
+				rogu.
+			</p>
 			<ul>
 				<p>W trakcie realizacji:</p>
-				<li>aktualizacja zdjęć</li>
+				<li>aktualizacja adresów tablic (81/112)</li>
+				<li>aktualizacja zdjęć (16/81)</li>
 				<li>aktualizacja opisów</li>
 				<li>aktualizacja angielskiej wersji</li>
 				<li>udostępnianie tablic</li>
 			</ul>
 			<ul>
 				<p>Plany na przyszłość:</p>
-				<li>geokodowanie adresów</li>
 				<li>wersja mapy dla dzieci</li>
 				<li>historia odwiedzonych tablic</li>
 				<li>system komentarzy</li>
 				<li>tryb offline</li>
 				<li>dodanie warstw historycznych</li>
 				<li>wyznaczanie szlaku wielona tablicami</li>
-				<li>panel administratora</li>
+				
 			</ul>
 			<button id="info-close-btn">Ok</button>
 		</div>
@@ -79,11 +85,20 @@
 				również przyznawane są godła włascicielom nieuchomości spełniającym
 				określone warunki.
 			</p>
-			<a id="link-conditions" href="https://cksip.szczawnica.pl/godla-szalayowskie/" target="_blank"
+			<p>Źródła:</p>
+			<a
+				id="link-conditions"
+				href="https://cksip.szczawnica.pl/godla-szalayowskie/"
+				target="_blank"
 				>Sposób uzyskania tablicy na stronie CKSiP</a
 			>
-			
-			<!-- <p id="reference">Barbara Alina Węglarz: <span>Szlak godeł szalayowskich. Osobliwość turystyczna Szczawnicy</span> Wydawnictwo: MOK Szczawnica, 2010</p> -->
+			<p id="reference">
+				Barbara Alina Węglarz:
+				<span
+					>Szlak godeł szalayowskich. Osobliwość turystyczna Szczawnicy</span
+				>
+				Wydawnictwo: MOK Szczawnica, 2010
+			</p>
 		</div>
 		<button id="burger-btn" aria-label="Szukaj">
 			<img class="burger-btn" src="./img/icon/search.svg" alt="" />

@@ -135,18 +135,25 @@ body.dark-mode {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	line-height: 2.5rem;
+	line-height: 2rem;
 	z-index: 9999;
+	overflow: scroll;
 	h1{
+		font-size: 2rem;
 		text-align: center;
-		line-height: 3rem;
+		line-height: 2.5rem;
+	}
+	p{
+		
+		margin: 1rem;
+		text-align: center;
 	}
 	button{	
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin: 5rem;
+		margin: 1rem;
 		width: fit-content;
 		padding: 1rem 3rem;
 		height: fit-content;
@@ -536,11 +543,13 @@ body.dark-mode {
 		text-align: justify;
 	}
 	a {
-		text-align: center;
+		text-align: start;
+		margin-left: 1rem;
 		font-style: italic;
+		font-size: 1.3rem;
 	}
 	#reference{
-		padding: 1.2rem;
+		padding-left: 1.2rem;
 		text-align: justify;
 		font-size: 1.3rem;
 		color: #575757;

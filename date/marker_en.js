@@ -20,7 +20,7 @@ export const places = [
 	{
 		id:'pod-aniolkiem',
 		coords: [49.423419, 20.486438],
-		img: [{src : 'img/tablica/zdj/pod_aniolkiem.jpg', author : ''},],
+		img: [{src : 'img/tablica/zdj/pod_aniolkiem1.jpg', author : 'own photo'},],
 		title: 'Under the angel',
 		address: '<b>Address:</b> Główna 31',
 		description: '<b>Description: </b>',
@@ -355,7 +355,7 @@ export const places = [
 	{
 		id:'pod-konikiem',
 		coords: [49.422873, 20.487953],
-		img: [{src : 'img/tablica/zdj/pod_konikiem1.jpg', author : ''},],
+		img: [{src : 'img/tablica/zdj/pod_konikiem1.png', author : 'own photo'},],
 		title: 'Under the horse',
 		address: '<b>Address:</b> Szalaya 55',
 		description: '<b>Description: </b>...',
@@ -364,7 +364,7 @@ export const places = [
 	{
 		id:'pod-kosynierem',
 		coords: [49.420747, 20.48984],
-		img: [{src : 'img/tablica/zdj/pod_kosynierem1.jpg', author : ''},],
+		img: [{src : 'img/tablica/zdj/pod_kosynierem1.png', author : 'own photo'},],
 		title: 'Under the Scythemen',
 		address: '<b>Address:</b> Szalaya 96',
 		description: '<b>Description: </b>...',
@@ -391,7 +391,7 @@ export const places = [
 	{
 		id:'pod-kozakiem',
 		coords: [49.422348, 20.488928],
-		img: [{src : 'img/tablica/zdj/pod_kozakiem1.jpg', author : ''},],
+		img: [{src : 'img/tablica/zdj/pod_kozakiem1.jpg', author : 'own photo'},],
 		title: 'Under the Cossack',
 		address: '<b>Address:</b> Szalaya 77',
 		description: '<b>Description: </b>...',
@@ -598,7 +598,7 @@ export const places = [
 	{
 		id:'pod-ryba',
 		coords: [49.423, 20.486468],
-		img: [{src : 'img/tablica/zdj/pod_ryba1.jpg', author : ''},],
+		img: [{src : 'img/tablica/zdj/pod_ryba1.jpg', author : 'own photo'},],
 		title: 'Under the fish',
 		address: '<b>Address:</b> Szalaya 41',
 		description: '<b>Description: </b>...',

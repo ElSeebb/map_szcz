@@ -54,6 +54,7 @@ function generateList(places, { sortMode = 'title', filter = '' } = {}) {
 				<div class="emblem-btn-name"><p>${place.title}</p></div>
 				</button>
 				`;
+				// symbole do listy, przenieś do góry wew. przycisku!
 				// <div class="emblem-btn-symbol">
 				// 	<img src="${place.symbol} alt="Godło ${place.title}" style="width: 100%;" />
 				// </div>
