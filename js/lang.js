@@ -14,7 +14,7 @@ const translations = {
 	pl: {
 		title: 'Godła Szalayowskie',
 		//author: 'Autor mapy: ',
-		describ: `Godła Szalayowskie są to szyldy na drewnianych tablicach, których tradycja sięga XIX wieku. Przedstawiają malowidła oraz podpisy określające nazwę domu. Często związane też z charakterem lub talentem właściciela. Zostały nazwane tak na cześć twórcy i właściciela uzdrowiska w Szczawnicy, któremu przypisuje się pomysł tych szyldów oraz ich pierwotne wykonanie. W tamtych czasach oznaczały domy, w których wynajmowano kwatery kuracjuszom. Dodatkowym celem było ułatwienie gością odszukania właściwego domu pośród wielu podobnych do siebie. Dziś również przyznawane są godła włascicielom nieuchomości spełniającym określone warunki.`,
+		describ: `Godła Szalayowskie są to szyldy na drewnianych tablicach, których tradycja sięga XIX wieku. Przedstawiają malowidła oraz podpisy określające nazwę domu. Często związane też z charakterem lub talentem właściciela. Zostały nazwane tak na cześć twórcy i właściciela uzdrowiska w Szczawnicy, któremu przypisuje się pomysł tych szyldów oraz ich pierwotne wykonanie. W tamtych czasach oznaczały domy, w których wynajmowano kwatery kuracjuszom. Dodatkowym celem było ułatwienie gościom odszukania właściwego domu pośród wielu podobnych do siebie. Dziś również przyznawane są godła właścicielom nieruchomości spełniającym określone warunki.`,
 		linkConditions: 'Sposób uzyskania tablicy na stronie CKSiP',
 		navLink: 'Nawiguj',
 		closeBtn: 'Zamknij',

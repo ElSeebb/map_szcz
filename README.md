@@ -27,17 +27,17 @@ For the project I use:
 - code optimization
 - sharing a marker
 - favorite emblems
+- visit history with progress %
 
 ### Future goal:
+- trail walk option with multiple markers (Travelling Salesman Problem) - optimal trail
 - address Geocoding
-- trail walk option with multiple markers
 - map version for kids
-- visit history with progress %
 - adding historical layers
 - comment system
 - offline mode (Service Worker)
 - gamification/ quiz/ puzzle for young
-- administrator panel to adding or editing markers
+- administrator panel to adding or editing markers (headless cms)
 - analytical panel
 - lazy loading of photos
 
