@@ -55,14 +55,7 @@ function generateMarkers(places) {
 //panel
 
 export function openPanel(panel, place) {
-	const [lat, lng] = place.coords;
-	const mapsLink = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
-	//wykrywanie iOS
-	const isIOS =
-		/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-	if (isIOS) {
-		mapsLink = `http://maps.apple.com/?daddr=${lat},${lng}`;
-	}
+	
 
 	panel.classList.add('aktywny');
 
@@ -72,8 +65,8 @@ export function openPanel(panel, place) {
 		: [{ src: place.img, author: place.author || 'brak danych' }];
 
 	currentOpenPlace = place;
-
-	panel.innerHTML = `
+	const panelContent = document.getElementById('panel-content');
+	panelContent.innerHTML = `
 		<div class="image-carousel">
     		${
 					images.length > 1
@@ -95,11 +88,8 @@ export function openPanel(panel, place) {
 
 		<h2>${place.title}</h2> 
 		<p>${place.address}</p>
-		<p>${place.description}</p>
-		<a href="${mapsLink}" target="_blank" rel="noopener noreferrer" class="gmap-btn">
-   		<img src='img/icon/navigation-2.svg'><span id="nav-link">Nawiguj</span>
-		</a>
-		<button id="close-btn">${getTranslation('closeBtn')}</button>
+		<p class="panel-descr">${place.description}</p>
+		
 	`;
 
 	// zmiana zdjęć - karuzela
@@ -120,16 +110,7 @@ export function openPanel(panel, place) {
 		});
 	}
 
-	// zamykanie panelu
-	document.getElementById('close-btn').addEventListener('click', () => {
-		panel.classList.remove('aktywny');
-		if (activeMarker) {
-			activeMarker.setIcon(defaultIcon);
-			activeMarker.setZIndexOffset(0);
-			activeMarker = null;
-		}
-		currentOpenPlace = null;
-	});
+	
 }
 
 function handlePlaceClick(place) {
@@ -183,3 +164,59 @@ function handlePlaceClick(place) {
 }
 
 export { generateMarkers, markers, defaultIcon, activeIcon, handlePlaceClick };
+
+// przycisk zamykania
+document.getElementById('close-btn').addEventListener('click', () => {
+    panel.classList.remove('aktywny');
+    if (activeMarker) {
+        activeMarker.setIcon(defaultIcon);
+        activeMarker.setZIndexOffset(0);
+        activeMarker = null;
+    }
+    currentOpenPlace = null;
+});
+
+// przycisk nawigacji
+const navigateBtn = document.getElementById('navigate-btn');
+navigateBtn.addEventListener('click', (e) => {
+    if (!currentOpenPlace) {
+        e.preventDefault();
+        return;
+    }
+    const [lat, lng] = currentOpenPlace.coords;
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    navigateBtn.href = isIOS
+        ? `http://maps.apple.com/?daddr=${lat},${lng}`
+        : `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+});
+
+// przycisk ulubione
+/*document.getElementById('fav-btn').addEventListener('click', () => {
+    if (!currentOpenPlace) return;
+    // obsługa dodania do ulubionych
+});
+
+// przycisk odwiedzone
+/*document.getElementById('visited-btn').addEventListener('click', () => {
+    if (!currentOpenPlace) return;
+    // obsługa dodania do odziwdzonych
+});
+
+// przycisk udostępniania
+document.getElementById('share-btn').addEventListener('click', async () => {
+    if (!currentOpenPlace) return;
+    const shareData = {
+        title: currentOpenPlace.title,
+        text: currentOpenPlace.description,
+        url: window.location.href
+    };
+    if (navigator.share) {
+        try {
+            await navigator.share(shareData);
+        } catch (err) {
+            console.error(err);
+        }
+    } else {
+        alert('Udostępnianie nie jest obsługiwane w tej przeglądarce.');
+    }
+});*/

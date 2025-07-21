@@ -34,14 +34,40 @@
 		<div id="night-overlay" class="night hidden"></div>
 		<div id="panel" class="panel-mob hidden">
 			<div id="panel-content"></div>
+			<!-- <div class="panel-btn-box">
+				<button
+					id="visited-btn"
+					title="Dodaj do odwiedzonych"
+					class="panel-btn"
+				>
+					<img src="img/icon/check-circle.svg" alt="" />
+				</button>
+				<button id="fav-btn" title="Dodaj do ulubionych" class="panel-btn">
+					<img src="img/icon/heart.svg" alt="" />
+				</button>
+				<button id="share-btn" title="Udostępnij" class="panel-btn">
+					<img src="img/icon/share-2.svg" alt="" />
+				</button>
+			</div> -->
+			<div class="panel-btn-box">
+
+				<a id="navigate-btn" target="_blank" rel="noopener noreferrer" class="panel-btn-big">
+					<!-- <img src="img/icon/navigation-2.svg" alt="" /> -->
+					<span id="nav-link">Nawiguj</span>
+				</a>
+			</div>
+			<div class="panel-btn-box">
+
+				<button id="close-btn" title="Zamknij panel" class="panel-btn-big">Zamknij</button>
+			</div>
 		</div>
 		<div class="info-panel" id="info-panel">
 			<h1>Aktualne plany rozwojowe</h1>
 			<p>
 				Mapa aktualnie zawiera 81 tablic ze 112 znanych lub znalezionych w
-				dostępnych źródłach. <br>Jeśli posiadasz informacje o godle którego tutaj
-				nie ma, możesz to zglosić klikając na czerwony przycisk w prawym dolnym
-				rogu.
+				dostępnych źródłach. <br />Jeśli posiadasz informacje o godle którego
+				tutaj nie ma, możesz to zglosić klikając na czerwony przycisk w prawym
+				dolnym rogu.
 			</p>
 			<ul>
 				<p>W trakcie realizacji:</p>
@@ -50,16 +76,15 @@
 				<li>aktualizacja opisów</li>
 				<li>aktualizacja angielskiej wersji</li>
 				<li>udostępnianie tablic</li>
+				<li>historia odwiedzonych tablic</li>
 			</ul>
 			<ul>
 				<p>Plany na przyszłość:</p>
 				<li>wersja mapy dla dzieci</li>
-				<li>historia odwiedzonych tablic</li>
 				<li>system komentarzy</li>
 				<li>tryb offline</li>
 				<li>dodanie warstw historycznych</li>
 				<li>wyznaczanie szlaku wielona tablicami</li>
-				
 			</ul>
 			<button id="info-close-btn">Ok</button>
 		</div>
@@ -98,14 +123,13 @@
 					>Szlak godeł szalayowskich. Osobliwość turystyczna Szczawnicy</span
 				>
 				Wydawnictwo: MOK Szczawnica, 2010
-				<br>
+				<br />
 				Barbara Alina Węglarz:
-				<span
-					>Spacerkiem po starej Szczawnicy i Rusi Szlachtowskiej</span
-				>
+				<span>Spacerkiem po starej Szczawnicy i Rusi Szlachtowskiej</span>
 				Oficyna Wydawnicza "Rewasz", 2011
-			
+			</p>
 		</div>
+
 		<button id="burger-btn" aria-label="Szukaj">
 			<img class="burger-btn" src="./img/icon/search.svg" alt="" />
 		</button>

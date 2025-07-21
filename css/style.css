@@ -381,12 +381,15 @@ body.dark-mode .form-box textarea {
 #panel p {
   font-size: 1.6rem;
 }
+#panel .panel-descr {
+  margin-bottom: 3rem;
+}
 #panel button {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 5rem;
+  margin: 0.5rem;
   width: -moz-fit-content;
   width: fit-content;
   padding: 1rem 3rem;
@@ -403,6 +406,25 @@ body.dark-mode .form-box textarea {
 #panel button:hover {
   background-color: #a7a7a7;
 }
+#panel #close-btn {
+  margin-bottom: 4rem;
+}
+#panel .panel-btn-big {
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+#panel .panel-btn-big a {
+  background-color: black;
+}
+#panel .panel-btn {
+  padding: 0.5rem;
+}
+#panel .panel-btn-box {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  display: flex;
+}
 #panel .author {
   font-size: 1rem;
   color: #838383;
@@ -416,7 +438,7 @@ body.dark-mode .form-box textarea {
   padding: 1rem 2rem;
   border: none;
   border-radius: 5px;
-  background-color: white;
+  background-color: #f0f0f0;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
   color: rgb(1, 1, 78);
   font-weight: bold;
@@ -434,7 +456,7 @@ body.dark-mode .form-box textarea {
   color: rgb(1, 1, 78);
 }
 #panel a:hover {
-  background-color: #a2a1f8;
+  background-color: #838383;
 }
 
 #panel.aktywny {
