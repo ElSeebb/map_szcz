@@ -243,6 +243,8 @@ body.dark-mode {
 
 			.emblem-btn-symbol {
 				position: relative;
+				display: flex;
+				align-items: center;
 				width: 4rem;
 				height: 4rem;
 				object-fit: contain;

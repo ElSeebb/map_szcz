@@ -214,6 +214,8 @@ body.dark-mode .form-box textarea {
 }
 #emblem-list .emblem-list-box .emblem-btn .emblem-btn-symbol {
   position: relative;
+  display: flex;
+  align-items: center;
   width: 4rem;
   height: 4rem;
   -o-object-fit: contain;

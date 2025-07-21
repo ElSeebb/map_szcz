@@ -21,7 +21,6 @@ function compareHouseNumbers(a, b) {
 		sensitivity: 'base',
 	});
 }
-
 //wyciągnaie numerów
 function extractHouseNumber(addressHTML) {
 	const match = addressHTML.match(/<b>(Adres|Address):<\/b>\s*[^<]*?(\d+[a-zA-Z]?)/i);
@@ -38,26 +37,27 @@ function extractStreet(addressHTML) {
 function generateList(places, { sortMode = 'title', filter = '' } = {}) {
 	
 	let html = '';
-
+	
 	//wyszukiwarka
 	const filtered = places.filter((place) =>
 		place.title.toLowerCase().includes(filter.toLowerCase())
-	);
+);
 
 	//sortowanie
 	if (sortMode === 'title') {
 		const sorted = [...filtered].sort((a, b) => a.title.localeCompare(b.title));
-
+		
 		sorted.forEach((place) => {
+			const imgSrc = Array.isArray(place.img) ? place.img[0].src : place.img;
 			html += `
 				<button class="emblem-btn" data-id="${place.id}">
+				<div class="emblem-btn-symbol">
+					<img src="${imgSrc}" alt="" style="width: 100%;" />
+				</div>
 				<div class="emblem-btn-name"><p>${place.title}</p></div>
 				</button>
 				`;
-				// symbole do listy, przenieś do góry wew. przycisku!
-				// <div class="emblem-btn-symbol">
-				// 	<img src="${place.symbol} alt="Godło ${place.title}" style="width: 100%;" />
-				// </div>
+				// alt - Godło ${place.title}
 		});
 	} else if (sortMode === 'street') {
 		const groupedByStreet = {};
@@ -82,11 +82,12 @@ function generateList(places, { sortMode = 'title', filter = '' } = {}) {
 					`;
 
 				groupedByStreet[street].sort(compareHouseNumbers).forEach((place) => {
+					const imgSrc = Array.isArray(place.img) ? place.img[0].src : place.img;
 					html += `
 					<button class="emblem-btn" data-id="${place.id}">
 						<div class="emblem-btn-number">${extractHouseNumber(place.address)}</div>
 						<div class="emblem-btn-symbol">
-							<img src="${place.symbol}" style="width: 100%;" />
+							<img src="${imgSrc}" alt="" style="width: 100%;" />
 						</div>
 						<div class="emblem-btn-name"><p>${place.title}</p></div>
 					</button>
