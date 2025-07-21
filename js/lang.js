@@ -14,7 +14,7 @@ const translations = {
 	pl: {
 		title: 'Godła Szalayowskie',
 		//author: 'Autor mapy: ',
-		describ: `Godła Szalayowskie są to szyldy na drewnianych tablicach, których tradycja sięga XIX wieku. Przedstawiają malowidła oraz podpisy określające nazwę domu. Zostały nazwane na cześć twórcy i właściciela uzdrowiska w Szczawnicy, któremu przypisuje się pomysł tych szyldów oraz ich pierwotne wykonanie. W tamtych czasach oznaczały domy, w których wynajmowano kwatery kuracjuszom. Dziś również przyznawane są godła włascicielom nieuchomości spełniającym określone warunki.`,
+		describ: `Godła Szalayowskie są to szyldy na drewnianych tablicach, których tradycja sięga XIX wieku. Przedstawiają malowidła oraz podpisy określające nazwę domu. Często związane też z charakterem lub talentem właściciela. Zostały nazwane tak na cześć twórcy i właściciela uzdrowiska w Szczawnicy, któremu przypisuje się pomysł tych szyldów oraz ich pierwotne wykonanie. W tamtych czasach oznaczały domy, w których wynajmowano kwatery kuracjuszom. Dodatkowym celem było ułatwienie gością odszukania właściwego domu pośród wielu podobnych do siebie. Dziś również przyznawane są godła włascicielom nieuchomości spełniającym określone warunki.`,
 		linkConditions: 'Sposób uzyskania tablicy na stronie CKSiP',
 		navLink: 'Nawiguj',
 		closeBtn: 'Zamknij',
@@ -38,7 +38,7 @@ const translations = {
 	en: {
 		title: `Szalay's emblems`,
 		//author: 'Map author: ',
-		describ: `Szalay's emblems are wooden plaques dating back to the 19th century. They depict paintings and inscriptions identifying the house's name. They were named after the creator and owner of the Szczawnica spa, who is credited with inventing them and creating their original design. At that time, they designated houses where accommodations were rented to spa guests. Today, emblems are also awarded to property owners who meet certain conditions.`,
+		describ: `Szalay emblems are signs on wooden boards dating back to the 19th century. They depict paintings and inscriptions identifying the house's name, often also linked to the owner's character or talent. It was named after the creator and owner of the Szczawnica spa, who is credited with inventing these signs and creating their original design. At that time, they designated houses where accommodations were rented to spa guests. An additional purpose was to make it easier for guests to find the right house among many similar ones. Today, coats of arms are also awarded to property owners who meet certain criteria.`,
 		linkConditions: 'How to obtain a emblem on the CKSiP website (pl)',
 		navLink: 'Navigate',
 		closeBtn: 'Close',
