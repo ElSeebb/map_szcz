@@ -55,8 +55,6 @@ function generateMarkers(places) {
 //panel
 
 export function openPanel(panel, place) {
-	
-
 	panel.classList.add('aktywny');
 
 	let currentImg = 0;
@@ -110,7 +108,47 @@ export function openPanel(panel, place) {
 		});
 	}
 
-	
+	// odzwiedzone
+	const visitedBtn = document.getElementById('visited-btn');
+	const visitedIcon = document.getElementById('visited-icon');
+
+	if (visitedBtn && visitedIcon) {
+		const visitedPlaces = JSON.parse(
+			localStorage.getItem('visitedPlaces') || '[]'
+		);
+		const idStr = String(place.id);
+		const isVisited = visitedPlaces.includes(idStr);
+
+		visitedBtn.setAttribute('aria-pressed', String(isVisited));
+		visitedIcon.src = isVisited
+			? 'img/icon/check-circle-full.svg'
+			: 'img/icon/check-circle.svg';
+
+		// dodanie nowego listenera po przerenderowaniu panelu
+		visitedBtn.replaceWith(visitedBtn.cloneNode(true));
+		const newVisitedBtn = document.getElementById('visited-btn');
+		const newVisitedIcon = document.getElementById('visited-icon');
+
+		newVisitedBtn.addEventListener('click', () => {
+			let visited = JSON.parse(localStorage.getItem('visitedPlaces') || '[]');
+			const currentlyVisited = visited.includes(idStr);
+
+			if (currentlyVisited) {
+				visited = visited.filter((id) => id !== idStr);
+			} else {
+				visited.push(idStr);
+			}
+			localStorage.setItem('visitedPlaces', JSON.stringify(visited));
+
+			
+			newVisitedBtn.setAttribute('aria-pressed', String(!currentlyVisited));
+			newVisitedIcon.src = !currentlyVisited
+				? 'img/icon/check-circle-full.svg'
+				: 'img/icon/check-circle.svg';
+		});
+	} else {
+		console.error('Brak visited-btn lub visited-icon w panelu');
+	}
 }
 
 function handlePlaceClick(place) {
@@ -167,27 +205,28 @@ export { generateMarkers, markers, defaultIcon, activeIcon, handlePlaceClick };
 
 // przycisk zamykania
 document.getElementById('close-btn').addEventListener('click', () => {
-    panel.classList.remove('aktywny');
-    if (activeMarker) {
-        activeMarker.setIcon(defaultIcon);
-        activeMarker.setZIndexOffset(0);
-        activeMarker = null;
-    }
-    currentOpenPlace = null;
+	panel.classList.remove('aktywny');
+	if (activeMarker) {
+		activeMarker.setIcon(defaultIcon);
+		activeMarker.setZIndexOffset(0);
+		activeMarker = null;
+	}
+	currentOpenPlace = null;
 });
 
 // przycisk nawigacji
 const navigateBtn = document.getElementById('navigate-btn');
 navigateBtn.addEventListener('click', (e) => {
-    if (!currentOpenPlace) {
-        e.preventDefault();
-        return;
-    }
-    const [lat, lng] = currentOpenPlace.coords;
-    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-    navigateBtn.href = isIOS
-        ? `http://maps.apple.com/?daddr=${lat},${lng}`
-        : `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+	if (!currentOpenPlace) {
+		e.preventDefault();
+		return;
+	}
+	const [lat, lng] = currentOpenPlace.coords;
+	const isIOS =
+		/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+	navigateBtn.href = isIOS
+		? `http://maps.apple.com/?daddr=${lat},${lng}`
+		: `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
 });
 
 // przycisk ulubione
@@ -220,3 +259,21 @@ document.getElementById('share-btn').addEventListener('click', async () => {
         alert('Udostępnianie nie jest obsługiwane w tej przeglądarce.');
     }
 });*/
+
+document.addEventListener('DOMContentLoaded', () => {
+	const panel = document.getElementById('info-panel');
+	const closeBtn = document.getElementById('info-close-btn');
+
+	const lastClosed = localStorage.getItem('infoPanelClosed');
+	const now = new Date().getTime();
+	const oneDay = 24 * 60 * 60 * 1000;
+
+	if (!lastClosed || now - parseInt(lastClosed) > oneDay) {
+		panel.classList.remove('hidden');
+	}
+
+	closeBtn.addEventListener('click', () => {
+		panel.classList.add('hidden');
+		localStorage.setItem('infoPanelClosed', now.toString());
+	});
+});
