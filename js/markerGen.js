@@ -149,6 +149,48 @@ export function openPanel(panel, place) {
 	} else {
 		console.error('Brak visited-btn lub visited-icon w panelu');
 	}
+
+	//ulubiuone
+	const favoriteBtn = document.getElementById('fav-btn');
+	const favoriteIcon = document.getElementById('fav-icon');
+
+	if (favoriteBtn && favoriteIcon) {
+		const favoritePlaces = JSON.parse(
+			localStorage.getItem('favoritePlaces') || '[]'
+		);
+		const idStr = String(place.id);
+		const isFavorite = favoritePlaces.includes(idStr);
+
+		favoriteBtn.setAttribute('aria-pressed', String(isFavorite));
+		favoriteIcon.src = isFavorite
+			? 'img/icon/heart-full.svg'
+			: 'img/icon/heart.svg';
+
+		// dodanie nowego listenera po przerenderowaniu panelu
+		favoriteBtn.replaceWith(favoriteBtn.cloneNode(true));
+		const newFavoriteBtn = document.getElementById('fav-btn');
+		const newFavoriteIcon = document.getElementById('fav-icon');
+
+		newFavoriteBtn.addEventListener('click', () => {
+			let favorite = JSON.parse(localStorage.getItem('favoritePlaces') || '[]');
+			const currentlyFavorite = favorite.includes(idStr);
+
+			if (currentlyFavorite) {
+				favorite = favorite.filter((id) => id !== idStr);
+			} else {
+				favorite.push(idStr);
+			}
+			localStorage.setItem('favoritePlaces', JSON.stringify(favorite));
+
+			
+			newFavoriteBtn.setAttribute('aria-pressed', String(!currentlyFavorite));
+			newFavoriteIcon.src = !currentlyFavorite
+				? 'img/icon/heart-full.svg'
+				: 'img/icon/heart.svg';
+		});
+	} else {
+		console.error('Brak fav-btn lub fav-icon w panelu');
+	}
 }
 
 function handlePlaceClick(place) {
