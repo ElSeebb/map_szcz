@@ -517,10 +517,10 @@ export const places = [
 	{
 		id:'pod-owocami',
 		coords: [49.427448, 20.471997],
-		img: [{src : 'img/tablica/zdj/pod_owocami1.jpeg', author : ''},],
+		img: [{src : 'img/tablica/zdj/pod_owocami1.jpeg', author : 'photo from the owner'},],
 		title: 'Under the fruits',
 		address: '<b>Address:</b> Główna 70',
-		description: '<b>Description: </b>...',
+		description: '<b>Description: </b>The emblem is currently not on display.',
 		//symbol: '',
 	},
 	{
