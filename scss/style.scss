@@ -138,17 +138,25 @@ body.dark-mode {
 	line-height: 2rem;
 	z-index: 9999;
 	overflow: scroll;
-	h1{
+	h1 {
 		font-size: 2rem;
 		text-align: center;
 		line-height: 2.5rem;
 	}
-	p{
-		
+	p {
 		margin: 1rem;
 		text-align: center;
 	}
-	button{	
+	.info-panel-text{
+		max-width: 30%;
+
+	}
+	@media (max-width:800px) {
+		.info-panel-text{
+			max-width: 100%;
+		}
+	}
+	button {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -165,12 +173,12 @@ body.dark-mode {
 		cursor: pointer;
 		transition: background-color 0.4s ease;
 	}
-	button:hover{
+	button:hover {
 		background-color: #a5a3a3;
 	}
 }
 
-.info-panel.hidden{
+.info-panel.hidden {
 	display: none;
 }
 
@@ -426,7 +434,8 @@ body.dark-mode {
 	p {
 		font-size: 1.6rem;
 	}
-	.panel-descr{
+	.panel-descr {
+		text-align: justify;
 		margin-bottom: 3rem;
 	}
 	button {
@@ -450,25 +459,24 @@ body.dark-mode {
 	button:hover {
 		background-color: #a7a7a7;
 	}
-	#close-btn{
+	#close-btn {
 		margin-bottom: 4rem;
 	}
-	.panel-btn-big{
+	.panel-btn-big {
 		padding: 1rem 3rem;
 		cursor: pointer;
-		a{
+		a {
 			background-color: black;
 		}
 	}
-	.panel-btn{
+	.panel-btn {
 		padding: 0.5rem;
 	}
-	.panel-btn-box{
+	.panel-btn-box {
 		display: flex;
 		justify-content: center;
 		margin: 1rem;
-		display:flex ;
-		
+		display: flex;
 	}
 	.author {
 		font-size: 1rem;
@@ -503,7 +511,6 @@ body.dark-mode {
 	a:hover {
 		background-color: #838383;
 	}
-	
 }
 
 #panel.aktywny {
@@ -537,7 +544,7 @@ body.dark-mode {
 		top: -2rem;
 		display: flex;
 		justify-content: center;
-		
+
 		font-size: 1.3rem;
 		a {
 			margin: 0 1rem;
@@ -574,15 +581,68 @@ body.dark-mode {
 		font-style: italic;
 		font-size: 1.3rem;
 	}
-	#reference{
+	#reference {
 		padding-left: 1.2rem;
 		text-align: justify;
 		font-size: 1.3rem;
 		color: #575757;
-		span{
+		span {
 			font-style: italic;
 		}
 	}
+}
+//layers lista
+.layers-list {
+	position: fixed;
+	display: none;
+	right: 1rem;
+	bottom: 7rem;
+	width: 20dvw;
+	height: fit-content;
+	border: none;
+	transform: translateX(0%);
+	transition: transform 1s ease;
+	z-index: 2000;
+	opacity: 0.8;
+
+	.layers-list-btn {
+		padding: 2rem;
+		box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+		border-radius: 5px;
+		font-size: 1.5rem;
+		color: rgb(255, 255, 255);
+		transition: color 0.4s ease;
+		cursor: pointer;
+	}
+	#third-military-survey {
+		background-color: #474747;
+	}
+	#second-military-survey {
+		background-color: #af2424;
+	}
+	#first-military-survey {
+		background-color: #df8888;
+	}
+	.layers-list-btn:hover{
+		background-color: #fff;
+		color: #000;
+	}
+}
+
+@media (max-width: 800px) {
+	.layers-list {
+		width: 50dvw;
+		p{
+			font-size: 1rem;
+		}
+	}
+}
+.layers-list.aktywny {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	transform: translateX(0);
+	opacity: 1;
 }
 
 //formularz błędu
@@ -669,6 +729,27 @@ body.dark-mode {
 	display: flex;
 	gap: 1rem;
 	z-index: 1500;
+
+	.layers-btn {
+		display: none;
+		align-items: center;
+		padding: 0.5rem;
+		background: #b1b39b;
+		border: none;
+		border-radius: 50%;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+		transition: background 0.5s ease;
+		z-index: 1500;
+		max-width: 90vw;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		transform: none;
+		cursor: pointer;
+	}
+
+	.layers-btn:hover {
+		background-color: #e4e2e2;
+	}
 
 	.theme-btn {
 		@include btn-style;

@@ -124,6 +124,14 @@ body.dark-mode .form-box textarea {
   margin: 1rem;
   text-align: center;
 }
+.info-panel .info-panel-text {
+  max-width: 30%;
+}
+@media (max-width: 800px) {
+  .info-panel .info-panel-text {
+    max-width: 100%;
+  }
+}
 .info-panel button {
   display: flex;
   flex-direction: column;
@@ -382,6 +390,7 @@ body.dark-mode .form-box textarea {
   font-size: 1.6rem;
 }
 #panel .panel-descr {
+  text-align: justify;
   margin-bottom: 3rem;
 }
 #panel button {
@@ -535,6 +544,59 @@ body.dark-mode .form-box textarea {
   font-style: italic;
 }
 
+.layers-list {
+  position: fixed;
+  display: none;
+  right: 1rem;
+  bottom: 7rem;
+  width: 20dvw;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: none;
+  transform: translateX(0%);
+  transition: transform 1s ease;
+  z-index: 2000;
+  opacity: 0.8;
+}
+.layers-list .layers-list-btn {
+  padding: 2rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  transition: color 0.4s ease;
+  cursor: pointer;
+}
+.layers-list #third-military-survey {
+  background-color: #474747;
+}
+.layers-list #second-military-survey {
+  background-color: #af2424;
+}
+.layers-list #first-military-survey {
+  background-color: #df8888;
+}
+.layers-list .layers-list-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media (max-width: 800px) {
+  .layers-list {
+    width: 50dvw;
+  }
+  .layers-list p {
+    font-size: 1rem;
+  }
+}
+.layers-list.aktywny {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(0);
+  opacity: 1;
+}
+
 .form-box {
   position: absolute;
   top: 50%;
@@ -613,6 +675,25 @@ body.dark-mode .form-box textarea {
   display: flex;
   gap: 1rem;
   z-index: 1500;
+}
+.button-box .layers-btn {
+  display: none;
+  align-items: center;
+  padding: 0.5rem;
+  background: #b1b39b;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  transition: background 0.5s ease;
+  z-index: 1500;
+  max-width: 90vw;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transform: none;
+  cursor: pointer;
+}
+.button-box .layers-btn:hover {
+  background-color: #e4e2e2;
 }
 .button-box .theme-btn {
   max-width: 90vw;

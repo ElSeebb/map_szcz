@@ -517,7 +517,7 @@ export const places = [
 	{
 		id:'pod-owocami',
 		coords: [49.427448, 20.471997],
-		img: [{src : 'img/tablica/zdj/pod_owocami1.jpg', author : ''},],
+		img: [{src : 'img/tablica/zdj/pod_owocami1.jpeg', author : ''},],
 		title: 'Pod owocami',
 		address: '<b>Adres:</b> Główna 70',
 		description: '<b>Opis: </b>...',

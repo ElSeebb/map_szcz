@@ -10,6 +10,8 @@
 			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
 		/>
 		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+		<script src="https://unpkg.com/leaflet-tilelayer-wmts@1.0.0/leaflet-tilelayer-wmts.js"></script>
+
 
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
@@ -17,6 +19,9 @@
 	<body>
 		<div id="map"></div>
 		<div class="button-box">
+			<button id="layers-btn" class="layers-btn" title="Zmień warstwe">
+				<img src="./img/icon/layers.svg" alt="" />
+			</button>
 			<button id="theme-toggle" class="theme-btn" title="Tryb nocny">
 				<span id="dark-mode-btn" class="label">Tryb nocny</span>
 			</button>
@@ -32,6 +37,13 @@
 		</div>
 
 		<div id="night-overlay" class="night hidden"></div>
+
+		<div class="layers-list" id="layers-list">
+			<div id="third-military-survey" class="layers-list-btn"><p>Mapa Trzeciego Przeglądu Wojskowego Imperium Habsburskiego - (1869-1887) 1:75 000</p></div>
+			<div id="second-military-survey" class="layers-list-btn"><p>Mapa Drugiego Przeglądu Wojskowego Imperium Habsburskiego - Galicja i Bukowina (1861–1864)</p></div>
+			<div id="first-military-survey" class="layers-list-btn"><p>Mapa Pierwszego Przeglądu Wojskowego Imperium Habsburskiego - Galicja i Lodomeria (1779–1783)</p></div>
+		</div>
+
 		<div id="panel" class="panel-mob hidden">
 			<div id="panel-content"></div>
 			<div class="panel-btn-box">
@@ -63,7 +75,7 @@
 		</div>
 		<div class="info-panel" id="info-panel">
 			<h1>Aktualne plany rozwojowe</h1>
-			<p>
+			<p class="info-panel-text">
 				Mapa aktualnie zawiera 81 tablic ze 112 znanych lub znalezionych w
 				dostępnych źródłach. <br />Jeśli posiadasz informacje o godle którego
 				tutaj nie ma, możesz to zglosić klikając na czerwony przycisk w prawym
@@ -72,7 +84,7 @@
 			<ul>
 				<p>W trakcie realizacji:</p>
 				<li>aktualizacja adresów tablic (81/112)</li>
-				<li>aktualizacja zdjęć (17/81)</li>
+				<li>aktualizacja zdjęć (18/81)</li>
 				<li>aktualizacja opisów</li>
 				<li>aktualizacja angielskiej wersji</li>
 				<li>udostępnianie tablic</li>
@@ -84,7 +96,6 @@
 				<li>system komentarzy</li>
 				<li>tryb offline</li>
 				<li>dodanie warstw historycznych</li>
-				<li>wyznaczanie szlaku wielona tablicami</li>
 			</ul>
 			<button id="info-close-btn">Ok</button>
 		</div>
