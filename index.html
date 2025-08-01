@@ -3,7 +3,18 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Godła Szalayowskie</title>
+		<title>Godła Szalayowskie - Historyczne szyldy drewniane w Szczawnicy | Mapa i Szlak Historyczny</title>
+		<meta
+			name="description"
+			content="Poznaj tradycję Godeł Szalayowskich – drewnianych szyldów z XIX wieku w Szczawnicy. Odkryj historię, znaczenie i aktualną mapę z tablicami Szalayowskimi."
+		/>
+
+		<meta
+			name="keywords"
+			content="Godła Szalayowskie, tablice Szalayowskie, mapa Szczawnica, szlak historyczny Szczawnica, drewniane szyldy, historia Szczawnicy, tradycja Godła Szalayowskie"
+		/>
+
+		<meta name="author" content="Mapa Godeł Szalayowskich" />
 		<link rel="icon" type="image/png" href="img/icon/favicon.png" />
 		<link
 			rel="stylesheet"
@@ -11,7 +22,6 @@
 		/>
 		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 		<script src="https://unpkg.com/leaflet-tilelayer-wmts@1.0.0/leaflet-tilelayer-wmts.js"></script>
-
 
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
@@ -39,9 +49,24 @@
 		<div id="night-overlay" class="night hidden"></div>
 
 		<div class="layers-list" id="layers-list">
-			<div id="third-military-survey" class="layers-list-btn"><p>Mapa Trzeciego Przeglądu Wojskowego Imperium Habsburskiego - (1869-1887) 1:75 000</p></div>
-			<div id="second-military-survey" class="layers-list-btn"><p>Mapa Drugiego Przeglądu Wojskowego Imperium Habsburskiego - Galicja i Bukowina (1861–1864)</p></div>
-			<div id="first-military-survey" class="layers-list-btn"><p>Mapa Pierwszego Przeglądu Wojskowego Imperium Habsburskiego - Galicja i Lodomeria (1779–1783)</p></div>
+			<div id="third-military-survey" class="layers-list-btn">
+				<p>
+					Mapa Trzeciego Przeglądu Wojskowego Imperium Habsburskiego -
+					(1869-1887) 1:75 000
+				</p>
+			</div>
+			<div id="second-military-survey" class="layers-list-btn">
+				<p>
+					Mapa Drugiego Przeglądu Wojskowego Imperium Habsburskiego - Galicja i
+					Bukowina (1861–1864)
+				</p>
+			</div>
+			<div id="first-military-survey" class="layers-list-btn">
+				<p>
+					Mapa Pierwszego Przeglądu Wojskowego Imperium Habsburskiego - Galicja
+					i Lodomeria (1779–1783)
+				</p>
+			</div>
 		</div>
 
 		<div id="panel" class="panel-mob hidden">
@@ -62,15 +87,20 @@
 				</button> -->
 			</div>
 			<div class="panel-btn-box">
-
-				<a id="navigate-btn" target="_blank" rel="noopener noreferrer" class="panel-btn-big">
+				<a
+					id="navigate-btn"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="panel-btn-big"
+				>
 					<!-- <img src="img/icon/navigation-2.svg" alt="" /> -->
 					<span id="nav-link">Nawiguj</span>
 				</a>
 			</div>
 			<div class="panel-btn-box">
-
-				<button id="close-btn" title="Zamknij panel" class="panel-btn-big">Zamknij</button>
+				<button id="close-btn" title="Zamknij panel" class="panel-btn-big">
+					Zamknij
+				</button>
 			</div>
 		</div>
 		<div class="info-panel" id="info-panel">
