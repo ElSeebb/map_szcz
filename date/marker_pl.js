@@ -20,7 +20,7 @@ export const places = [
 	{
 		id:'pod-aniolkiem',
 		coords: [49.423419, 20.486438],
-		img: [{src : 'img/tablica/zdj/pod_aniolkiem1.jpg', author : 'zdj. własne'},],
+		img: [{src : 'img/tablica/zdj/pod_aniolkiem1.jpg', author : 'zdjęcie własne'},],
 		title: 'Pod aniołkiem',
 		address: '<b>Adres:</b> Główna 31',
 		description: '<b>Opis: </b>',
@@ -47,7 +47,7 @@ export const places = [
 	{
 		id:'pod-beczka',
 		coords: [49.42002, 20.496491],
-		img: [{src : 'img/tablica/zdj/pod_beczka1.jpg', author : ''},],
+		img: [{src : 'img/tablica/zdj/pod_beczka1.jpg', author : 'zdjęcie własne'},],
 		title: 'Pod beczką',
 		address: '<b>Adres:</b> Szlachtowska 28',
 		description: '<b>Opis: </b>Godło nadane w 2022',
@@ -209,7 +209,7 @@ export const places = [
 	{
 		id:'pod-goralem',
 		coords: [49.42359, 20.485812],
-		img: [{src : 'img/tablica/zdj/pod_goralem1.jpg', author : 'zdj. własne'},],
+		img: [{src : 'img/tablica/zdj/pod_goralem1.jpg', author : 'zdjęcie własne'},],
 		title: 'Pod góralem',
 		address: '<b>Adres:</b> Szalaya 27',
 		description: '<b>Opis: </b>...',
@@ -290,7 +290,7 @@ export const places = [
 	{
 		id:'pod-jarzebinka',
 		coords: [49.423006, 20.486579],
-		img: [{src : 'img/tablica/zdj/pod_jarzebinka1.jpg', author : 'zdj. własne'},],
+		img: [{src : 'img/tablica/zdj/pod_jarzebinka1.jpg', author : 'zdjęcie własne'},],
 		title: 'Pod jarzębinką',
 		address: '<b>Adres:</b> Szalaya 41a',
 		description: '<b>Opis: </b>...',
@@ -309,7 +309,7 @@ export const places = [
 		id:'pod-jemiola',
 		coords: [49.42854, 20.495899],
 		img: [
-			{src : 'img/tablica/zdj/pod_jemiola1.jpg', author : 'zdj. własne'}			
+			{src : 'img/tablica/zdj/pod_jemiola1.jpg', author : 'zdjęcie własne'}			
 		],
 		title: 'Pod jemiołą',
 		address: '<b>Adres:</b> Św. Krzyża  49',
@@ -355,7 +355,7 @@ export const places = [
 	{
 		id:'pod-konikiem',
 		coords: [49.422873, 20.487953],
-		img: [{src : 'img/tablica/zdj/pod_konikiem1.png', author : 'zdj. własne'},],
+		img: [{src : 'img/tablica/zdj/pod_konikiem1.png', author : 'zdjęcie własne'},],
 		title: 'Pod konikiem',
 		address: '<b>Adres:</b> Szalaya 55',
 		description: '<b>Opis: </b>...',
@@ -364,7 +364,7 @@ export const places = [
 	{
 		id:'pod-kosynierem',
 		coords: [49.420747, 20.48984],
-		img: [{src : 'img/tablica/zdj/pod_kosynierem1.png', author : 'zdj. własne'},],
+		img: [{src : 'img/tablica/zdj/pod_kosynierem1.png', author : 'zdjęcie własne'},],
 		title: 'Pod kosynierem',
 		address: '<b>Adres:</b> Szalaya 96',
 		description: '<b>Opis: </b>...',
@@ -382,7 +382,7 @@ export const places = [
 	{
 		id:'pod-kotwica',
 		coords: [49.423004, 20.487296],
-		img: [{src : 'img/tablica/zdj/pod_kotwica1.jpg', author : 'zdj. własne'},],
+		img: [{src : 'img/tablica/zdj/pod_kotwica1.jpg', author : 'zdjęcie własne'},],
 		title: 'Pod kotwicą',
 		address: '<b>Adres:</b> Szalaya 53',
 		description: '<b>Opis: </b>...',
@@ -391,7 +391,7 @@ export const places = [
 	{
 		id:'pod-kozakiem',
 		coords: [49.422348, 20.488928],
-		img: [{src : 'img/tablica/zdj/pod_kozakiem1.jpg', author : 'zdj. własne'},],
+		img: [{src : 'img/tablica/zdj/pod_kozakiem1.jpg', author : 'zdjęcie własne'},],
 		title: 'Pod kozakiem',
 		address: '<b>Adres:</b> Szalaya 77',
 		description: '<b>Opis: </b>...',
@@ -409,7 +409,7 @@ export const places = [
 	{
 		id:'pod-krakowiakiem',
 		coords: [49.429906, 20.50032],
-		img: [{src : 'img/tablica/zdj/pod_krakowiakiem1.jpg', author : 'zdj. własne'},],
+		img: [{src : 'img/tablica/zdj/pod_krakowiakiem1.jpg', author : 'zdjęcie własne'},],
 		title: 'Pod krakowiakiem',
 		address: '<b>Adres:</b> Sopotnicka 28',
 		description: '<b>Opis: </b>Godło nadane za wygrany konkurs rzucania siekierą do celu w 2016 podczas rozpoczyna cykl uroczystości organizowanych z okazji Roku Szalayowskiego',
@@ -580,7 +580,7 @@ export const places = [
 	{
 		id:'pod-rakiem',
 		coords: [49.423246, 20.486753],
-		img: [{src : 'img/tablica/zdj/pod_rakiem1.jpg', author : 'zdj. własne'},],
+		img: [{src : 'img/tablica/zdj/pod_rakiem1.jpg', author : 'zdjęcie własne'},],
 		title: 'Pod rakiem',
 		address: '<b>Adres:</b> Szalaya 43',
 		description: '<b>Opis: </b>...',
@@ -598,7 +598,7 @@ export const places = [
 	{
 		id:'pod-ryba',
 		coords: [49.423, 20.486468],
-		img: [{src : 'img/tablica/zdj/pod_ryba1.jpg', author : 'zdj. własne'},],
+		img: [{src : 'img/tablica/zdj/pod_ryba1.jpg', author : 'zdjęcie własne'},],
 		title: 'Pod rybą',
 		address: '<b>Adres:</b> Szalaya 41',
 		description: '<b>Opis: </b>...',
@@ -652,7 +652,7 @@ export const places = [
 	{
 		id:'pod-sloncem',
 		coords: [49.424639, 20.483683],
-		img: [{src : 'img/tablica/zdj/pod_sloncem1.jpg', author : 'zdj. własne'},],
+		img: [{src : 'img/tablica/zdj/pod_sloncem1.jpg', author : 'zdjęcie własne'},],
 		title: 'Pod słońcem',
 		address: '<b>Adres:</b> Szalaya 17',
 		description: '<b>Opis: </b>...',
@@ -859,7 +859,7 @@ export const places = [
 	{
 		id:'pod-wegrzynem',
 		coords: [49.422507, 20.488168],
-		img: [{src : 'img/tablica/zdj/pod_wegrzynem1.jpg', author : 'zdj. własne'},],
+		img: [{src : 'img/tablica/zdj/pod_wegrzynem1.jpg', author : 'zdjęcie własne'},],
 		title: 'Pod węgrzynem',
 		address: '<b>Adres:</b> Szalaya 72',
 		description: '<b>Opis: </b>...',
@@ -922,7 +922,7 @@ export const places = [
 	{
 		id:'pod-wodospadem',
 		coords: [49.430775, 20.500279],
-		img: [{src : 'img/tablica/zdj/pod_wodospadem1.jpg', author : 'zdj. własne'},],
+		img: [{src : 'img/tablica/zdj/pod_wodospadem1.jpg', author : 'zdjęcie własne'},],
 		title: 'Pod wodospadem',
 		address: '<b>Adres:</b> Sopotnicka 35a',
 		description: '<b>Opis: </b>Godło nadane w 2022r',
@@ -940,7 +940,7 @@ export const places = [
 	{
 		id:'pod-zajacem',
 		coords: [49.422761, 20.488024],
-		img: [{src : 'img/tablica/zdj/pod_zajacem1.jpg', author : 'zdj. własne'},],
+		img: [{src : 'img/tablica/zdj/pod_zajacem1.jpg', author : 'zdjęcie własne'},],
 		title: 'Pod zającem',
 		address: '<b>Adres:</b> Szalaya 61',
 		description: '<b>Opis: </b>...',
@@ -976,7 +976,7 @@ export const places = [
 	{
 		id:'pod-zlotym-lwemm',
 		coords: [49.422655, 20.487639],
-		img: [{src : 'img/tablica/zdj/pod_zlotym_lwem1.jpg', author : 'zdj. własne'},],
+		img: [{src : 'img/tablica/zdj/pod_zlotym_lwem1.jpg', author : 'zdjęcie własne'},],
 		title: 'Pod złotym lwem',
 		address: '<b>Adres:</b> Szalaya 56',
 		description: '<b>Opis: </b>...',

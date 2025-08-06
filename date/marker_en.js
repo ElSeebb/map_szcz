@@ -47,7 +47,7 @@ export const places = [
 	{
 		id:'pod-beczka',
 		coords: [49.42002, 20.496491],
-		img: [{src : 'img/tablica/zdj/pod_beczka1.jpg', author : ''},],
+		img: [{src : 'img/tablica/zdj/pod_beczka1.jpg', author : 'own photo'},],
 		title: 'Under the barrel',
 		address: '<b>Address:</b> Szlachtowska 28',
 		description: '<b>Description: </b>Awarded in 2022',
