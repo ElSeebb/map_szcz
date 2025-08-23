@@ -2,15 +2,16 @@ import { handlePlaceClick } from './markerGen.js';
 let currentPlaces = [];
 
 export function setCurrentPlaces(newPlaces) {
-    currentPlaces = newPlaces;
+	currentPlaces = newPlaces;
 }
 
 export function getCurrentPlaces() {
-    return currentPlaces;
+	return currentPlaces;
 }
 
 let currentSortMode = 'title';
 let currentSearchQuery = '';
+let currentFilter = 'all';
 
 //porównanie nuumerów
 function compareHouseNumbers(a, b) {
@@ -23,11 +24,13 @@ function compareHouseNumbers(a, b) {
 }
 //wyciągnaie numerów
 function extractHouseNumber(addressHTML) {
-	const match = addressHTML.match(/<b>(Adres|Address):<\/b>\s*[^<]*?(\d+[a-zA-Z]?)/i);
+	const match = addressHTML.match(
+		/<b>(Adres|Address):<\/b>\s*[^<]*?(\d+[a-zA-Z]?)/i
+	);
 	return match ? match[2].toLowerCase() : '';
 }
 
-///wyciągniae ulic
+//wyciągniae ulic
 function extractStreet(addressHTML) {
 	const match = addressHTML.match(/<b>(Adres|Address):<\/b>\s*([^0-9<]+)/i);
 	return match ? match[2].trim() : 'Inna ulica';
@@ -35,18 +38,30 @@ function extractStreet(addressHTML) {
 
 //generator listy
 function generateList(places, { sortMode = 'title', filter = '' } = {}) {
-	
 	let html = '';
-	
+
 	//wyszukiwarka
-	const filtered = places.filter((place) =>
-		place.title.toLowerCase().includes(filter.toLowerCase())
-);
+	const visited = JSON.parse(localStorage.getItem('visitedPlaces') || '[]');
+	const favorites = JSON.parse(localStorage.getItem('favoritePlaces') || '[]');
+
+	const filtered = places.filter((place) => {
+		const matchesSearch = place.title
+			.toLowerCase()
+			.includes(filter.toLowerCase());
+
+		if (currentFilter === 'visited') {
+			return matchesSearch && visited.includes(place.id);
+		} else if (currentFilter === 'favorites') {
+			return matchesSearch && favorites.includes(place.id);
+		} else {
+			return matchesSearch; // all
+		}
+	});
 
 	//sortowanie
 	if (sortMode === 'title') {
 		const sorted = [...filtered].sort((a, b) => a.title.localeCompare(b.title));
-		
+
 		sorted.forEach((place) => {
 			const imgSrc = Array.isArray(place.img) ? place.img[0].src : place.img;
 			html += `
@@ -57,7 +72,7 @@ function generateList(places, { sortMode = 'title', filter = '' } = {}) {
 				<div class="emblem-btn-name"><p>${place.title}</p></div>
 				</button>
 				`;
-				// alt - Godło ${place.title}
+			// alt - Godło ${place.title}
 		});
 	} else if (sortMode === 'street') {
 		const groupedByStreet = {};
@@ -82,7 +97,9 @@ function generateList(places, { sortMode = 'title', filter = '' } = {}) {
 					`;
 
 				groupedByStreet[street].sort(compareHouseNumbers).forEach((place) => {
-					const imgSrc = Array.isArray(place.img) ? place.img[0].src : place.img;
+					const imgSrc = Array.isArray(place.img)
+						? place.img[0].src
+						: place.img;
 					html += `
 					<button class="emblem-btn" data-id="${place.id}">
 						<div class="emblem-btn-number">${extractHouseNumber(place.address)}</div>
@@ -125,35 +142,38 @@ function generateList(places, { sortMode = 'title', filter = '' } = {}) {
 			const isHidden = list.classList.contains('hidden');
 			list.classList.toggle('hidden');
 
-			
 			icon.textContent = isHidden ? '−' : '+';
 		});
 	});
-
 }
 // funkcja do generowania dynamicznego filtra listy ulic
 function setupStreetAccordions() {
-    document.querySelectorAll('.street-heading').forEach(heading => {
-        heading.addEventListener('click', () => {
-            heading.classList.toggle('open');
-            const street = heading.dataset.street;
-            const list = document.querySelector(`.street-list[data-list="${street}"]`);
-            if (list) {
-                list.classList.toggle('hidden');
+	document.querySelectorAll('.street-heading').forEach((heading) => {
+		heading.addEventListener('click', () => {
+			heading.classList.toggle('open');
+			const street = heading.dataset.street;
+			const list = document.querySelector(
+				`.street-list[data-list="${street}"]`
+			);
+			if (list) {
+				list.classList.toggle('hidden');
 
-                // zmiana strzałki
-                const arrow = heading.querySelector('.arrow-icon');
-                arrow.textContent = list.classList.contains('hidden') ? '+' : '–';
-            }
-        });
-    });
+				// zmiana strzałki
+				const arrow = heading.querySelector('.arrow-icon');
+				arrow.textContent = list.classList.contains('hidden') ? '+' : '–';
+			}
+		});
+	});
 }
 
 // obsługa sortowania
 document.querySelectorAll('input[name="sort-mode"]').forEach((input) => {
 	input.addEventListener('change', () => {
 		currentSortMode = input.value;
-		generateList(getCurrentPlaces(), { sortMode: currentSortMode, filter: currentSearchQuery });
+		generateList(getCurrentPlaces(), {
+			sortMode: currentSortMode,
+			filter: currentSearchQuery,
+		});
 		//setupStreetAccordions();
 	});
 });
@@ -161,8 +181,10 @@ document.querySelectorAll('input[name="sort-mode"]').forEach((input) => {
 // obsługa wyszukiwania
 document.getElementById('search-input').addEventListener('input', (e) => {
 	currentSearchQuery = e.target.value;
-	generateList(getCurrentPlaces(), { sortMode: currentSortMode, filter: currentSearchQuery });
-	
+	generateList(getCurrentPlaces(), {
+		sortMode: currentSortMode,
+		filter: currentSearchQuery,
+	});
 });
 
 // start funkcji
@@ -185,5 +207,19 @@ document.addEventListener('click', (e) => {
 	}
 });
 
+export { generateList, setupStreetAccordions };
 
-export {generateList, setupStreetAccordions};
+document.getElementById('filter-all').addEventListener('click', () => {
+    currentFilter = 'all';
+    generateList(getCurrentPlaces(), { sortMode: currentSortMode, filter: currentSearchQuery });
+});
+
+document.getElementById('filter-visited').addEventListener('click', () => {
+    currentFilter = 'visited';
+    generateList(getCurrentPlaces(), { sortMode: currentSortMode, filter: currentSearchQuery });
+});
+
+document.getElementById('filter-favorites').addEventListener('click', () => {
+    currentFilter = 'favorites';
+    generateList(getCurrentPlaces(), { sortMode: currentSortMode, filter: currentSearchQuery });
+});

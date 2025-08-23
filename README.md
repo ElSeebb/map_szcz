@@ -19,6 +19,7 @@ For the project I use:
 - alphabetical and street sorting option 
 - Google/Apple Map navigation 
 - geolocalization
+- favorite emblems
 
 ### Current goal:
 - update photos
@@ -26,7 +27,6 @@ For the project I use:
 - update english
 - code optimization
 - sharing a marker
-- favorite emblems
 - visit history with progress %
 
 ### Future goal:
@@ -42,4 +42,4 @@ For the project I use:
 - lazy loading of photos
 
 ## License
-Copyright © 2025 [Sebastian](https://portfolioseebb.wordpress.com/glowna/)
+Copyright © 2025 [Sebastian](https://godlaszalayowskie.pl/autor)

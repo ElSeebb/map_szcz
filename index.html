@@ -48,7 +48,7 @@
 			name="twitter:image"
 			content="https://godlaszalayowskie.pl/img/graph-img.png"
 		/>
-		
+
 		<!-- ... -->
 		<link rel="icon" type="image/png" href="img/icon/favicon.png" />
 		<link
@@ -83,7 +83,8 @@
 
 		<div id="night-overlay" class="night hidden"></div>
 
-		<div class="layers-list" id="layers-list">
+		<!-- Warstwy historyczne -->
+		<!-- <div class="layers-list" id="layers-list">
 			<div id="third-military-survey" class="layers-list-btn">
 				<p>
 					Mapa Trzeciego Przeglądu Wojskowego Imperium Habsburskiego -
@@ -102,7 +103,7 @@
 					i Lodomeria (1779–1783)
 				</p>
 			</div>
-		</div>
+		</div> -->
 
 		<div id="panel" class="panel-mob hidden">
 			<div id="panel-content"></div>
@@ -159,7 +160,6 @@
 				<p>Plany na przyszłość:</p>
 				<li>wersja mapy dla dzieci</li>
 				<li>system komentarzy</li>
-				<li>tryb offline</li>
 				<li>dodanie warstw historycznych</li>
 			</ul>
 			<button id="info-close-btn">Ok</button>
@@ -219,6 +219,11 @@
 						id="search-input"
 						placeholder="Szukaj godła"
 					/>
+				</div>
+				<div class="filters">
+					<button id="filter-all" title="Wszystkie"><img src="/img/icon/clipboard.svg" alt=""></button>
+					<button id="filter-visited" title="Lista odwiedzonych"><img src="/img/icon/check-circle.svg" alt=""></button>
+					<button id="filter-favorites" title="Lista ulubionych"><img src="/img/icon/heart.svg" alt=""></button>
 				</div>
 				<div class="sort-options">
 					<label>
