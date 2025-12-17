@@ -496,15 +496,15 @@ export const places = [
 		description: '<b>Description: </b>...',
 		//symbol: '',
 	},*/
-	/*{
+	{
 		id:'pod-modrzejewska',
 		coords: [49.425419, 20.488147],
 		img: [{src : 'img/tablica/zdj/pod_modrzejewska1.jpg', author : ''},],
 		title: 'Under Modrzejewska',
 		address: '<b>Address:</b> Park Górny 7',
-		description: '<b>Description: </b>',
+		description: '<b>Description: </b> The emblem is currently not on display on the building.',
 		//symbol: '',
-	},*/
+	},
 	/*{
 		id:'pod-niedzwiedziem',
 		coords: [49.427357,20.472679],
@@ -850,7 +850,7 @@ export const places = [
 	{
 		id:'pod-wegierska-korona',
 		coords: [49.42586, 20.481793],
-		img: [{src : 'img/tablica/zdj/', author : ''},],
+		img: [{src : 'img/tablica/zdj/pod_wegierska_korona1.jpg', author : 'own photo'},],
 		title: 'Under the Hungarian crown',
 		address: '<b>Address:</b>  Główna 6',
 		description: '<b>Description: </b>...',

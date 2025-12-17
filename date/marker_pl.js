@@ -412,7 +412,7 @@ export const places = [
 		img: [{src : 'img/tablica/zdj/pod_krakowiakiem1.jpg', author : 'zdjęcie własne'},],
 		title: 'Pod krakowiakiem',
 		address: '<b>Adres:</b> Sopotnicka 28',
-		description: '<b>Opis: </b>Godło nadane za wygrany konkurs rzucania siekierą do celu w 2016 podczas rozpoczyna cykl uroczystości organizowanych z okazji Roku Szalayowskiego',
+		description: '<b>Opis: </b>Godło nadane za wygrany konkurs rzucania siekierą do celu w 2016 podczas rozpoczęcia cyklu uroczystości organizowanych z okazji Roku Szalayowskiego',
 		//symbol: '',
 	},
 	/*{
@@ -496,15 +496,15 @@ export const places = [
 		description: '<b>Opis: </b>...',
 		//symbol: '',
 	},*/
-	/*{
+	{
 		id:'pod-modrzejewska',
 		coords: [49.425419, 20.488147],
 		img: [{src : 'img/tablica/zdj/pod_modrzejewska1.jpg', author : ''},],
 		title: 'Pod Modrzejewską',
 		address: '<b>Adres:</b> Park Górny 7',
-		description: '<b>Opis: </b>',
+		description: '<b>Opis:</b> Godło obecnie nieeksponowane na budynku.',
 		//symbol: '',
-	},*/
+	},
 	/*{
 		id:'pod-niedzwiedziem',
 		coords: [49.427357,20.472679],
@@ -850,7 +850,7 @@ export const places = [
 	{
 		id:'pod-wegierska-korona',
 		coords: [49.42586, 20.481793],
-		img: [{src : 'img/tablica/zdj/', author : ''},],
+		img: [{src : 'img/tablica/zdj/pod_wegierska_korona1.jpg', author : 'zdjęcie  własne'},],
 		title: 'Pod węgierską koroną',
 		address: '<b>Adres:</b>  Główna 6',
 		description: '<b>Opis: </b>...',

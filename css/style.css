@@ -121,20 +121,29 @@ body.dark-mode .form-box textarea {
   z-index: 9999;
   overflow: scroll;
 }
-.info-panel h1 {
+.info-panel .info-panel-box {
+  max-width: 80%;
+  max-height: 70%;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+.info-panel .info-panel-box h1 {
   font-size: 2rem;
   text-align: center;
   line-height: 2.5rem;
 }
-.info-panel p {
+.info-panel .info-panel-box p {
   margin: 1rem;
   text-align: center;
 }
-.info-panel .info-panel-text {
+.info-panel .info-panel-box .info-panel-text {
   max-width: 30%;
 }
 @media (max-width: 800px) {
-  .info-panel .info-panel-text {
+  .info-panel .info-panel-box .info-panel-text {
     max-width: 100%;
   }
 }
@@ -149,7 +158,6 @@ body.dark-mode .form-box textarea {
   padding: 1rem 3rem;
   height: -moz-fit-content;
   height: fit-content;
-  justify-content: center;
   border: none;
   border-radius: 5px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
@@ -424,7 +432,6 @@ body.dark-mode .form-box textarea {
   padding: 1rem 3rem;
   height: -moz-fit-content;
   height: fit-content;
-  justify-content: center;
   border: none;
   border-radius: 5px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
@@ -452,7 +459,6 @@ body.dark-mode .form-box textarea {
   display: flex;
   justify-content: center;
   margin: 1rem;
-  display: flex;
 }
 #panel .author {
   font-size: 1rem;
@@ -731,8 +737,6 @@ body.dark-mode .form-box textarea {
   z-index: 1100;
   color: rgb(0, 0, 0);
   align-items: center;
-  padding: 1rem 2rem;
-  gap: 0.5rem;
   transform: none;
 }
 .button-box .theme-btn:hover {

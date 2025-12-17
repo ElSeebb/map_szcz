@@ -14,7 +14,7 @@ burgerBtn.addEventListener('click', () => {
 });
 
 //layers 
-const layersBtn = document.getElementById('layers-btn');
+const layersBtn = document.getElementById('layers-list-btn');
 const layersList = document.getElementById('layers-list')
 
 layersBtn.addEventListener('click', () => {
