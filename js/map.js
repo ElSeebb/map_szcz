@@ -1,5 +1,6 @@
 import { latlngs } from '../date/border.js';
 
+
 const key = 'mnZ4thQ7dlWpRjiHX5FU';
 let initialCoords;
 let initialZoom;
@@ -64,3 +65,7 @@ const polyline = L.polyline(latlngs, {
 	dashArray: '10, 8',
 	lineJoin: 'round',
 }).addTo(map);
+
+
+import { kataster } from './burger.js';
+//kataster.addTo(map);

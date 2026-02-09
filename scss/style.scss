@@ -62,10 +62,10 @@ body.dark-mode {
 			box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
 		}
 	}
-	#reference{
+	#reference {
 		color: white;
 	}
-	#link-conditions{
+	#link-conditions {
 		color: #f1ebb4;
 	}
 	.title-box {
@@ -127,68 +127,84 @@ body.dark-mode {
 }
 
 //info panel
-	.info-panel {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		height: 100vh;
-		background: rgba(0, 0, 0, 0.8);
-		color: white;
-		font-size: 1.5rem;
+.info-panel {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.8);
+	color: white;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	line-height: 2rem;
+	z-index: 9999;
+	overflow: scroll;
+	.info-panel-lang {
 		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		line-height: 2rem;
-		z-index: 9999;
-		overflow: scroll;
-		.info-panel-box{
-			max-width: 80%;
-			max-height: 70%;
-			overflow: auto;
-			display: flex;
-			align-items: center;
-			justify-content: start;
-			flex-direction: column;
-			h1 {
-				font-size: 2rem;
-				text-align: center;
-				line-height: 2.5rem;
-			}
-			p {
-				margin: 1rem;
-				text-align: center;
-			}
-			.info-panel-text{
-				max-width: 30%;
-			}
-			@media (max-width:800px) {
-				.info-panel-text{
-					max-width: 100%;
-				}
-			}
-		}
 		button {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			margin: 1rem;
-			width: fit-content;
-			padding: 1rem 3rem;
-			height: fit-content;
-			border: none;
-			border-radius: 5px;
-			box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-			font-weight: bold;
-			cursor: pointer;
-			transition: background-color 0.4s ease;
+			background-size: cover;
+			transition: opacity .3s ease;
 		}
-		button:hover {
-			background-color: #a5a3a3;
+		button:hover{
+			opacity: .8;
+		}
+		.pol-btn {
+			background-image: url('/img/icon/Flag_of_Poland.svg');
+		}
+		.eng-btn {
+			background-image: url('/img/icon/Flag_of_the_United_Kingdom.png');
 		}
 	}
+	.info-panel-box {
+		max-width: 80%;
+		max-height: 70%;
+		overflow: auto;
+		display: flex;
+		align-items: center;
+		justify-content: start;
+		flex-direction: column;
+		h1 {
+			font-size: 2rem;
+			text-align: center;
+			line-height: 2.5rem;
+		}
+		p {
+			margin: 1rem;
+			text-align: center;
+		}
+		.info-panel-text {
+			max-width: 30%;
+		}
+		@media (max-width: 800px) {
+			.info-panel-text {
+				max-width: 100%;
+			}
+		}
+	}
+	button {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 1rem;
+		width: fit-content;
+		padding: 1rem 3rem;
+		height: fit-content;
+		border: none;
+		border-radius: 5px;
+		box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+		font-weight: bold;
+		cursor: pointer;
+		transition: background-color 0.4s ease;
+	}
+	button:hover {
+		background-color: #a5a3a3;
+	}
+}
 
 .info-panel.hidden {
 	display: none;
@@ -223,10 +239,10 @@ body.dark-mode {
 		border-radius: 5px;
 		box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
 		z-index: 10;
-		.filters{
+		.filters {
 			position: relative;
-			
-			button{
+
+			button {
 				padding: 0.2rem;
 				margin: 0.5rem 0;
 				border: none;
@@ -234,7 +250,7 @@ body.dark-mode {
 				cursor: pointer;
 				transition: background-color 0.5s ease;
 			}
-			button:hover{
+			button:hover {
 				background-color: #c0bebe;
 			}
 		}
@@ -325,7 +341,9 @@ body.dark-mode {
 
 .street-list {
 	overflow: hidden;
-	transition: max-height 0.8s ease, padding 0.3s ease;
+	transition:
+		max-height 0.8s ease,
+		padding 0.3s ease;
 
 	&.hidden {
 		max-height: 0;
@@ -394,7 +412,9 @@ body.dark-mode {
 	border-radius: 15px;
 	background-color: #f7f7f7;
 	overflow-y: auto;
-	transition: transform 0.4s ease, opacity 0.4s ease;
+	transition:
+		transform 0.4s ease,
+		opacity 0.4s ease;
 	transform: translateX(100%);
 	opacity: 0;
 	z-index: 1000;
@@ -619,7 +639,7 @@ body.dark-mode {
 .layers-list {
 	position: fixed;
 	display: none;
-	right: 1rem;
+	right: 2rem;
 	bottom: 7rem;
 	width: 20dvw;
 	height: fit-content;
@@ -627,27 +647,41 @@ body.dark-mode {
 	transform: translateX(0%);
 	transition: transform 1s ease;
 	z-index: 2000;
-	opacity: 0.8;
+	opacity: 1;
 
 	.layers-list-btn {
-		padding: 2rem;
+		padding: 0.2rem 2rem;
 		box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
 		border-radius: 5px;
 		font-size: 1.5rem;
-		color: rgb(255, 255, 255);
+		color: rgb(0, 0, 0);
 		transition: color 0.4s ease;
 		cursor: pointer;
 	}
 	#third-military-survey {
+		display: none;
 		background-color: #474747;
 	}
 	#second-military-survey {
+		display: none;
 		background-color: #af2424;
 	}
 	#first-military-survey {
+		display: none;
 		background-color: #df8888;
 	}
-	.layers-list-btn:hover{
+	#kataster {
+		background-color: #cacaca;
+		border: #0000002d solid;
+		transition: background-color 0.4s ease;
+		span {
+			font-size: 1rem;
+		}
+	}
+	#kataster:hover {
+		background-color: #e76060;
+	}
+	.layers-list-btn:hover {
 		background-color: #fff;
 		color: #000;
 	}
@@ -656,7 +690,7 @@ body.dark-mode {
 @media (max-width: 800px) {
 	.layers-list {
 		width: 50dvw;
-		p{
+		p {
 			font-size: 1rem;
 		}
 	}
@@ -665,7 +699,7 @@ body.dark-mode {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	transform: translateX(0);
+	transform: translateX(0%);
 	opacity: 1;
 }
 
@@ -693,7 +727,9 @@ body.dark-mode {
 		input {
 			width: 300px;
 			padding: 10px;
-			border: 1px, solid black;
+			border:
+				1px,
+				solid black;
 			border-radius: 2px;
 		}
 		label {
@@ -754,9 +790,8 @@ body.dark-mode {
 	gap: 1rem;
 	z-index: 1500;
 
-
 	.layers-btn {
-		display: none;
+		//display: none;
 		align-items: center;
 		padding: 0.5rem;
 		background: #b1b39b;

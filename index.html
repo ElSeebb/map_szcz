@@ -83,7 +83,7 @@
 		<div id="night-overlay" class="night hidden"></div>
 
 		<!-- Warstwy historyczne -->
-		<!-- <div class="layers-list" id="layers-list">
+		 <div class="layers-list" id="layers-list">
 			<div id="third-military-survey" class="layers-list-btn">
 				<p>
 					Mapa Trzeciego Przeglądu Wojskowego Imperium Habsburskiego -
@@ -102,7 +102,14 @@
 					i Lodomeria (1779–1783)
 				</p>
 			</div>
-		</div>  -->
+			<div id="kataster" class="layers-list-btn">
+				<p>
+					Kataster Galicyjski - 1846
+					<br>
+					<span>© Archiwum Narodowe w Krakowie, Kataster galicyjski, sygn. 29/280/2695</span> 
+				</p>
+			</div>
+		</div>  
 
 		<div id="panel" class="panel-mob hidden">
 			<div id="panel-content"></div>
@@ -139,24 +146,28 @@
 			</div>
 		</div>
 		<div class="info-panel" id="info-panel">
+			<div class="info-panel-lang">
+				<button class="pol-btn lang-btn">PL</button>
+				<button class="eng-btn lang-btn">ENG</button>
+			</div>
 			<div class="info-panel-box">
-				<h2>Aktualne plany rozwojowe (stan: grudzień 2025)</h2>
-				<p class="info-panel-text">
+				<h2 id="info-panel-title">Aktualne plany rozwojowe (stan: luty 2026)</h2>
+				<p class="info-panel-text" id="info-panel-text">
 					Witaj na Geoportalu poświęconym tzw. Godłom Szalayowskim! Znajdziesz tu mapę z aktualnymi lokalizacjami, opisami i zdjęciami zachowanych tablic, które stanowią unikatowy element historycznej tożsamości Szczawnicy. </br>
-Projekt ma charakter hobbystyczny i tworzony jest w wolnym czasie – dlatego rozwija się stopniowo, ale regularnie. Jeśli posiadasz informacje, zdjęcia lub lokalizacje godeł, których tutaj brakuje, możesz je zgłosić za pomocą czerwonego przycisku z wykrzyknikiem w prawym dolnym rogu. </br>
+Projekt ma charakter hobbystyczny i tworzony jest w wolnym czasie – dlatego rozwija się stopniowo, ale regularnie. <br>Jeśli posiadasz informacje, zdjęcia lub lokalizacje godeł, których tutaj brakuje, możesz je zgłosić za pomocą czerwonego przycisku z wykrzyknikiem w prawym dolnym rogu. </br>
 Każda taka pomoc przyczynia się do odtworzenia historii uzdrowiska i zachowania pamięci o tych wyjątkowych znakach.
 				</p>
-				<ul>
-					<p>W trakcie realizacji:</p>
+				<p id="plans-title-cur">W trakcie realizacji:</p>
+				<ul id="plans-current">
 					<li>aktualizacja adresów tablic (82/112)</li>
-					<li>aktualizacja zdjęć (21/82)</li>
+					<li>aktualizacja zdjęć (31/82)</li>
 					<li>aktualizacja opisów</li>
 					<li>aktualizacja angielskiej wersji</li>
 					<li>historia odwiedzonych tablic</li>
 					<li>dodanie warstw historycznych</li>
 				</ul>
-				<ul>
-					<p>Plany na przyszłość:</p>
+				<p id="plans-title-fut">Plany na przyszłość:</p>
+				<ul id="plans-future">
 					<li>wersja mapy dla dzieci</li>
 					<li>system komentarzy</li>
 				</ul>
@@ -168,7 +179,7 @@ Każda taka pomoc przyczynia się do odtworzenia historii uzdrowiska i zachowani
 				<h1 id="page-title">Godła Szalayowskie</h1>
 			</div>
 			<p>
-				<span id="map-author">Copyright © 2025 |&nbsp</span>
+				<span id="map-author">Copyright © 2026 |&nbsp</span>
 				Sebastian Ciesielka
 			</p>
 		</div>
@@ -304,7 +315,7 @@ Każda taka pomoc przyczynia się do odtworzenia historii uzdrowiska i zachowani
 		<script type="module" src="js/map.js"></script>
 		<script type="module" src="js/list.js"></script>
 		<script type="module" src="js/markerGen.js"></script>
-		<script src="./js/burger.js"></script>
+		<script type="module" src="./js/burger.js"></script>
 		<script type="module" src="./js/dark.js"></script>
 		<script src="./js/error.js"></script>
 		<script type="module" src="js/lang.js"></script>

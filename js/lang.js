@@ -32,7 +32,23 @@ const translations = {
 		darkModeOff: 'Tryb dzienny',
 		submitErrorBtn: 'Zgłoś błąd',
 		darkModeBtn: 'Tryb nocny',
-		switchLangBtn: 'Przełącz język',
+		switchLangBtn: 'Switch language',
+		infoPanelTitle: 'Aktualne plany rozwojowe (stan: luty 2026)',
+		infoPanelText:
+			`Witaj na Geoportalu poświęconym tzw. Godłom Szalayowskim! Znajdziesz tu mapę z aktualnymi lokalizacjami, opisami i zdjęciami zachowanych tablic, które stanowią unikatowy element historycznej tożsamości Szczawnicy. </br>
+Projekt ma charakter hobbystyczny i tworzony jest w wolnym czasie – dlatego rozwija się stopniowo, ale regularnie. <br>Jeśli posiadasz informacje, zdjęcia lub lokalizacje godeł, których tutaj brakuje, możesz je zgłosić za pomocą czerwonego przycisku z wykrzyknikiem w prawym dolnym rogu. </br>
+Każda taka pomoc przyczynia się do odtworzenia historii uzdrowiska i zachowania pamięci o tych wyjątkowych znakach.`,
+		plansTitleCur: 'W trakcie realizacji:',
+		plansCurrent: `<li>aktualizacja adresów tablic (82/112)</li>
+					<li>aktualizacja zdjęć (31/82)</li>
+					<li>aktualizacja opisów</li>
+					<li>aktualizacja angielskiej wersji</li>
+					<li>historia odwiedzonych tablic</li>
+					<li>dodanie warstw historycznych</li>`,
+		plansTitleFut: 'Plany na przyszłość',
+		plansFuture: `<li>wersja mapy dla dzieci</li>
+					<li>system komentarzy</li>
+					<li>warstwy z innymi atrakcjami</li>`,
 	},
 
 	en: {
@@ -56,7 +72,25 @@ const translations = {
 		darkModeOff: 'Light mode',
 		submitErrorBtn: 'Submit error',
 		darkModeBtn: 'Dark mode',
-		switchLangBtn: 'Switch language',
+		switchLangBtn: 'Zmień język',
+		infoPanelTitle: 'Current development plans (as of February 2026)',
+		infoPanelText: `Welcome to the Geoportal dedicated to the Szalay emblems!
+Here you will find a map with the current locations, descriptions, and photographs of preserved plaques, which form a unique element of Szczawnica’s historical identity. <br>
+This is a non-commercial, hobby project developed in the author’s spare time, which is why it evolves gradually but consistently. <br>
+If you have information, photographs, or locations of emblems that are missing here, you can submit them using the red exclamation mark button in the bottom-right corner. <br>
+Every contribution helps to reconstruct the history of the spa town and preserve the memory of these unique symbols.`,
+		plansTitleCur: 'Currently in progress:',
+		plansCurrent: `<li>updating emblems addresses (82/112)</li>
+              <li>updating photos (31/82)</li>
+              <li>updating descriptions</li>
+              <li>updating the English version</li>
+              <li>visited emblems history</li>
+              <li>adding historical map layers</li>`,
+		plansTitleFut: 'Future plans',
+		plansFuture: `<li>child-friendly map version</li>
+             <li>comment system</li>
+             <li>layers with other attractions</li>`,
+
 	},
 };
 
@@ -129,6 +163,24 @@ function applyTranslation(lang) {
 
 	const switchLangBtnTr = document.getElementById('lang-btn');
 	if (switchLangBtnTr) switchLangBtnTr.title = t.switchLangBtn;
+
+	const infoPanelTitleTr = document.getElementById('info-panel-title');
+	if (infoPanelTitleTr) infoPanelTitleTr.textContent = t.infoPanelTitle;
+
+	const infoPanelTextTr = document.getElementById('info-panel-text');
+	if (infoPanelTextTr) infoPanelTextTr.innerHTML = t.infoPanelText;
+
+	const plansTitleCurTr = document.getElementById('plans-title-cur');
+	if (plansTitleCurTr) plansTitleCurTr.textContent = t.plansTitleCur;
+
+	const plansCurrentTr = document.getElementById('plans-current');
+	if (plansCurrentTr) plansCurrentTr.innerHTML = t.plansCurrent;
+	
+	const plansTitleFutTr = document.getElementById('plans-title-fut');
+	if (plansTitleFutTr) plansTitleFutTr.textContent = t.plansTitleFut;
+	
+	const plansFutureTr = document.getElementById('plans-future');
+	if (plansFutureTr) plansFutureTr.innerHTML = t.plansFuture;
 }
 
 // przeładownaie języka i markerów
@@ -151,7 +203,7 @@ function reloadLanguage() {
 			if (updatedPlace) {
 				openPanel(panel, updatedPlace, closeBtnText);
 				const activeButton = document.querySelector(
-					`.emblem-btn[data-id="${currentOpenPlace.id}"]`
+					`.emblem-btn[data-id="${currentOpenPlace.id}"]`,
 				);
 				if (activeButton) {
 					activeButton.classList.add('active');
@@ -163,12 +215,37 @@ function reloadLanguage() {
 }
 
 // obsługa przycisku
-langToggle.addEventListener('click', () => {
-	currentLang = currentLang === 'pl' ? 'en' : 'pl';
+
+function setLanguage(lang) {
+	if (!translations[lang]) return;
+
+	currentLang = lang;
 	localStorage.setItem('lang', currentLang);
-	langToggle.textContent = currentLang === 'pl' ? 'EN' : 'PL';
+
+	if (langToggle) {
+		langToggle.textContent = currentLang === 'pl' ? 'EN' : 'PL';
+	}
+
 	reloadLanguage();
+}
+
+if (langToggle) {
+	langToggle.addEventListener('click', () => {
+		setLanguage(currentLang === 'pl' ? 'en' : 'pl');
+	});
+}
+
+document.querySelectorAll('.lang-btn').forEach((btn) => {
+	btn.addEventListener('click', () => {
+		if (btn.classList.contains('pol-btn')) {
+			setLanguage('pl');
+		}
+		if (btn.classList.contains('eng-btn')) {
+			setLanguage('en');
+		}
+	});
 });
+
 
 export function getCloseBtnText() {
 	return translations[currentLang].closeBtn;

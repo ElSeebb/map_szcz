@@ -121,6 +121,22 @@ body.dark-mode .form-box textarea {
   z-index: 9999;
   overflow: scroll;
 }
+.info-panel .info-panel-lang {
+  display: flex;
+}
+.info-panel .info-panel-lang button {
+  background-size: cover;
+  transition: opacity 0.3s ease;
+}
+.info-panel .info-panel-lang button:hover {
+  opacity: 0.8;
+}
+.info-panel .info-panel-lang .pol-btn {
+  background-image: url("/img/icon/Flag_of_Poland.svg");
+}
+.info-panel .info-panel-lang .eng-btn {
+  background-image: url("/img/icon/Flag_of_the_United_Kingdom.png");
+}
 .info-panel .info-panel-box {
   max-width: 80%;
   max-height: 70%;
@@ -573,7 +589,7 @@ body.dark-mode .form-box textarea {
 .layers-list {
   position: fixed;
   display: none;
-  right: 1rem;
+  right: 2rem;
   bottom: 7rem;
   width: 20dvw;
   height: -moz-fit-content;
@@ -582,25 +598,39 @@ body.dark-mode .form-box textarea {
   transform: translateX(0%);
   transition: transform 1s ease;
   z-index: 2000;
-  opacity: 0.8;
+  opacity: 1;
 }
 .layers-list .layers-list-btn {
-  padding: 2rem;
+  padding: 0.2rem 2rem;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   font-size: 1.5rem;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   transition: color 0.4s ease;
   cursor: pointer;
 }
 .layers-list #third-military-survey {
+  display: none;
   background-color: #474747;
 }
 .layers-list #second-military-survey {
+  display: none;
   background-color: #af2424;
 }
 .layers-list #first-military-survey {
+  display: none;
   background-color: #df8888;
+}
+.layers-list #kataster {
+  background-color: #cacaca;
+  border: rgba(0, 0, 0, 0.1764705882) solid;
+  transition: background-color 0.4s ease;
+}
+.layers-list #kataster span {
+  font-size: 1rem;
+}
+.layers-list #kataster:hover {
+  background-color: #e76060;
 }
 .layers-list .layers-list-btn:hover {
   background-color: #fff;
@@ -619,7 +649,7 @@ body.dark-mode .form-box textarea {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transform: translateX(0);
+  transform: translateX(0%);
   opacity: 1;
 }
 
@@ -703,7 +733,6 @@ body.dark-mode .form-box textarea {
   z-index: 1500;
 }
 .button-box .layers-btn {
-  display: none;
   align-items: center;
   padding: 0.5rem;
   background: #b1b39b;
