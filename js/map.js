@@ -67,5 +67,4 @@ const polyline = L.polyline(latlngs, {
 }).addTo(map);
 
 
-import { kataster } from './burger.js';
-//kataster.addTo(map);
+

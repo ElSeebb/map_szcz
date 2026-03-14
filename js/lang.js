@@ -33,14 +33,20 @@ const translations = {
 		submitErrorBtn: 'Zgłoś błąd',
 		darkModeBtn: 'Tryb nocny',
 		switchLangBtn: 'Switch language',
-		infoPanelTitle: 'Aktualne plany rozwojowe (stan: luty 2026)',
+		infoPanelTitle: 'Aktualne plany rozwojowe (stan: marzec 2026)',
 		infoPanelText:
 			`Witaj na Geoportalu poświęconym tzw. Godłom Szalayowskim! Znajdziesz tu mapę z aktualnymi lokalizacjami, opisami i zdjęciami zachowanych tablic, które stanowią unikatowy element historycznej tożsamości Szczawnicy. </br>
-Projekt ma charakter hobbystyczny i tworzony jest w wolnym czasie – dlatego rozwija się stopniowo, ale regularnie. <br>Jeśli posiadasz informacje, zdjęcia lub lokalizacje godeł, których tutaj brakuje, możesz je zgłosić za pomocą czerwonego przycisku z wykrzyknikiem w prawym dolnym rogu. </br>
-Każda taka pomoc przyczynia się do odtworzenia historii uzdrowiska i zachowania pamięci o tych wyjątkowych znakach.`,
+Projekt ma charakter hobbystyczny i tworzony jest w wolnym czasie – dlatego rozwija się stopniowo, ale regularnie. <br>Jeśli posiadasz informacje, zdjęcia lub lokalizacje godeł, których tutaj brakuje, możesz je zgłosić za pomocą czerwonego przycisku z wykrzyknikiem w prawym dolnym rogu <img src="./img/icon/alert-triangle.svg" class="inline-icons">. </br>
+Każda taka pomoc przyczynia się do odtworzenia historii uzdrowiska i zachowania pamięci o tych wyjątkowych znakach. </br><hr>
+			Strona została rozszerzona o pierwszą warstwę historyczną — Kataster Galicyjski z 1846 r. pt. „Wyżnia Szczawnica sammt Ortschaft Nyżnia Szczawnica in Galizien Sandecer Kreis Bezirk Szczawnica”.
+Warstwę można włączyć, klikając przycisk w prawym dolnym rogu <img src="./img/icon/layers.svg" class="inline-icons"> i wybierając odpowiednią pozycję. Jakość mapy zależy od przybliżenia. 
+ <br>
+<i>Georeferencja mapy została wykonana samodzielnie. Mogą występować błędy i niedokładności ze współczesnym układem ulic i budynków.</br> Źródło: Archiwum Narodowe w Krakowie, Kataster galicyjski, sygn. 29/280/2695.
+Wykorzystano zgodnie z ustawą z dnia 11 sierpnia 2021 r. o otwartych danych i ponownym wykorzystywaniu informacji sektora publicznego.</i> 
+`,
 		plansTitleCur: 'W trakcie realizacji:',
 		plansCurrent: `<li>aktualizacja adresów tablic (82/112)</li>
-					<li>aktualizacja zdjęć (31/82)</li>
+					<li>aktualizacja zdjęć (33/82)</li>
 					<li>aktualizacja opisów</li>
 					<li>aktualizacja angielskiej wersji</li>
 					<li>historia odwiedzonych tablic</li>
@@ -73,15 +79,20 @@ Każda taka pomoc przyczynia się do odtworzenia historii uzdrowiska i zachowani
 		submitErrorBtn: 'Submit error',
 		darkModeBtn: 'Dark mode',
 		switchLangBtn: 'Zmień język',
-		infoPanelTitle: 'Current development plans (as of February 2026)',
+		infoPanelTitle: 'Current development plans (as of March 2026)',
 		infoPanelText: `Welcome to the Geoportal dedicated to the Szalay emblems!
 Here you will find a map with the current locations, descriptions, and photographs of preserved plaques, which form a unique element of Szczawnica’s historical identity. <br>
 This is a non-commercial, hobby project developed in the author’s spare time, which is why it evolves gradually but consistently. <br>
 If you have information, photographs, or locations of emblems that are missing here, you can submit them using the red exclamation mark button in the bottom-right corner. <br>
-Every contribution helps to reconstruct the history of the spa town and preserve the memory of these unique symbols.`,
+Every contribution helps to reconstruct the history of the spa town and preserve the memory of these unique symbols. <br><hr>
+The website has been expanded with its first historical map layer — the Galician Cadastre (1846) titled “Wyżnia Szczawnica sammt Ortschaft Nyżnia Szczawnica in Galizien Sandecer Kreis Bezirk Szczawnica.”
+You can enable it by clicking the button in the bottom-right corner <img src="./img/icon/layers.svg" class="inline-icons"> and selecting the appropriate layer.<br>
+<i>The map was georeferenced by myself. Errors and inaccuracies may occur due to the current street and building layout.<br>
+Source: National Archives in Kraków, Galician Cadastre, ref. no. 29/280/2695.
+Used in accordance with the Polish Act of 11 August 2021 on open data and the re-use of public sector information.</i>`,
 		plansTitleCur: 'Currently in progress:',
 		plansCurrent: `<li>updating emblems addresses (82/112)</li>
-              <li>updating photos (31/82)</li>
+              <li>updating photos (33/82)</li>
               <li>updating descriptions</li>
               <li>updating the English version</li>
               <li>visited emblems history</li>

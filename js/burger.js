@@ -1,4 +1,5 @@
-import {map} from './map.js';
+import { toggleHistoricalLayer } from './historicalLayers.js';
+
 
 const burgerBtn = document.getElementById('burger-btn');
 const listBox = document.getElementById('emblem-list');
@@ -27,83 +28,40 @@ layersBtn.addEventListener('click', () => {
 	}
 });
 
-export const kataster = L.tileLayer('./img/kataster/{z}/{x}/{y}.png', {
-	minZoom: 12,
-	maxZoom: 18,
-	opacity: 1,
-	// bounds: [
-	// 	[49.395, 20.47],
-	// 	[49.455, 20.52],
-	// ],
-	attribution:
-		'© Archiwum Narodowe w Krakowie, Kataster galicyjski, sygn. 29/280/2695',
-	updateWhenIdle: true,
-	keepBuffer: 2,
-});
 
-//ARCANIUM WMTS
-const thirdSurvey = L.tileLayer(
-	'https://maps.arcanum.com/wmts/thirdsurvey75000/{TileMatrix}/{TileRow}/{TileCol}.jpeg',
-	{
-		layer: 'thirdsurvey75000',
-		style: '',
-		tilematrixSet: 'GoogleMapsCompatible',
-		format: 'image/jpeg',
-		tileSize: 256,
-		opacity: 0.6,
-		attribution: '&copy; Arcanum',
-	}
-);
+document
+	.getElementById('kataster')
+	.addEventListener('click', () => {
+		toggleHistoricalLayer('kataster');
+		layersList.classList.remove('active');
+	});
 
-const secondSurvey = L.tileLayer(
-	'https://maps.arcanum.com/wmts/secondsurvey-galicia/{TileMatrix}/{TileRow}/{TileCol}.jpeg',
-	{
-		layer: 'secondsurvey-galicia',
-		style: '',
-		tilematrixSet: 'GoogleMapsCompatible',
-		format: 'image/jpeg',
-		tileSize: 256,
-		opacity: 0.6,
-		attribution: '&copy; Arcanum',
-	}
-);
+document
+	.getElementById('first-military-survey')
+	.addEventListener('click', () => {
+		toggleHistoricalLayer('firstSurvey');
+		layersList.classList.remove('active');
+	});
 
-const firstSurvey = L.tileLayer(
-	'https://maps.arcanum.com/wmts/firstsurvey-galicia/{TileMatrix}/{TileRow}/{TileCol}.jpeg',
-	{
-		layer: 'firstsurvey-galicia',
-		style: '',
-		tilematrixSet: 'GoogleMapsCompatible',
-		format: 'image/jpeg',
-		tileSize: 256,
-		opacity: 0.6,
-		attribution: '&copy; Arcanum',
-	}
-);
-
-// przełączanie warstwy
-function toggleArcanumLayer(layer) {
-	if (map.hasLayer(layer)) {
-		map.removeLayer(layer);
-	} else {
-		[thirdSurvey, secondSurvey, firstSurvey, kataster].forEach((l) => {
-			if (map.hasLayer(l)) map.removeLayer(l);
-		});
-		map.addLayer(layer);
-	}
-}
+document
+	.getElementById('second-military-survey')
+	.addEventListener('click', () => {
+		toggleHistoricalLayer('secondSurvey');
+		layersList.classList.remove('active');
+	});
 
 document
 	.getElementById('third-military-survey')
-	.addEventListener('click', () => toggleArcanumLayer(thirdSurvey));
-document
-	.getElementById('second-military-survey')
-	.addEventListener('click', () => toggleArcanumLayer(secondSurvey));
-document
-	.getElementById('first-military-survey')
-	.addEventListener('click', () => toggleArcanumLayer(firstSurvey));
+	.addEventListener('click', () => {
+		toggleHistoricalLayer('thirdSurvey');
+		layersList.classList.remove('active');
+	});
+
 document
 	.getElementById('kataster')
-	.addEventListener('click', () => toggleArcanumLayer(kataster));
-
+	.addEventListener('click', () => {
+		
+		toggleHistoricalLayer('kataster');
+		layersList.classList.remove('active');
+	});
 

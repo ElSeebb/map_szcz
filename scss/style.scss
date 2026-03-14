@@ -177,7 +177,7 @@ body.dark-mode {
 			text-align: center;
 		}
 		.info-panel-text {
-			max-width: 30%;
+			max-width: 50%;
 		}
 		@media (max-width: 800px) {
 			.info-panel-text {
@@ -390,6 +390,46 @@ body.dark-mode {
 	border-radius: 15px;
 	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
 }
+
+//suwak przeźroczystości historycznych
+.opacity-control {
+	background: rgb(255, 255, 255);
+	border: 2px solid rgba(97, 97, 97, 0.76);
+	padding: 6px;
+	border-radius: 3px;
+	box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+.opacity-control input[type='range'] {
+	-webkit-appearance: none; 
+	writing-mode: vertical-lr; 
+	direction: rtl;            
+	height: 120px;   
+	width: 1.5rem;        
+	background: #c0c0c04b;
+	cursor: pointer;
+}
+
+.opacity-control input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none; 
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #96c4f5;
+	cursor: pointer;
+	box-shadow: 0 0 4px rgba(0,0,0,0.4);
+	margin-top: -4px;
+}
+
+.opacity-control input[type="range"]::-moz-range-thumb {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background: #96c4f5;
+	cursor: pointer;
+	box-shadow: 0 0 4px rgba(0,0,0,0.4);
+}
+
+
 
 .leaflet-tooltip {
 	font-size: 1.1rem;
@@ -650,7 +690,7 @@ body.dark-mode {
 	opacity: 1;
 
 	.layers-list-btn {
-		padding: 0.2rem 2rem;
+		padding: 0.3rem 0.5rem;
 		box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
 		border-radius: 5px;
 		font-size: 1.5rem;
@@ -671,15 +711,19 @@ body.dark-mode {
 		background-color: #df8888;
 	}
 	#kataster {
-		background-color: #cacaca;
+		background-color: #ebe8e8;
 		border: #0000002d solid;
 		transition: background-color 0.4s ease;
+		p{
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
 		span {
-			font-size: 1rem;
+			font-size: 1.1rem;
 		}
 	}
 	#kataster:hover {
-		background-color: #e76060;
+		background-color: #cecccc;
 	}
 	.layers-list-btn:hover {
 		background-color: #fff;
@@ -687,11 +731,30 @@ body.dark-mode {
 	}
 }
 
+.inline-icons {
+
+	height: 18px;
+	vertical-align: middle;
+	padding: 2px;
+	margin: 1px 4px;
+	background-color: rgb(255, 255, 255);
+	border: #000 solid 1px;
+	border-radius: 50%;
+}
+
 @media (max-width: 800px) {
 	.layers-list {
-		width: 50dvw;
+		width: 80dvw;
 		p {
-			font-size: 1rem;
+			font-size: 0.8rem;
+		}
+		#kataster{
+			p{
+				font-size: 1.2rem;
+			}
+			span{
+				font-size: 1rem;
+			}
 		}
 	}
 }
